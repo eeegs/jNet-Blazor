@@ -1,0 +1,45 @@
+﻿@inherits BaseRazor
+
+@switch (InputType)
+{
+    case InputType.DatetimeLocal:
+        break;
+    case InputType.Color:
+    case InputType.Date:
+    case InputType.Email:
+    case InputType.File:
+    case InputType.Hidden:
+    case InputType.Image:
+    case InputType.Month:
+    case InputType.Number:
+    case InputType.Password:
+    case InputType.Reset:
+    case InputType.Search:
+    case InputType.Tel:
+    case InputType.Text:
+    case InputType.Time:
+    case InputType.Url:
+    case InputType.Week:
+        <input name="@Name" title="@Description" id="@Name" readonly=@Readonly @attributes=@Attributes type="@InputType.ToString()" />
+        break;
+    case InputType.Range:
+        break;
+    case InputType.Submit:
+        break;
+    case InputType.Button:
+        break;
+    case InputType.Radio:
+        break;
+    case InputType.Checkbox:
+        break;
+    default:
+        break;
+}
+
+@code {
+    [Parameter(CaptureUnmatchedValues = true)] public Dictionary<string, object> Attributes { get; set; }
+    [Parameter] public InputType InputType { get; set; }
+    [Parameter] public string Description { get; set; }
+    [Parameter] public string Name { get; set; }
+    [Parameter] public bool Readonly { get; set; }
+}

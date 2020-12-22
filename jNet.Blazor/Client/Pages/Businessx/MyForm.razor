@@ -1,0 +1,44 @@
+﻿<EditForm Model="@Business" OnValidSubmit="@HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <p>
+        <label>
+            Identifier:
+            <InputNumber @bind-Value="Business.Id" readonly />
+        </label>
+    </p>
+    <p>
+        <label>
+            Name:
+            <InputText @bind-Value="Business.Name" />
+        </label>
+    </p>
+    <p>
+        <label>
+            Description (optional):
+            <InputTextArea @bind-Value="Business.Description" />
+        </label>
+    </p>
+    <p>
+        <label>
+            ACN:
+            <InputText @bind-Value="Business.ACN" />
+        </label>
+    </p>
+    <p>
+        <label>
+            ABN:
+            <InputText @bind-Value="Business.ABN" />
+        </label>
+    </p>
+    <button type="submit">Submit</button>
+</EditForm>
+
+@code {
+    [Parameter] public Business Business { get; set; }
+
+    private void HandleValidSubmit()
+    {
+    }
+}

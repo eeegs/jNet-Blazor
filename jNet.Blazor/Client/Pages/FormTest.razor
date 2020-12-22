@@ -1,0 +1,32 @@
+﻿@page "/Form"
+@inherits BaseRazor
+@using jNet.Blazor.Client.Pages.Form
+
+<AForm>
+    <AField InputType="@InputType.Date" Name="Fred" Description="A colour picker" Readonly="@true" foo="bar"></AField>
+</AForm>
+
+
+@code {
+    private IEnumerable<FieldDef> fieldData;
+
+    protected override void OnInitialized()
+    {
+        try
+        {
+            fieldData = new FieldDef[] {
+                new InputField { Name = "Tom", Lable="Tom", Description="Tom's description", Columns = 1, InputType= InputType.Text },
+                new LineBreak { },
+                new InputField { Name = "Tom", Lable="Tom", Description="Tom's description", Columns = 1, InputType= InputType.Text },
+                new LineBreak { },
+                new InputField { Name = "FirstName", Lable="First Name", Description="First or christian name", Columns = 3, InputType= InputType.Text },
+                new InputField { Name = "Email", Lable="Email", Description="Tom's email address", Columns = 2, InputType= InputType.Email}
+            };
+        }
+        catch (AccessTokenNotAvailableException exception)
+        {
+            exception.Redirect();
+        }
+        base.OnInitialized();
+    }
+}

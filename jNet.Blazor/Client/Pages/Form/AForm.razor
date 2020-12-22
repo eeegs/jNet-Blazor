@@ -1,0 +1,10 @@
+﻿@inherits BaseRazor
+
+<form>
+    @ChildContent
+</form>
+
+@code {
+    [Parameter] public object Model { get;set;}
+    [Parameter] public RenderFragment ChildContent { get; set; }
+}

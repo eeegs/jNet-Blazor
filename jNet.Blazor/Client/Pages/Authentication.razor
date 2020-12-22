@@ -1,0 +1,27 @@
+@page "/authentication/{action}"
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@using System.Threading.Tasks
+<RemoteAuthenticatorView Action="@Action" OnLogOutSucceeded=@OnLogOutSucceeded OnLogInSucceeded=@OnLogInSucceeded/>
+
+@code{
+    [Parameter] public string Action { get; set; }
+
+    [CascadingParameter]
+    public Task<AuthenticationState> AuthenticationState { get; set; }
+
+
+    public async void OnLogInSucceeded()
+    {
+        var user = (await AuthenticationState).User;
+
+        if (user.Identity.IsAuthenticated)
+        {
+            // Do some stuff
+        }
+    }
+
+    public void OnLogOutSucceeded()
+    {
+        // Do some stuff
+    }
+}
