@@ -1110,6 +1110,7 @@
           "Microsoft.Authentication.WebAssembly.Msal": "5.0.1",
           "Microsoft.Extensions.Http": "5.0.0",
           "System.Net.Http.Json": "5.0.0",
+          "jNet.Blazor.Parts": "1.0.0",
           "jNet.Blazor.Shared": "1.0.0"
         },
         "compile": {
@@ -1119,9 +1120,25 @@
           "bin/placeholder/jNet.Blazor.Client.dll": {}
         }
       },
+      "jNet.Blazor.Parts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "5.0.1"
+        },
+        "compile": {
+          "bin/placeholder/jNet.Blazor.Parts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/jNet.Blazor.Parts.dll": {}
+        }
+      },
       "jNet.Blazor.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "5.0.1"
+        },
         "compile": {
           "bin/placeholder/jNet.Blazor.Shared.dll": {}
         },
@@ -3114,6 +3131,11 @@
       "type": "project",
       "path": "../Client/jNet.Blazor.Client.csproj",
       "msbuildProject": "../Client/jNet.Blazor.Client.csproj"
+    },
+    "jNet.Blazor.Parts/1.0.0": {
+      "type": "project",
+      "path": "../../jNet.Blazor.Parts/jNet.Blazor.Parts.csproj",
+      "msbuildProject": "../../jNet.Blazor.Parts/jNet.Blazor.Parts.csproj"
     },
     "jNet.Blazor.Shared/1.0.0": {
       "type": "project",

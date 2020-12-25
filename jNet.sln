@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jNet.Data", "jNet.Data\jNet
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jNet.Command", "jNet.Command\jNet.Command.csproj", "{EAE48154-67D2-495F-BE55-44E54A222870}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jNet.Blazor.Parts", "jNet.Blazor.Parts\jNet.Blazor.Parts.csproj", "{B918A752-FA37-42F2-9C4F-3A6E27DC56D9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jNet.Web", "jNet.Web\jNet.Web.csproj", "{A13128CA-872F-46AE-810B-87113F9362F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{EAE48154-67D2-495F-BE55-44E54A222870}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAE48154-67D2-495F-BE55-44E54A222870}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAE48154-67D2-495F-BE55-44E54A222870}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B918A752-FA37-42F2-9C4F-3A6E27DC56D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B918A752-FA37-42F2-9C4F-3A6E27DC56D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B918A752-FA37-42F2-9C4F-3A6E27DC56D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B918A752-FA37-42F2-9C4F-3A6E27DC56D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A13128CA-872F-46AE-810B-87113F9362F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A13128CA-872F-46AE-810B-87113F9362F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A13128CA-872F-46AE-810B-87113F9362F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A13128CA-872F-46AE-810B-87113F9362F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

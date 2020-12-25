@@ -111,8 +111,43 @@ using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 #line hidden
 #nullable disable
 #nullable restore
+#line 15 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Client\_Imports.razor"
+using jNet.Blazor.Parts;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 17 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Client\_Imports.razor"
+using jNet.Blazor.Parts.Pages;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 3 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Client\Pages\FormTest.razor"
 using jNet.Blazor.Client.Pages.Form;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Client\Pages\FormTest.razor"
+using jNet.Blazor.Parts.Form;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 5 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Client\Pages\FormTest.razor"
+using System.Text.Json;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 6 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Client\Pages\FormTest.razor"
+using System.Text.Json.Serialization;
 
 #line default
 #line hidden
@@ -126,29 +161,18 @@ using jNet.Blazor.Client.Pages.Form;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 10 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Client\Pages\FormTest.razor"
+#line 20 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Client\Pages\FormTest.razor"
        
-    private IEnumerable<FieldDef> fieldData;
+    Business model = new Business { Id = 234, Description = "Fred was here", Email = "s.e@t.com.au", ABN = 24108317997, ACN = 108317997, Name = "JerraNET" };
 
-    protected override void OnInitialized()
+
+    private void Click()
     {
-        try
-        {
-            fieldData = new FieldDef[] {
-                new InputField { Name = "Tom", Lable="Tom", Description="Tom's description", Columns = 1, InputType= InputType.Text },
-                new LineBreak { },
-                new InputField { Name = "Tom", Lable="Tom", Description="Tom's description", Columns = 1, InputType= InputType.Text },
-                new LineBreak { },
-                new InputField { Name = "FirstName", Lable="First Name", Description="First or christian name", Columns = 3, InputType= InputType.Text },
-                new InputField { Name = "Email", Lable="Email", Description="Tom's email address", Columns = 2, InputType= InputType.Email}
-            };
-        }
-        catch (AccessTokenNotAvailableException exception)
-        {
-            exception.Redirect();
-        }
-        base.OnInitialized();
+        model.Name = "TestCoy1";
+        model.Description= "A new description";
     }
+
+    string Model2Json => JsonSerializer.Serialize(model);
 
 #line default
 #line hidden

@@ -3,6 +3,7 @@ using m = jNet.Data.Model;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
+using System.Reflection;
 
 namespace jNet.Command
 {

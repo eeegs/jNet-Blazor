@@ -371,9 +371,25 @@
           "lib/net5.0/System.Net.Http.Json.dll": {}
         }
       },
+      "jNet.Blazor.Parts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "5.0.1"
+        },
+        "compile": {
+          "bin/placeholder/jNet.Blazor.Parts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/jNet.Blazor.Parts.dll": {}
+        }
+      },
       "jNet.Blazor.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "5.0.1"
+        },
         "compile": {
           "bin/placeholder/jNet.Blazor.Shared.dll": {}
         },
@@ -752,9 +768,25 @@
           "lib/net5.0/System.Net.Http.Json.dll": {}
         }
       },
+      "jNet.Blazor.Parts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "5.0.1"
+        },
+        "compile": {
+          "bin/placeholder/jNet.Blazor.Parts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/jNet.Blazor.Parts.dll": {}
+        }
+      },
       "jNet.Blazor.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "5.0.1"
+        },
         "compile": {
           "bin/placeholder/jNet.Blazor.Shared.dll": {}
         },
@@ -1360,6 +1392,11 @@
         "version.txt"
       ]
     },
+    "jNet.Blazor.Parts/1.0.0": {
+      "type": "project",
+      "path": "../../jNet.Blazor.Parts/jNet.Blazor.Parts.csproj",
+      "msbuildProject": "../../jNet.Blazor.Parts/jNet.Blazor.Parts.csproj"
+    },
     "jNet.Blazor.Shared/1.0.0": {
       "type": "project",
       "path": "../Shared/jNet.Blazor.Shared.csproj",
@@ -1373,6 +1410,7 @@
       "Microsoft.Authentication.WebAssembly.Msal >= 5.0.1",
       "Microsoft.Extensions.Http >= 5.0.0",
       "System.Net.Http.Json >= 5.0.0",
+      "jNet.Blazor.Parts >= 1.0.0",
       "jNet.Blazor.Shared >= 1.0.0"
     ]
   },
@@ -1407,6 +1445,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Blazor.Parts\\jNet.Blazor.Parts.csproj": {
+              "projectPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Blazor.Parts\\jNet.Blazor.Parts.csproj"
+            },
             "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Blazor\\Shared\\jNet.Blazor.Shared.csproj": {
               "projectPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Blazor\\Shared\\jNet.Blazor.Shared.csproj"
             }

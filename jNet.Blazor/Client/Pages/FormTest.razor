@@ -1,32 +1,32 @@
 ﻿@page "/Form"
 @inherits BaseRazor
 @using jNet.Blazor.Client.Pages.Form
+@using jNet.Blazor.Parts.Form
+@using System.Text.Json;
+@using System.Text.Json.Serialization;
 
-<AForm>
-    <AField InputType="@InputType.Date" Name="Fred" Description="A colour picker" Readonly="@true" foo="bar"></AField>
-</AForm>
+<jNet.AspNetCore.Components.Forms.EditForm Model="@model">
+    <jNet.AspNetCore.Components.Forms.DataAnnotationsValidator />
+    <jNet.AspNetCore.Components.Forms.ValidationSummary />
+    <AutoField />
+    <jNet.AspNetCore.Components.Forms.InputText @bind-Value="model.Name" />
+</jNet.AspNetCore.Components.Forms.EditForm>
+
+<button @onclick="Click">Push</button>
+
+<p>@Model2Json</p>
 
 
 @code {
-    private IEnumerable<FieldDef> fieldData;
+    Business model = new Business { Id = 234, Description = "Fred was here", Email = "s.e@t.com.au", ABN = 24108317997, ACN = 108317997, Name = "JerraNET" };
 
-    protected override void OnInitialized()
+
+    private void Click()
     {
-        try
-        {
-            fieldData = new FieldDef[] {
-                new InputField { Name = "Tom", Lable="Tom", Description="Tom's description", Columns = 1, InputType= InputType.Text },
-                new LineBreak { },
-                new InputField { Name = "Tom", Lable="Tom", Description="Tom's description", Columns = 1, InputType= InputType.Text },
-                new LineBreak { },
-                new InputField { Name = "FirstName", Lable="First Name", Description="First or christian name", Columns = 3, InputType= InputType.Text },
-                new InputField { Name = "Email", Lable="Email", Description="Tom's email address", Columns = 2, InputType= InputType.Email}
-            };
-        }
-        catch (AccessTokenNotAvailableException exception)
-        {
-            exception.Redirect();
-        }
-        base.OnInitialized();
+        model.Name = "TestCoy1";
+        model.Description= "A new description";
     }
+
+    string Model2Json => JsonSerializer.Serialize(model);
 }
+

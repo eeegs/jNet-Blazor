@@ -72,8 +72,8 @@ namespace jNet.Blazor.Server.Controllers
 		{
 			var res = new s.Business
 			{
-				ABN = $"{b.Detail.ABN:00 000 000 000}",
-				ACN = $"{b.Detail.ACN:000 000 000}",
+				ABN = b.Detail.ABN,
+				ACN = b.Detail.ACN,
 				AccountId = b.AccountId,
 				Id = b.Id,
 				Name = b.Name,

@@ -1,0 +1,21 @@
+﻿@using System.Drawing
+@using System.Text.RegularExpressions
+@inherits InputBase<int>
+<input type="range" @attributes=AdditionalAttributes class=@CssClass @bind=CurrentValueAsString />
+@code {
+
+    protected override string FormatValueAsString(int value) => value.ToString();
+
+    protected override bool TryParseValueFromString(string value, out int result, out string validationErrorMessage)
+    {
+        validationErrorMessage = null;
+
+        if (!int.TryParse(value, out result))
+        {
+            validationErrorMessage = "Not a valid integer";
+            result = 0;
+            return false;
+        }
+        return true;
+    }
+}

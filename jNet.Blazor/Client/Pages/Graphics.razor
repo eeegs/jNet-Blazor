@@ -1,0 +1,28 @@
+﻿<h3>SVG</h3>
+
+
+<input type="range" @bind-value="@value" @bind-value:event="oninput" list="powers" />
+<p>@value</p>
+
+<svg>
+    <rect width="40" height="60" fill="red" x="@value"></rect>
+</svg>
+
+<datalist id="powers">
+    <option value="0" label="0" />
+    <option value="1" lable="1" />
+    <option value="2" lable="2" />
+    <option value="5" lable="5" />
+    <option value="10" lable="10" />
+    <option value="20" lable="20" />
+    <option value="50" lable="50" />
+    <option value="100" lable="100" />
+</datalist>
+
+
+
+
+@code {
+    private int _value = 50;
+    private int value { get =>_value; set { _value = value; ShouldRender(); } }
+}

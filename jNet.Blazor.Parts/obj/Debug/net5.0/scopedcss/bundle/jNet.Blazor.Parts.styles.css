@@ -1,0 +1,40 @@
+/* _content/jNet.Blazor.Parts/Pages/YearPlanner.razor.rz.scp.css */
+.planner-year[b-n5lcsj7omt] {
+}
+
+.planner-month.heading[b-n5lcsj7omt] {
+    font-weight: bold;
+}
+
+    .planner-month.heading .planner-day.heading[b-n5lcsj7omt] {
+        color: darkgoldenrod;
+        text-align: left;
+    }
+
+    .planner-month.heading .planner-day[b-n5lcsj7omt] {
+        text-align: center;
+    }
+
+.planner-day[b-n5lcsj7omt] {
+    display: inline-block;
+    width: 2em;
+    border: solid lightgray 1px;
+    margin-top: -1px;
+    margin-left: -1px;
+}
+
+    .planner-day span[b-n5lcsj7omt] {
+        font-size: xx-small;
+        vertical-align: top;
+        margin-left: 1px;
+    }
+
+
+    .planner-day.heading[b-n5lcsj7omt] {
+        width: 6em;
+    }
+
+    .planner-day.wend[b-n5lcsj7omt] {
+        color: red;
+        background-color: Lightblue
+    }

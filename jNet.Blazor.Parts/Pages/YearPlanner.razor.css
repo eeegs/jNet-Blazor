@@ -1,0 +1,39 @@
+﻿.planner-year {
+}
+
+.planner-month.heading {
+    font-weight: bold;
+}
+
+    .planner-month.heading .planner-day.heading {
+        color: darkgoldenrod;
+        text-align: left;
+    }
+
+    .planner-month.heading .planner-day {
+        text-align: center;
+    }
+
+.planner-day {
+    display: inline-block;
+    width: 2em;
+    border: solid lightgray 1px;
+    margin-top: -1px;
+    margin-left: -1px;
+}
+
+    .planner-day span {
+        font-size: xx-small;
+        vertical-align: top;
+        margin-left: 1px;
+    }
+
+
+    .planner-day.heading {
+        width: 6em;
+    }
+
+    .planner-day.wend {
+        color: red;
+        background-color: Lightblue
+    }

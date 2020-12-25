@@ -1,0 +1,15 @@
+﻿@using System.Diagnostics.CodeAnalysis
+
+@inherits MyInputBase<string?>
+<label for="@Id">@Label</label>
+<textarea @attributes=Attributes class=@CssClass @bind=CurrentValueAsString />
+@code {
+    // placeholder="@Placeholder" title="@Title" readonly="@ReadOnly" required="@Required" disabled="@IsAKey"
+
+    protected override bool TryParseValueFromString(string? value, out string? result, [NotNullWhen(false)] out string? validationErrorMessage)
+    {
+        result = value;
+        validationErrorMessage = null;
+        return true;
+    }
+}

@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\jNet.Blazor.Parts\jNet.Blazor.Parts.csproj" />
     <ProjectReference Include="..\jNet.Data\jNet.Data.csproj" />
   </ItemGroup>
 

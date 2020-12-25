@@ -64,3 +64,13 @@ C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Command\obj\Debug\n
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Command\obj\Debug\net5.0\ref\jNet.Command.dll
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Command\obj\Debug\net5.0\jNet.Command.pdb
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Command\obj\Debug\net5.0\jNet.Command.genruntimeconfig.cache
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Command\bin\Debug\net5.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Command\bin\Debug\net5.0\Microsoft.AspNetCore.Components.dll
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Command\bin\Debug\net5.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Command\bin\Debug\net5.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Command\bin\Debug\net5.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Command\bin\Debug\net5.0\Microsoft.JSInterop.dll
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Command\bin\Debug\net5.0\System.IO.Pipelines.dll
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Command\bin\Debug\net5.0\jNet.Blazor.Parts.dll
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Command\bin\Debug\net5.0\jNet.Blazor.Parts.pdb
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Command\bin\Debug\net5.0\jNet.Blazor.Parts.StaticWebAssets.xml

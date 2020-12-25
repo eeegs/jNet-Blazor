@@ -126,8 +126,8 @@ namespace jNet.Data.Model
 		public long Id { get; init; }
 		public string Name { get; set; }
 		public string? Description { get; set; }
-		public long ACN { get; set; }
-		public long ABN { get; set; }
+		public long? ACN { get; set; }
+		public long? ABN { get; set; }
 
 		public Business? Business { get; init; }
 		public Supplier? Supplier { get; init; }

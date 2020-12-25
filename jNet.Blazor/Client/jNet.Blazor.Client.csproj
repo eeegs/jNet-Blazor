@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\jNet.Blazor.Parts\jNet.Blazor.Parts.csproj" />
     <ProjectReference Include="..\Shared\jNet.Blazor.Shared.csproj" />
   </ItemGroup>
 

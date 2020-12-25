@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,63 +10,31 @@ namespace jNet.Blazor.Shared
 {
 	public class Business
 	{
+		[Key]
 		public long Id { get; set; }
-		public string Name { get; set; }
-		public string Description { get; set; }
-		public string ACN { get; set; }
-		public string ABN { get; set; }
+
+		[Required]
+		[ScaffoldColumn(false)]
+		[Display(Description = "This is the registered name of the business", Name = "Registered Name", ShortName = "F", Prompt = "The registered name")]
+		public string Name { get; set; } = "";
+
+		[DataType(DataType.EmailAddress)]
+		public string? Email { get; set; }
+
+		[CreditCard]
+		public string? CreditCard { get; set; }
+
+		[Display(Description = "A Description Field", Name = "Fred", ShortName = "F", Prompt = "Hell yeah!")]
+		public string Description { get; set; } = "";
+
+		[Range(5, 10)]
+		public long? ACN { get; set; }
+
+		[Required]
+		public long? ABN { get; set; }
 		public long AccountId { get; set; }
-	}
 
-	public class FormData
-	{
-		public string Name { get; set; }
-		public string Description { get; set; }
-		public bool ReadOnly { get; set; }
-		public ICollection<FieldDef> FieldData { get; set; } = new List<FieldDef>();
-	}
-
-	public class FieldDef
-	{
-		public int Index { get; set; }
-		public int Columns { get; set; }
-	}
-
-	public class LineBreak : FieldDef
-	{
-	}
-
-	public class InputField : FieldDef
-	{
-		public string Name { get; set; }
-		public string Lable { get; set; }
-		public string Description { get; set; }
-		public InputType InputType { get; set; }
-	}
-
-	public enum InputType : byte
-	{
-		Button,
-		Checkbox,
-		Color,
-		Date,
-		DatetimeLocal,
-		Email,
-		File,
-		Hidden,
-		Image,
-		Month,
-		Number,
-		Password,
-		Radio,
-		Range,
-		Reset,
-		Search,
-		Submit,
-		Tel,
-		Text,
-		Time,
-		Url,
-		Week
+		[Display(Name = "Business Color")]
+		public Color BackgroundColor { get; set; }
 	}
 }

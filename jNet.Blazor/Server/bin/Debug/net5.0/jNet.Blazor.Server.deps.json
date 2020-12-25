@@ -1152,6 +1152,7 @@
           "Microsoft.Authentication.WebAssembly.Msal": "5.0.1",
           "Microsoft.Extensions.Http": "5.0.0",
           "System.Net.Http.Json": "5.0.0",
+          "jNet.Blazor.Parts": "1.0.0",
           "jNet.Blazor.Shared": "1.0.0"
         },
         "runtime": {
@@ -1161,7 +1162,21 @@
           "jNet.Blazor.Client.dll": {}
         }
       },
+      "jNet.Blazor.Parts/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "5.0.1"
+        },
+        "runtime": {
+          "jNet.Blazor.Parts.dll": {}
+        },
+        "compile": {
+          "jNet.Blazor.Parts.dll": {}
+        }
+      },
       "jNet.Blazor.Shared/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "5.0.1"
+        },
         "runtime": {
           "jNet.Blazor.Shared.dll": {}
         },
@@ -3393,6 +3408,11 @@
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
     "jNet.Blazor.Client/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "jNet.Blazor.Parts/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

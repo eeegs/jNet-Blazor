@@ -110,6 +110,27 @@ using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 15 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Client\_Imports.razor"
+using jNet.Blazor.Parts;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 16 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Client\_Imports.razor"
+using jNet.Blazor.Parts.Form;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 17 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Client\_Imports.razor"
+using jNet.Blazor.Parts.Pages;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/business/{Id:long}")]
     public partial class Edit : BaseRazor
     {
@@ -124,7 +145,7 @@ using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 
     [Parameter] public long? Id { get; set; }
 
-    private Business? businessModel = null;
+    private Business businessModel = null;
 
     protected override async Task OnInitializedAsync()
     {
