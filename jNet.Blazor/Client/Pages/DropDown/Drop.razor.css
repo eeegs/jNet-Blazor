@@ -1,0 +1,39 @@
+﻿
+
+div.jNetDrop {
+    display: inline-block;
+    position: relative;
+}
+
+    div.jNetDrop > input {
+        padding-right: calc(2rem-2px);
+    }
+
+    div.jNetDrop > button {
+        position: absolute;
+        right: 1px;
+        top: 1px;
+        bottom: 1px;
+        width: calc(2rem - 2px);
+        border: none;
+        border-radius: 1px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-left: 1px solid lightgray;
+        cursor: pointer;
+    }
+
+    div.jNetDrop > div.dropdown {
+        display: none;
+    }
+
+        div.jNetDrop > div.dropdown.open {
+            position: absolute;
+            display: block;
+            width: 100%;
+            top: 100%;
+            height: 200px;
+            border: 1px solid lightgray;
+            border-radius: 2px;
+            border-top: none;
+        }

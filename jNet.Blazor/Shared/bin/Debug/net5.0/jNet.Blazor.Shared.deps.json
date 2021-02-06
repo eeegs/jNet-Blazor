@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v5.0": {
       "jNet.Blazor.Shared/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "5.0.1"
+          "Microsoft.AspNetCore.Components.Web": "5.0.1",
+          "jNet.CRUD": "1.0.0"
         },
         "runtime": {
           "jNet.Blazor.Shared.dll": {}
@@ -136,6 +137,11 @@
             "fileVersion": "5.0.120.57516"
           }
         }
+      },
+      "jNet.CRUD/1.0.0": {
+        "runtime": {
+          "jNet.CRUD.dll": {}
+        }
       }
     }
   },
@@ -235,6 +241,11 @@
       "sha512": "sha512-qEePWsaq9LoEEIqhbGe6D5J8c9IqQOUuTzzV6wn1POlfdLkJliZY3OlB0j0f17uMWlqZYjH7txj+2YbyrIA8Yg==",
       "path": "system.io.pipelines/5.0.1",
       "hashPath": "system.io.pipelines.5.0.1.nupkg.sha512"
+    },
+    "jNet.CRUD/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

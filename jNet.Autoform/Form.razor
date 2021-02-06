@@ -1,0 +1,67 @@
+﻿@namespace jNet.Autoform
+
+@if (Data != null)
+{
+    <EditForm Model="@Data" novalidate class="row">
+        <DataAnnotationsValidator />
+        @*<AutoField @bind-Value="Model" ReadOnly="ReadOnly" UseValidationMessages="true" />*@
+
+        @if (Fields != null)
+        {
+            foreach (var f in Fields)
+            {
+                @if (f.Hidden)
+                {
+                    <InputGeneric Field="@f" ReadOnly="@ReadOnly" />
+                }
+                else
+                {
+                    <div class="col-md-4 form-group">
+                        <label for="@f.Id">@f.Label</label>
+                        <InputGeneric Field="@f" ReadOnly="@ReadOnly" UseValidationMessages="@true" />
+                    </div>
+                }
+            }
+        }
+        @if (ReadOnly)
+        {
+            <button @onclick='() => ReadOnly = false'>Edit</button>
+            <button @onclick="Cancel">Cancel</button>
+        }
+        else
+        {
+            <button type="submit">Submit</button>
+            <button @onclick="Cancel">Cancel</button>
+            <button type="reset">Reset</button>
+            <button @onclick="Delete">Delete</button>
+        }
+    </EditForm>
+}
+else
+{
+    <p>No Model to display</p>
+}
+
+@code{
+    [Parameter] public bool ReadOnly { get; set; } = false;
+    [Parameter] public IEnumerable<FieldData>? Fields { get; set; }
+    [Parameter] public object? Data { get; set; }
+    [Parameter] public EventCallback<object> OnDelete { get; set; }
+    [Parameter] public EventCallback<object> OnSubmit { get; set; }
+    [Parameter] public EventCallback<object> OnCancel { get; set; }
+
+    private Task Submit()
+    {
+        return OnSubmit.InvokeAsync(Data);
+    }
+
+    private Task Delete()
+    {
+        return OnDelete.InvokeAsync(Data);
+    }
+
+    private Task Cancel()
+    {
+        return OnCancel.InvokeAsync(Data);
+    }
+}

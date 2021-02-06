@@ -1,0 +1,50 @@
+﻿
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+div[class*='col-'] {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+@media (min-width: 312px) {
+    @for $i from 1 through 12 {
+        div.col-sm-#{$i} {
+            width: calc(100%*#{$i}/12);
+        }
+    }
+}
+
+@media (min-width: 596px) {
+    @for $i from 1 through 12 {
+        div.col-md-#{$i} {
+            width: calc(100%*#{$i}/12);
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    @for $i from 1 through 12 {
+        div.col-lg-#{$i} {
+            width: calc(100%*#{$i}/12);
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    @for $i from 1 through 12 {
+        div.col-xl-#{$i} {
+            width: calc(100%*#{$i}/12);
+        }
+    }
+}
+
+@for $i from 1 through 12 {
+    div.col-#{$i} {
+        width: calc(100%*#{$i}/12);
+    }
+}
+

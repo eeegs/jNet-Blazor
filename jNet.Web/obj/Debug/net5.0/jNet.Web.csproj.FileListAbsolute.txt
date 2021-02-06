@@ -352,7 +352,6 @@ C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Web\obj\Debug\net5.
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Web\obj\Debug\net5.0\jNet.Web.AssemblyInfoInputs.cache
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Web\obj\Debug\net5.0\jNet.Web.AssemblyInfo.cs
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Web\obj\Debug\net5.0\jNet.Web.csproj.CoreCompileInputs.cache
-C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Web\obj\Debug\net5.0\jNet.Web.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Web\obj\Debug\net5.0\jNet.Web.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Web\obj\Debug\net5.0\jNet.Web.RazorAssemblyInfo.cache
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Web\obj\Debug\net5.0\jNet.Web.RazorAssemblyInfo.cs
@@ -377,4 +376,9 @@ C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Web\obj\Debug\net5.
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Web\obj\Debug\net5.0\ref\jNet.Web.dll
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Web\obj\Debug\net5.0\jNet.Web.pdb
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Web\obj\Debug\net5.0\jNet.Web.genruntimeconfig.cache
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Web\bin\Debug\net5.0\jNet.CRUD.dll
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Web\bin\Debug\net5.0\jNet.CRUD.pdb
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Web\obj\Debug\net5.0\jNet.Web.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Web\bin\Debug\net5.0\jNet.Autoform.dll
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Web\bin\Debug\net5.0\jNet.Autoform.pdb
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Web\bin\Debug\net5.0\jNet.Blazor.Parts.StaticWebAssets.xml

@@ -1,34 +1,15 @@
-@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
-html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+:root {
+    --col-back: rgb(241, 243, 255);
 }
 
-a, .btn-link {
-    color: #0366d6;
-}
+    :root.dark {
+        --col-back: rgb(42, 57, 70);
+    }
+        :root.dark img {
+            filter: brightness(.8) contrast(1.2);
+        }
 
-.btn-primary {
-    color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
-}
-
-.content {
-    padding-top: 1.1rem;
-}
-
-.valid.modified:not([type=checkbox]) {
-    outline: 1px solid #26b050;
-}
-
-.invalid {
-    outline: 1px solid red;
-}
-
-.validation-message {
-    color: red;
-}
 
 #blazor-error-ui {
     background: lightyellow;
@@ -48,3 +29,96 @@ a, .btn-link {
         right: 0.75rem;
         top: 0.5rem;
     }
+
+
+/*.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;*/ /* Preferred icon size */
+    /*display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;*/
+    /* Support for all WebKit browsers. */
+    /*-webkit-font-smoothing: antialiased;*/
+    /* Support for Safari and Chrome. */
+    /*text-rendering: optimizeLegibility;*/
+    /* Support for Firefox. */
+    /*-moz-osx-font-smoothing: grayscale;*/
+    /* Support for IE. */
+    /*font-feature-settings: 'liga';
+}*/
+
+    /* Rules for sizing the icon. */
+    /*.material-icons.md-18 {
+        font-size: 18px;
+    }
+
+    .material-icons.md-24 {
+        font-size: 24px;
+    }
+
+    .material-icons.md-36 {
+        font-size: 36px;
+    }
+
+    .material-icons.md-48 {
+        font-size: 48px;
+    }*/
+
+    /* Rules for using icons as black on a light background. */
+    /*.material-icons.md-dark {
+        color: rgba(0, 0, 0, 0.54);
+    }
+
+        .material-icons.md-dark.md-inactive {
+            color: rgba(0, 0, 0, 0.26);
+        }*/
+
+    /* Rules for using icons as white on a dark background. */
+    /*.material-icons.md-light {
+        color: rgba(255, 255, 255, 1);
+    }
+
+        .material-icons.md-light.md-inactive {
+            color: rgba(255, 255, 255, 0.3);
+        }*/
+
+header {
+    background-color: rgb(184, 151, 71);
+    position: absolute;
+    height: 60px;
+    top: 0;
+    width: 100%
+}
+
+nav {
+    background-color: rgb(118, 57, 63);
+    position: absolute;
+    top: 60px;
+    width: 200px;
+    bottom: 60px;
+    left: 0;
+}
+
+footer {
+    background-color: rgb(74, 74, 71);
+    position: absolute;
+    height: 60px;
+    bottom: 0;
+    width: 100%;
+}
+
+main {
+    background-color: var(--col-back);
+    position: absolute;
+    top: 60px;
+    bottom: 60px;
+    left: 201px;
+    right: 0
+}
+

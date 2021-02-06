@@ -1,4 +1,5 @@
-﻿@using System.Globalization;
+﻿@namespace jNet.Blazor.Parts
+@using System.Globalization;
 @using System.Diagnostics.CodeAnalysis
 @typeparam TValue
 @inherits MyInputBase<TValue>
@@ -10,7 +11,7 @@
     [Parameter] public string ParsingErrorMessage { get; set; } = "The {0} field must be a number.";
     [Parameter] public string? FormatString { get; set; } = null;
 
-    private readonly static string _stepAttributeValue; // Null by default, so only allows whole numbers as per HTML spec
+    //private readonly static string _stepAttributeValue; // Null by default, so only allows whole numbers as per HTML spec
 
     static FieldFormated()
     {
@@ -26,7 +27,7 @@
             targetType == typeof(short) ||
             targetType == typeof(byte))
         {
-            _stepAttributeValue = "any";
+            //_stepAttributeValue = "any";
         }
         else
         {

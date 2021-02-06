@@ -1,0 +1,12 @@
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.CRUD\bin\Debug\net5.0\jNet.CRUD.deps.json
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.CRUD\bin\Debug\net5.0\jNet.CRUD.dll
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.CRUD\bin\Debug\net5.0\ref\jNet.CRUD.dll
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.CRUD\bin\Debug\net5.0\jNet.CRUD.pdb
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.CRUD\obj\Debug\net5.0\jNet.CRUD.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.CRUD\obj\Debug\net5.0\jNet.CRUD.AssemblyInfoInputs.cache
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.CRUD\obj\Debug\net5.0\jNet.CRUD.AssemblyInfo.cs
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.CRUD\obj\Debug\net5.0\jNet.CRUD.csproj.CoreCompileInputs.cache
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.CRUD\obj\Debug\net5.0\jNet.CRUD.dll
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.CRUD\obj\Debug\net5.0\ref\jNet.CRUD.dll
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.CRUD\obj\Debug\net5.0\jNet.CRUD.pdb
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.CRUD\obj\Debug\net5.0\jNet.CRUD.csprojAssemblyReference.cache

@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace jNet.Blazor.Parts.Form
+namespace jNet.Blazor.Parts
 {
     #line hidden
     using System;
@@ -33,14 +33,14 @@ using Microsoft.AspNetCore.Components.Forms;
 #line hidden
 #nullable disable
 #nullable restore
-#line 1 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\Form\FieldInteger.razor"
+#line 2 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\Form\FieldInteger.razor"
 using System.Globalization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\Form\FieldInteger.razor"
+#line 3 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\Form\FieldInteger.razor"
 using System.Diagnostics.CodeAnalysis;
 
 #line default
@@ -54,13 +54,13 @@ using System.Diagnostics.CodeAnalysis;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 7 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\Form\FieldInteger.razor"
+#line 8 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\Form\FieldInteger.razor"
        
     [Parameter] public string ParsingErrorMessage { get; set; } = "The {0} field must be a number.";
     [Parameter] public IntergerType Type { get; set; } = IntergerType.Number;
     [Parameter] public int? Step { get; set; }
 
-    private readonly static string _stepAttributeValue; // Null by default, so only allows whole numbers as per HTML spec
+    //private readonly static string _stepAttributeValue; // Null by default, so only allows whole numbers as per HTML spec
 
     static FieldInteger()
     {
@@ -73,7 +73,7 @@ using System.Diagnostics.CodeAnalysis;
             targetType == typeof(short) ||
             targetType == typeof(byte))
         {
-            _stepAttributeValue = "any";
+            //_stepAttributeValue = "any";
         }
         else
         {

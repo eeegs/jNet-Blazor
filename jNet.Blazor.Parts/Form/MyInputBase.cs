@@ -8,9 +8,9 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 
-namespace jNet.Blazor.Parts.Form
+namespace jNet.Blazor.Parts
 {
-	public abstract class MyInputBase<T> : ZZZZZ<T>
+	public abstract class MyInputBase<T> : InputBase<T>
 	{
 		[Parameter] public string? Id { get; set; }
 		[Parameter] public string? Label { get; set; }

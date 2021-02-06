@@ -1,0 +1,26 @@
+﻿
+<div class="jNetDrop">
+    @Editor
+    <button @onclick="_=>{ IsOpen = !IsOpen; }">
+        @if (IsOpen)
+        {
+            @IconClose
+        }
+        else
+        {
+            @IconOpen
+        }
+    </button>
+    <div class="dropdown @(IsOpen ? "open" : "")">
+        @Panel
+    </div>
+</div>
+
+@code {
+    [Parameter] public RenderFragment Editor { get; set; }
+    [Parameter] public RenderFragment IconOpen { get; set; }
+    [Parameter] public RenderFragment IconClose { get; set; }
+    [Parameter] public RenderFragment Panel { get; set; }
+
+    private bool IsOpen = false;
+}

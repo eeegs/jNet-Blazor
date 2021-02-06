@@ -1,14 +1,19 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>jNet.Blazor</title>
     <base href="/" />
-    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <!--<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />-->
+    <link href="css/myNormalize.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
+    <link href="css/grid.css" rel="stylesheet" />
+    <link href="css/form.css" rel="stylesheet" />
     <link href="jNet.Blazor.Client.styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -22,5 +27,40 @@
     <script src="_content/Microsoft.Authentication.WebAssembly.Msal/AuthenticationService.js"></script>
     <script src="_framework/blazor.webassembly.js"></script>
 </body>
-
 </html>
+
+<script type="text/javascript">
+    window.jsinterop = {
+        setPropByElement: function (element, property, value) {
+            element[property] = value;
+        }
+    };
+    window.jNet = {
+        getInnerHtml: function (element) {
+            console.log(element);
+            return element.innerHTML;
+        },
+        getInnerText: function (element) {
+            console.log(element);
+            return element.innerText;
+        },
+        getTextNodes: function (element) {
+            var nodes = element.childNodes;
+            var result = [];
+
+            for (var i = 0; i < nodes.length; i++) {
+                if (nodes[i].nodeType == 3) {       // If it is a text node,
+                    result.push(nodes[i].nodeValue);  //    add its text to the result
+                }
+            }
+            return result;
+        },
+        setNodes: function (element, items) {
+            var html = "";
+            for (var i = 0; i < items.length; i++) {
+                html += "<span contenteditable='false'>" + items[i] + "</span>";
+            }
+            element.innerHTML = html;
+        }
+    };
+</script>

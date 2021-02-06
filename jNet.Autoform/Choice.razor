@@ -1,0 +1,26 @@
+﻿@namespace jNet.Autoform
+@typeparam TField
+@inherits InputBase<TField>
+
+@{
+    int i = 0;
+
+    var valueL = MakeLong(Value);
+
+    foreach (var entry in System.Enum.GetValues(typeof(TField)))
+    {
+        var id = $"id{GetHashCode()}_{i++}";
+        var entryL = MakeLong((TField)entry);
+        //var name = (System.Enum.GetName(typeof(TField), entry));
+        <label for="@id">
+            @if (HasFlags)
+            {
+                <input name="@entry" type="checkbox" @onchange="e => CheckChange(e, entryL)" id="@id" value="@entryL" checked="@((valueL & entryL) == entryL)" />@entry
+            }
+            else
+            {
+                <input name="@($"n{GetHashCode()}")" type="radio" @onchange="RadioChange" id="@id" value="@entryL" checked="@(valueL == entryL)" />@entry
+            }
+        </label>
+    }
+}

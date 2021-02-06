@@ -1,0 +1,58 @@
+﻿@namespace jNet.Autoform
+@inject IJSRuntime jsRuntime
+
+<label for="@this.GetHashCode()">
+    <input @ref="inputElement" type="checkbox" checked="@(Value == true)" id="@this.GetHashCode()" @onchange="@OnChange" />
+    @ChildContent
+</label>
+
+@code {
+
+
+    private ElementReference inputElement { get; set; }
+
+    private bool? _value;
+
+    [Parameter]
+    public bool Tristate { get; set; } = true;
+
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+
+    [Parameter]
+    public bool? Value
+    {
+        get => _value; set
+        {
+            if (_value != value)
+            {
+                _value = value;
+                ValueChanged.InvokeAsync(_value);
+            }
+        }
+    }
+
+    [Parameter]
+    public EventCallback<bool?> ValueChanged { get; set; }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await SetElementProperty(jsRuntime, inputElement, "indeterminate", Value == null);
+        await base.OnAfterRenderAsync(firstRender);
+    }
+
+    private void OnChange(ChangeEventArgs e)
+    {
+        Value = _value switch
+        {
+            null => true,
+            true => false,
+            false => Tristate ? null : true
+        };
+    }
+
+    private static async Task SetElementProperty(IJSRuntime jsRuntime, ElementReference element, string property, object value)
+    {
+        await jsRuntime.InvokeVoidAsync("window.jsinterop.setPropByElement", element, property, value);
+    }
+}

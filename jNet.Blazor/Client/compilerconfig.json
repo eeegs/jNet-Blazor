@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "wwwroot/css/grid.css",
+    "inputFile": "wwwroot/css/grid.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/form.css",
+    "inputFile": "wwwroot/css/form.scss"
+  }
+]

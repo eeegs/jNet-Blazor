@@ -3,7 +3,6 @@ C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\bin\De
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\bin\Debug\net5.0\jNet.Blazor.Parts.dll
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\bin\Debug\net5.0\ref\jNet.Blazor.Parts.dll
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\bin\Debug\net5.0\jNet.Blazor.Parts.pdb
-C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\obj\Debug\net5.0\jNet.Blazor.Parts.csprojAssemblyReference.cache
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\obj\Debug\net5.0\jNet.Blazor.Parts.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\obj\Debug\net5.0\jNet.Blazor.Parts.AssemblyInfoInputs.cache
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\obj\Debug\net5.0\jNet.Blazor.Parts.AssemblyInfo.cs
@@ -13,6 +12,7 @@ C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\obj\De
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\obj\Debug\net5.0\RazorDeclaration\Form\FieldFormated.razor.g.cs
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\obj\Debug\net5.0\RazorDeclaration\Form\FieldInteger.razor.g.cs
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\obj\Debug\net5.0\RazorDeclaration\Form\FieldText.razor.g.cs
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\obj\Debug\net5.0\RazorDeclaration\Form\FieldTextArea.razor.g.cs
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\obj\Debug\net5.0\RazorDeclaration\Pages\YearPlanner.razor.g.cs
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\obj\Debug\net5.0\jNet.Blazor.Parts.RazorComponent.output.cache
@@ -24,6 +24,7 @@ C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\obj\De
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\obj\Debug\net5.0\Razor\Form\FieldFormated.razor.g.cs
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\obj\Debug\net5.0\Razor\Form\FieldInteger.razor.g.cs
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\obj\Debug\net5.0\Razor\Form\FieldText.razor.g.cs
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\obj\Debug\net5.0\Razor\Form\FieldTextArea.razor.g.cs
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\obj\Debug\net5.0\Razor\_Imports.razor.g.cs
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\obj\Debug\net5.0\Razor\Pages\YearPlanner.razor.g.cs
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\obj\Debug\net5.0\staticwebassets\jNet.Blazor.Parts.StaticWebAssets.Manifest.cache
@@ -35,5 +36,7 @@ C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\obj\De
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\obj\Debug\net5.0\jNet.Blazor.Parts.dll
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\obj\Debug\net5.0\ref\jNet.Blazor.Parts.dll
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\obj\Debug\net5.0\jNet.Blazor.Parts.pdb
-C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\obj\Debug\net5.0\RazorDeclaration\Form\FieldTextArea.razor.g.cs
-C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\obj\Debug\net5.0\Razor\Form\FieldTextArea.razor.g.cs
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\obj\Debug\net5.0\jNet.Blazor.Parts.csprojAssemblyReference.cache
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\bin\Debug\net5.0\jNet.CRUD.dll
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\bin\Debug\net5.0\jNet.CRUD.pdb
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\obj\Debug\net5.0\jNet.Blazor.Parts.csproj.CopyComplete

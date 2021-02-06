@@ -1,0 +1,50 @@
+﻿@page "/account"
+@using jNet.CRUD
+@using s = jNet.Blazor.Shared
+@inherits BaseRazor<s.Account, long>
+
+<h3>AccountList</h3>
+
+<table>
+    <thead>
+        <tr>
+            @foreach (var f in fields)
+            {
+                <td>@f.Label</td>
+            }
+        </tr>
+    </thead>
+
+    <tbody>
+        @{
+            var top = listData.SingleOrDefault(q => q.ParentId == -1)?.Id;
+            if (top != null)
+            {
+                <AccountListRows Fields="@fields" ListData="@listData" Filter="@(q=>q.ParentId==top)" ID2URI="@(id => $"/xaccount/{id}")" />
+            }
+        }
+    </tbody>
+</table>
+@code {
+    [Parameter] public long? Id { get; set; }
+
+    private IEnumerable<Account> listData = Enumerable.Empty<Account>();
+    private FieldData[] fields;
+    private ICrudView<s.Account, long> crud;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        crud = new Crud<s.Account, long>(Http!, "account", 5); // the server API url
+        fields = new[]
+        {
+            eModel[nameof(s.Account.Name)],
+            eModel[nameof(s.Account.Description)],
+        };
+    }
+
+    protected async override Task OnParametersSetAsync()
+    {
+        listData = await crud.Get();
+    }
+}

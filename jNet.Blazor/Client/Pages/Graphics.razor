@@ -1,5 +1,9 @@
 ﻿<h3>SVG</h3>
 
+<Check @bind-Value="arg" Tristate="@false">Check Me</Check>
+
+
+<p>@arg</p>
 
 <input type="range" @bind-value="@value" @bind-value:event="oninput" list="powers" />
 <p>@value</p>
@@ -23,6 +27,7 @@
 
 
 @code {
+    private bool? arg;
     private int _value = 50;
-    private int value { get =>_value; set { _value = value; ShouldRender(); } }
+    private int value { get => _value; set { _value = value; ShouldRender(); } }
 }

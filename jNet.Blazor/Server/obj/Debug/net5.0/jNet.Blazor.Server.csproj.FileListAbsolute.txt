@@ -87,7 +87,6 @@ C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Server\obj\D
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Server\obj\Debug\net5.0\jNet.Blazor.Server.AssemblyInfoInputs.cache
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Server\obj\Debug\net5.0\jNet.Blazor.Server.AssemblyInfo.cs
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Server\obj\Debug\net5.0\jNet.Blazor.Server.csproj.CoreCompileInputs.cache
-C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Server\obj\Debug\net5.0\jNet.Blazor.Server.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Server\obj\Debug\net5.0\jNet.Blazor.Server.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Server\obj\Debug\net5.0\jNet.Blazor.Server.RazorAssemblyInfo.cache
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Server\obj\Debug\net5.0\jNet.Blazor.Server.RazorAssemblyInfo.cs
@@ -106,4 +105,10 @@ C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Server\obj\D
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Server\obj\Debug\net5.0\ref\jNet.Blazor.Server.dll
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Server\obj\Debug\net5.0\jNet.Blazor.Server.pdb
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Server\obj\Debug\net5.0\jNet.Blazor.Server.genruntimeconfig.cache
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Server\bin\Debug\net5.0\libman.json
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Server\bin\Debug\net5.0\jNet.CRUD.dll
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Server\bin\Debug\net5.0\jNet.CRUD.pdb
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Server\obj\Debug\net5.0\jNet.Blazor.Server.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Server\bin\Debug\net5.0\jNet.Autoform.dll
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Server\bin\Debug\net5.0\jNet.Autoform.pdb
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Server\bin\Debug\net5.0\jNet.Blazor.Parts.StaticWebAssets.xml

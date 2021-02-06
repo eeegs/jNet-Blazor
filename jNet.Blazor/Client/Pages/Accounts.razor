@@ -1,0 +1,41 @@
+﻿@page "/xaccount/{*route}"
+@using jNet.CRUD
+@using s = jNet.Blazor.Shared
+@inherits BaseRazor<s.Account, long>
+@using jNet.Autoform
+
+<CrudPage Key="eModel[nameof(s.Account.Id)]" CRUD="@crud" Columns="@(fields!)" Fields="@eModel" TModel="@s.Account" TKey="@long" Route="@Route" />
+
+@code {
+    private FieldData[] fields;
+    private ICrudView<s.Account, long> crud;
+    private CrudActivity activity = CrudActivity.List;
+
+    [Parameter] public long? Id { get; set; }
+    [Parameter] public string Route { get; set; }
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        crud = new Crud<s.Account, long>(Http!, "account", 5); // the server API url
+        crud.ID2URI = id => $"/account/{id}";
+        fields = new[]
+        {
+            eModel[nameof(s.Account.Name)],
+            eModel[nameof(s.Account.Description)],
+            eModel[nameof(s.Account.IsSummaryAccount)],
+        };
+    }
+
+    protected override void OnParametersSet()
+    {
+        activity = Id switch
+        {
+            null => CrudActivity.List,
+            _ => CrudActivity.Read
+        };
+
+        base.OnParametersSet();
+    }
+
+}

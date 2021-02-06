@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace jNet.Blazor.Parts.Form
+namespace jNet.Blazor.Parts
 {
     #line hidden
     using System;
@@ -33,7 +33,7 @@ using Microsoft.AspNetCore.Components.Forms;
 #line hidden
 #nullable disable
 #nullable restore
-#line 1 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\Form\FieldText.razor"
+#line 2 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\Form\FieldText.razor"
 using System.Diagnostics.CodeAnalysis;
 
 #line default
@@ -47,7 +47,7 @@ using System.Diagnostics.CodeAnalysis;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 5 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\Form\FieldText.razor"
+#line 6 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\Form\FieldText.razor"
        
     // placeholder="@Placeholder" title="@Title" readonly="@ReadOnly" required="@Required" disabled="@Disabled"
 

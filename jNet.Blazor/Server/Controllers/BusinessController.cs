@@ -16,17 +16,25 @@ namespace jNet.Blazor.Server.Controllers
 {
 	public class BusinessController : BaseController
 	{
-		public BusinessController(AccountingDb accountingDb, ILogger<BusinessController> logger) : base(accountingDb, logger)
+		public BusinessController(AccountingDb accountingDb, ILogger<ControllerBase> logger) : base(accountingDb, logger)
 		{
 		}
+
 
 		// GET: api/<BusinessController>
 		[HttpGet]
 		public async Task<IEnumerable<s.Business>> Get()
 		{
-			var x = await dB.Businesses.Include(q => q.Detail).Select(q=>Map(q)).ToListAsync();
-			logger.LogInformation($"{x.Count} business entries returned.");
-			return x;
+			try
+			{
+				var x = await dB.Businesses.Include(q => q.Detail).Select(q => MapTransport(q)).ToListAsync();
+				logger.LogInformation($"{x.Count} business entries returned.");
+				return x;
+			}
+			catch (Exception ex)
+			{
+				throw;
+			}
 		}
 
 		// GET api/<BusinessController>/5
@@ -36,7 +44,7 @@ namespace jNet.Blazor.Server.Controllers
 			try
 			{
 				var x = await dB.Businesses.Include(q => q.Detail).SingleAsync(q => q.Id == id);
-				return Map(x);
+				return MapTransport(x);
 			}
 			catch (InvalidOperationException x)
 			{
@@ -67,17 +75,16 @@ namespace jNet.Blazor.Server.Controllers
 		public void Delete(int id)
 		{
 		}
-	
-		static s.Business Map(m.Business b)
+
+		static s.Business MapTransport(m.Business data)
 		{
 			var res = new s.Business
 			{
-				ABN = b.Detail.ABN,
-				ACN = b.Detail.ACN,
-				AccountId = b.AccountId,
-				Id = b.Id,
-				Name = b.Name,
-				Description = b.Detail.Description
+				ABN = data.Detail.ABN,
+				ACN = data.Detail.ACN,
+				Id = data.Id,
+				Name = data.Name,
+				Note = data.Detail.Note
 			};
 			return res;
 		}

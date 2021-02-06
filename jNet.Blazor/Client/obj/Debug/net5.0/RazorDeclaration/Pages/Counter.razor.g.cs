@@ -119,14 +119,21 @@ using jNet.Blazor.Parts;
 #nullable disable
 #nullable restore
 #line 16 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Client\_Imports.razor"
-using jNet.Blazor.Parts.Form;
+using jNet.Blazor.Parts.Pages;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 17 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Client\_Imports.razor"
-using jNet.Blazor.Parts.Pages;
+using jNet.Autoform;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Client\Pages\Counter.razor"
+using jNet.Blazor.Client.Pages.DropDown;
 
 #line default
 #line hidden
@@ -139,19 +146,6 @@ using jNet.Blazor.Parts.Pages;
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 9 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Client\Pages\Counter.razor"
-       
-    private int currentCount = 0;
-
-    private void IncrementCount()
-    {
-        currentCount++;
-    }
-
-#line default
-#line hidden
-#nullable disable
     }
 }
 #pragma warning restore 1591

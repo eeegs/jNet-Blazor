@@ -1,0 +1,53 @@
+﻿@namespace jNet.Autoform
+@typeparam TKey
+
+@if (Fields == null)
+{
+    <p>No field data provided to list</p>
+}
+else
+{
+    <table>
+        <thead>
+            <tr>
+                @foreach (var f in Fields)
+                {
+                    <th title="@f.Description">@f.Label</th>
+                }
+            </tr>
+        </thead>
+        @if (Data != null)
+        {
+            <tbody>
+                @foreach (var item in Data)
+                {
+                    var first = true;
+                    <tr @key="@Key?.PropertyInfo.GetValue(item)">
+                        @foreach (var f in Fields)
+                        {
+                            if (first && Key != null && ID2URI != null)
+                            {
+                                <td>
+                                    <a href="@ID2URI((TKey?)(Key?.PropertyInfo.GetValue(item)))">@string.Format($"{{0:{f.Format}}}", f.PropertyInfo.GetValue(item))</a>
+                                </td>
+                            }
+                            else
+                            {
+                                <td>@string.Format($"{{0:{f.Format}}}", f.PropertyInfo.GetValue(item))</td>
+                            }
+                            first = false;
+                        }
+                    </tr>
+                }
+            </tbody>
+        }
+    </table>
+}
+
+@code
+{
+    [Parameter] public FieldData? Key { get; set; }
+    [Parameter] public IEnumerable<FieldData>? Fields { get; set; }
+    [Parameter] public IEnumerable<object>? Data { get; set; }
+    [Parameter] public Func<TKey?, string>? ID2URI { get; set; }
+}

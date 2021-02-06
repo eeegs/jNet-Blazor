@@ -1,0 +1,16 @@
+﻿@namespace jNet.Autoform
+@typeparam TField
+@inherits InputBase<TField>
+
+<input @attributes="@attributes" value="@CurrentValueAsString" @onchange="Change" @oninput="Input" />
+@if (UseValidationMessages)
+{
+    <ValidationMessage For="@ValueExpression" />
+}
+
+@code {
+    [Parameter] public bool UseValidationMessages { get; set; } = true;
+    [Parameter] public bool ReadOnly { get; set; } = default;
+    [Parameter] public FieldData Field { get; set; } = default!;
+    [Parameter] public bool FireOnInput { get; set; } = false;
+}

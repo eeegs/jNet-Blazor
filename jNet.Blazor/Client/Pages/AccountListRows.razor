@@ -1,0 +1,66 @@
+﻿@using jNet.CRUD
+@using s = jNet.Blazor.Shared
+
+@foreach (var item in ListData.Where(Filter))
+{
+    var first = true;
+    <tr @key="@item.Id">
+        @foreach (var f in Fields)
+        {
+
+            if (first)
+            {
+                <td style="@($"padding-left: {Indent*2}rem")">
+                    @if (item.IsSummaryAccount)
+                    {
+                        var id = item.Id;
+                        if (!expanded.Contains(id))
+                        {
+                            <i class="material-icons" @onclick="_ => Expand(id)">add_box</i>
+                        }
+                        else
+                        {
+                            <i class="material-icons" @onclick="_ => Collapse(id)">indeterminate_check_box</i>
+                        }
+                    }
+                    else
+                    {
+                        <i class="material-icons" style="color:transparent">check_box_outline_blank</i>
+                    }
+                    <a href="@ID2URI(item.Id)">@string.Format($"{{0:{f.Format}}}", item.Name)</a>
+                </td>
+            }
+            else
+            {
+                <td>
+                    @string.Format($"{{0:{f.Format}}}", f.PropertyInfo.GetValue(item))
+                </td>
+            }
+            first = false;
+        }
+    </tr>
+    @if (expanded.Contains(item.Id))
+    {
+        <AccountListRows Fields="@Fields" ID2URI="@ID2URI" ListData="@ListData" Filter="@(q=>q.ParentId==item.Id)" Indent="@(Indent+1)" />
+    }
+}
+
+@code {
+    [Parameter] public Func<s.Account, bool> Filter { get; set; }
+    [Parameter] public IEnumerable<Account> ListData { get; set; } = Enumerable.Empty<Account>();
+    [Parameter] public FieldData[] Fields { get; set; } = Array.Empty<FieldData>();
+    [Parameter] public Func<long?, string> ID2URI { get; set; }
+    [Parameter] public int Indent { get; set; } = 0;
+
+    private SortedSet<long> expanded = new();
+
+    private void Expand(long id)
+    {
+        expanded.Add(id);
+    }
+
+    private void Collapse(long id)
+    {
+        expanded.Remove(id);
+    }
+}

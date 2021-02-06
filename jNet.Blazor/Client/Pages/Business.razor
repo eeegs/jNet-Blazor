@@ -1,0 +1,40 @@
+﻿@page "/business/{*route}"
+@using jNet.CRUD
+@using s = jNet.Blazor.Shared
+@inherits BaseRazor<s.Business, long>
+
+<CrudPage Key="eModel[nameof(s.Business.Id)]" CRUD="@crud" Columns="@(fields!)" Fields="@eModel" TModel="@s.Business" TKey="@long" Route="@Route" />
+
+@code {
+    private FieldData[] fields;
+    private ICrudView<s.Business, long> crud;
+    private CrudActivity activity = CrudActivity.List;
+
+    [Parameter] public long? Id { get; set; }
+    [Parameter] public string Route { get; set; }
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        crud = new Crud<s.Business, long>(Http!, "business", 0); // the server API url
+        crud.ID2URI = id => $"/business/{id}";
+        fields = new[]
+        {
+            eModel[nameof(s.Business.Name)],
+            eModel[nameof(s.Business.Note)],
+            eModel[nameof(s.Business.ABN)],
+        };
+    }
+
+    protected override void OnParametersSet()
+    {
+        activity = Id switch
+        {
+            null => CrudActivity.List,
+            _ => CrudActivity.Read
+        };
+
+        base.OnParametersSet();
+    }
+
+}

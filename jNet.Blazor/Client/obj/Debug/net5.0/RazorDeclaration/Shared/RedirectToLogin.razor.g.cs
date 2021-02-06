@@ -112,14 +112,14 @@ using jNet.Blazor.Parts;
 #nullable disable
 #nullable restore
 #line 16 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Client\_Imports.razor"
-using jNet.Blazor.Parts.Form;
+using jNet.Blazor.Parts.Pages;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 17 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor\Client\_Imports.razor"
-using jNet.Blazor.Parts.Pages;
+using jNet.Autoform;
 
 #line default
 #line hidden
