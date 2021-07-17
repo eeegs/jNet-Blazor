@@ -1,0 +1,21 @@
+﻿@import "normalize.css";
+
+* {
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+@font-face {
+    font-family: system;
+    font-style: normal;
+    font-weight: normal;
+    src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}

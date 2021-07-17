@@ -12,4 +12,4 @@ C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Data\obj\Debug\net5
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Data\obj\Debug\net5.0\ref\jNet.Data.dll
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Data\obj\Debug\net5.0\jNet.Data.pdb
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Data\obj\Debug\net5.0\jNet.Data.genruntimeconfig.cache
-C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Data\obj\Debug\net5.0\jNet.Data.csprojAssemblyReference.cache
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Data\obj\Debug\net5.0\jNet.Data.csproj.AssemblyReference.cache

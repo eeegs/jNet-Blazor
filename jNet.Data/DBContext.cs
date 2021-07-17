@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
 using System.Diagnostics;
@@ -17,7 +18,7 @@ namespace jNet.Data
 			get => businessId;
 			set
 			{
-				Debug.Assert(businessId == default, "Change BusinessId after it is set");
+				Debug.Assert(businessId == default, "Changed BusinessId after it was initially set");
 				if (businessId != default)
 				{
 					// someone is trying to change it, so change it to default so they can't hack stuff
@@ -28,6 +29,10 @@ namespace jNet.Data
 		}
 		public AccountingDb([NotNull] DbContextOptions options) : base(options)
 		{
+			// Add the default objects to the context and mark them as unchanged.
+			// They will already exist in the DB from its initial deployment.
+			// This way we can use them in code without loading them from the db.
+			// See each object's IEntityTypeConfiguration<T>.Configure() method.
 			Entry(m.Account.Default).State = EntityState.Unchanged;
 			Entry(m.Business.Default).State = EntityState.Unchanged;
 			Entry(m.CompanyDetail.Default).State = EntityState.Unchanged;
@@ -78,6 +83,18 @@ namespace jNet.Data
 			}
 
 			return base.SaveChanges();
+		}
+	}
+
+	public class AccountingDbFactory : IDesignTimeDbContextFactory<AccountingDb>
+	{
+		AccountingDb IDesignTimeDbContextFactory<AccountingDb>.CreateDbContext(string[] args)
+		{
+			var o = new DbContextOptionsBuilder<AccountingDb>()
+				.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=Test")
+				.Options;
+
+			return new AccountingDb(o);
 		}
 	}
 }

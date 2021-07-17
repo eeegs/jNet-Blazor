@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+	  <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Pages\Scripting.razor.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="5.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="5.0.8" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="3.10.0" />
+    <PackageReference Include="Microsoft.Fast.Components.FluentUI" Version="0.2.0" />
+    <PackageReference Include="System.Net.Http.Json" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\source\repos\BlazorMonaco\BlazorMonaco\BlazorMonaco.csproj" />
+    <ProjectReference Include="..\Components\jNet.Blazor2.Components.csproj" />
+    <ProjectReference Include="..\Shared\jNet.Blazor2.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Pages\Docka - Copy %282%29.razor.cs">
+      <DependentUpon>Docka.razor.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\Docka - Copy - Copy.razor.cs">
+      <DependentUpon>Docka - Copy.razor.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\Docka - Copy.razor.cs">
+      <DependentUpon>Docka.razor.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Pages\Docka - Copy %282%29.razor.css">
+      <DependentUpon>Docka.razor.css</DependentUpon>
+    </None>
+    <None Update="Pages\Docka - Copy - Copy.razor.css">
+      <DependentUpon>Docka - Copy.razor.css</DependentUpon>
+    </None>
+    <None Update="Pages\Docka - Copy.razor.css">
+      <DependentUpon>Docka.razor.css</DependentUpon>
+    </None>
+  </ItemGroup>
+
+</Project>

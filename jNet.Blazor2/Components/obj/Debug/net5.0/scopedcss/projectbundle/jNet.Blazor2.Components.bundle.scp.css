@@ -1,0 +1,177 @@
+@import '';
+
+/* _content/jNet.Blazor2.Components/Inspector/Inspector.razor.rz.scp.css */
+table[b-98vzmnbj0p] {
+    border-collapse: separate;
+    width: 100%;
+    background-color: var(--main-bg-color);
+    border-spacing: 0;
+    /*table-layout: fixed;*/
+}
+
+td[b-98vzmnbj0p], th[b-98vzmnbj0p] {
+    border-top: 1px outset var(--main-bg-colorL);
+    border-bottom: 1px outset var(--main-bg-colorL);
+}
+
+    td.space1[b-98vzmnbj0p] {
+        border-right: 1px outset var(--main-bg-colorL);
+        width: .1em;
+        cursor: ew-resize;
+    }
+
+    td.space2[b-98vzmnbj0p] {
+        border-left: 1px outset var(--main-bg-colorL);
+        width: .1em;
+        background-color: whitesmoke;
+        cursor: ew-resize;
+    }
+
+    td.labels[b-98vzmnbj0p], td.values[b-98vzmnbj0p] {
+        padding-left: 0.1em;
+    }
+
+    td.values[b-98vzmnbj0p] {
+        background-color: whitesmoke;
+        border-right: 1px outset var(--main-bg-colorL);
+    }
+
+    td.labels[b-98vzmnbj0p] {
+        border-left: 1px outset var(--main-bg-colorL);
+        color: white;
+    }
+
+/* _content/jNet.Blazor2.Components/Layouts/MultiSplit.razor.rz.scp.css */
+
+div[b-nlhtc0o54x] {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+    div.divider[b-nlhtc0o54x] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+        div.divider > div[b-nlhtc0o54x] {
+            background-color: rgb(0 0 0 / 0.5);
+        }
+
+        div.divider.horizontal[b-nlhtc0o54x] {
+            cursor: ew-resize;
+        }
+
+            div.divider.horizontal > div[b-nlhtc0o54x] {
+                height: 16px;
+                margin-top: -8px;
+                top: 50%;
+            }
+
+        div.divider.vertical[b-nlhtc0o54x] {
+            cursor: ns-resize;
+        }
+
+            div.divider.vertical > div[b-nlhtc0o54x] {
+                width: 16px;
+                margin-left: -8px;
+                left: 50%;
+            }
+/* _content/jNet.Blazor2.Components/Layouts/Split.razor.rz.scp.css */
+div[b-1sn2rs8w49] {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+    div.divider[b-1sn2rs8w49] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+        div.divider > div[b-1sn2rs8w49] {
+            background-color: rgb(0 0 0 / 0.5);
+        }
+
+        div.divider.horizontal[b-1sn2rs8w49] {
+            cursor: ew-resize;
+        }
+
+            div.divider.horizontal > div[b-1sn2rs8w49] {
+                height: 16px;
+                margin-top: -8px;
+                top: 50%;
+            }
+
+        div.divider.vertical[b-1sn2rs8w49] {
+            cursor: ns-resize;
+        }
+
+            div.divider.vertical > div[b-1sn2rs8w49] {
+                width: 16px;
+                margin-left: -8px;
+                left: 50%;
+            }
+/* _content/jNet.Blazor2.Components/Layouts/SplitPanel.razor.rz.scp.css */
+
+div.panelA[b-wss80f9rwg], div.panelB[b-wss80f9rwg] {
+    position: absolute;
+    width:auto;
+    height: auto;
+    left:0;
+    right:0;
+    top:0;
+    bottom: 0;
+}
+
+div.panelA[b-wss80f9rwg] {
+}
+
+div.panelB[b-wss80f9rwg] {
+}
+/* _content/jNet.Blazor2.Components/Layouts/Splitter.razor.rz.scp.css */
+
+
+div[b-ddscohcc4a] {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+    div.divider[b-ddscohcc4a] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+div.divider > div[b-ddscohcc4a] {
+    background-color: rgb(0 0 0 / 0.5);
+}
+
+div.divider.horizontal[b-ddscohcc4a] {
+    cursor: ew-resize;
+}
+
+    div.divider.horizontal > div[b-ddscohcc4a] {
+        height: 16px;
+        margin-top: -8px;
+        top: 50%;
+    }
+
+div.divider.vertical[b-ddscohcc4a] {
+    cursor: ns-resize;
+}
+
+    div.divider.vertical > div[b-ddscohcc4a] {
+        width: 16px;
+        margin-left: -8px;
+        left: 50%;
+    }

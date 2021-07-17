@@ -1,0 +1,12 @@
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Numerics\bin\Debug\net5.0\jNet.Numerics.deps.json
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Numerics\bin\Debug\net5.0\jNet.Numerics.dll
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Numerics\bin\Debug\net5.0\ref\jNet.Numerics.dll
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Numerics\bin\Debug\net5.0\jNet.Numerics.pdb
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Numerics\obj\Debug\net5.0\jNet.Numerics.csproj.AssemblyReference.cache
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Numerics\obj\Debug\net5.0\jNet.Numerics.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Numerics\obj\Debug\net5.0\jNet.Numerics.AssemblyInfoInputs.cache
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Numerics\obj\Debug\net5.0\jNet.Numerics.AssemblyInfo.cs
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Numerics\obj\Debug\net5.0\jNet.Numerics.csproj.CoreCompileInputs.cache
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Numerics\obj\Debug\net5.0\jNet.Numerics.dll
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Numerics\obj\Debug\net5.0\ref\jNet.Numerics.dll
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Numerics\obj\Debug\net5.0\jNet.Numerics.pdb

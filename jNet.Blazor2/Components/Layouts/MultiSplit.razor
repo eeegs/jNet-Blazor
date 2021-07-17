@@ -1,0 +1,10 @@
+﻿
+<div class="container" @ref="@Container">
+    @ChildContent
+
+    @for (int i = 0; i < Splits.Length; i++)
+    {
+        var j = i;
+        <Split @key="@j" Index="@j" DragManager="@DragManager" Position="@Splits[j]" IsVertical="@IsVertical" ShowThumb="@ShowThumb" SplitColor="@SplitColor" SplitWidth="@SplitWidth"></Split>
+    }
+</div>

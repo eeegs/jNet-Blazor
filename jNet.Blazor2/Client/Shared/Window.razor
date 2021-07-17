@@ -1,0 +1,10 @@
+﻿
+<fieldset>
+    <legend>@Title</legend>
+    <article>@ChildContent</article>
+</fieldset>
+
+@code {
+    [Parameter] public string Title { get; set; }
+    [Parameter] public RenderFragment ChildContent { get; set; }
+}

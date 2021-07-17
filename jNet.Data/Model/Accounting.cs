@@ -14,6 +14,8 @@ namespace jNet.Data.Model
 	[NotMapped]
 	public abstract class BaseData
 	{
+		private DateTime modifiedDate = DateTime.UtcNow;
+
 		protected BaseData(string name)
 		{
 			Name = name;
@@ -25,7 +27,10 @@ namespace jNet.Data.Model
 		//}
 		[Key]
 		public long Id { get; set; }
-		public DateTime ModifiedDate { get; init; } = DateTime.UtcNow;
+		public DateTime ModifiedDate {
+			get => modifiedDate; 
+			init => modifiedDate = value.ToUniversalTime();
+		}
 		public string ModifiedBy { get; init; } = "Scott";
 		public string Name { get; protected set; }
 	}
@@ -68,7 +73,7 @@ namespace jNet.Data.Model
 		[Description("Money the company spends to produce the goods or services that it sells.")]
 		CoGS = 5,
 		[Description("Money the company spends to produce the goods or services that it sells.")]
-		Expence = 6,
+		Expense = 6,
 		[Description("Money the company earns from its sales of products or services, and interest and dividends earned from marketable securities.")]
 		OtherRevenue = 7,
 		[Description("Money the company spends to produce the goods or services that it sells.")]

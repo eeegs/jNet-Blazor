@@ -1,0 +1,10 @@
+﻿<Splitter @bind-Split="@BoundSplit" SplitColor="@SplitColor" ShowThumb="true" SplitWidth="@SplitWidth" IsVertical="@IsVertical">
+    <div class="panelA"
+         style="@(IsVertical?"height":"width"): @(Split)px;background-color: @BackGroundColorHex;">
+        @PanelA
+    </div>
+    <div class="panelB"
+         style="@(IsVertical?"top":"left"): @(Split + SplitWidth)px;background-color: @BackGroundColorHex;">
+        @PanelB
+    </div>
+</Splitter>

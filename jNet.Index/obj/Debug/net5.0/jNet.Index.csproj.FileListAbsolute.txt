@@ -1,0 +1,16 @@
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Index\bin\Debug\net5.0\jNet.Index.exe
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Index\bin\Debug\net5.0\jNet.Index.deps.json
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Index\bin\Debug\net5.0\jNet.Index.runtimeconfig.json
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Index\bin\Debug\net5.0\jNet.Index.runtimeconfig.dev.json
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Index\bin\Debug\net5.0\jNet.Index.dll
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Index\bin\Debug\net5.0\ref\jNet.Index.dll
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Index\bin\Debug\net5.0\jNet.Index.pdb
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Index\obj\Debug\net5.0\jNet.Index.csproj.AssemblyReference.cache
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Index\obj\Debug\net5.0\jNet.Index.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Index\obj\Debug\net5.0\jNet.Index.AssemblyInfoInputs.cache
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Index\obj\Debug\net5.0\jNet.Index.AssemblyInfo.cs
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Index\obj\Debug\net5.0\jNet.Index.csproj.CoreCompileInputs.cache
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Index\obj\Debug\net5.0\jNet.Index.dll
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Index\obj\Debug\net5.0\ref\jNet.Index.dll
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Index\obj\Debug\net5.0\jNet.Index.pdb
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Index\obj\Debug\net5.0\jNet.Index.genruntimeconfig.cache

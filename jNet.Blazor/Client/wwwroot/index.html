@@ -61,6 +61,12 @@
                 html += "<span contenteditable='false'>" + items[i] + "</span>";
             }
             element.innerHTML = html;
-        }
+        },
+        startCapture(ele, pId) {
+            ele.setPointerCapture(pId);
+        },
+        stopCapture(ele, pId) {
+            ele.releasePointerCapture(pId);
+        },
     };
 </script>

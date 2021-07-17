@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+	  <Nullable>enable</Nullable>
+	  <ApplicationIcon />
+	  <OutputType>Exe</OutputType>
+	  <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\..\temp\index1.index" Link="index1.index" />
+  </ItemGroup>
+
+</Project>

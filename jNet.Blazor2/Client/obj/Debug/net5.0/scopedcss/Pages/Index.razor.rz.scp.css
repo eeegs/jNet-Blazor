@@ -1,0 +1,30 @@
+
+div[b-1spxaeen4g] {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+    div.tool[b-1spxaeen4g] {
+        background-color: antiquewhite;
+    }
+
+
+    div.left[b-1spxaeen4g] {
+        background-color: indianred;
+    }
+
+
+    div.main[b-1spxaeen4g] {
+        background-color: darkseagreen;
+    }
+
+
+    div.right[b-1spxaeen4g] {
+        background-color: steelblue;
+    }
+
+
+    div.task[b-1spxaeen4g] {
+        background-color: lightpink;
+    }

@@ -1,0 +1,35 @@
+﻿@using System.Drawing
+@namespace jNet.Blazor.Client.Pages
+@{
+    // in screen space y is upside down so its negated before use
+
+    var rise = -Right.Coord.Location.Y + Left.Coord.Location.Y;
+    var run = Right.Coord.Location.X - Left.Coord.Location.X;
+
+    var angle = Math.Atan2(rise, run) / Tau;
+
+    angle = Math.Round(angle * 8) / 8;
+    var angleL = angle * Tau;
+    var angleR = (0.5 + angle) * Tau;
+
+    var dist = Math.Sqrt(rise * rise + run * run);
+
+    var acl = Math.Cos(angleL);
+    var asl = Math.Sin(angleL);
+    var acr = Math.Cos(angleR);
+    var asr = Math.Sin(angleR);
+
+    var x1 = Left.Coord.Location.X + Left.Coord.Radius * acl;
+    var y1 = Left.Coord.Location.Y - Left.Coord.Radius * asl;
+    var x2 = Right.Coord.Location.X + Right.Coord.Radius * acr;
+    var y2 = Right.Coord.Location.Y - Right.Coord.Radius * asr;
+    var x1a = Left.Coord.Location.X + dist / 3 * acl;
+    var y1a = Left.Coord.Location.Y - dist / 3 * asl;
+    var x2a = Right.Coord.Location.X + dist / 3 * acr;
+    var y2a = Right.Coord.Location.Y - dist / 3 * asr;
+
+    <circle cx="@x1" cy="@y1" r="3" fill="gray" />
+    <circle cx="@x2" cy="@y2" r="3" fill="gray" />
+
+    <path stroke-width="1" stroke="gray" fill="none" d="M @x1 @y1 C @x1a @y1a @x2a @y2a @x2 @y2" />
+}

@@ -9,4 +9,4 @@ C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.CRUD\obj\Debug\net5
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.CRUD\obj\Debug\net5.0\jNet.CRUD.dll
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.CRUD\obj\Debug\net5.0\ref\jNet.CRUD.dll
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.CRUD\obj\Debug\net5.0\jNet.CRUD.pdb
-C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.CRUD\obj\Debug\net5.0\jNet.CRUD.csprojAssemblyReference.cache
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.CRUD\obj\Debug\net5.0\jNet.CRUD.csproj.AssemblyReference.cache

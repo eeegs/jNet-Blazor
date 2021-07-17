@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "jNet.Numerics/1.0.0": {
+        "runtime": {
+          "jNet.Numerics.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "jNet.Numerics/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

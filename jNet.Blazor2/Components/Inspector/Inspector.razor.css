@@ -1,0 +1,40 @@
+﻿table {
+    border-collapse: separate;
+    width: 100%;
+    background-color: var(--main-bg-color);
+    border-spacing: 0;
+    /*table-layout: fixed;*/
+}
+
+td, th {
+    border-top: 1px outset var(--main-bg-colorL);
+    border-bottom: 1px outset var(--main-bg-colorL);
+}
+
+    td.space1 {
+        border-right: 1px outset var(--main-bg-colorL);
+        width: .1em;
+        cursor: ew-resize;
+    }
+
+    td.space2 {
+        border-left: 1px outset var(--main-bg-colorL);
+        width: .1em;
+        background-color: whitesmoke;
+        cursor: ew-resize;
+    }
+
+    td.labels, td.values {
+        padding-left: 0.1em;
+    }
+
+    td.values {
+        background-color: whitesmoke;
+        border-right: 1px outset var(--main-bg-colorL);
+    }
+
+    td.labels {
+        border-left: 1px outset var(--main-bg-colorL);
+        color: white;
+    }
+

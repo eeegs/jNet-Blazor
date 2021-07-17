@@ -1,30 +1,38 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace jNet.Data.Model
 {
 	[Table(nameof(Entry))]
 	public class Entry : BaseData2
 	{
-		private Entry(decimal amount) : this("NullTransaction", NullTransaction, Account.Default, amount)
+		public Entry(Entity entity, Transaction transaction, Account account, long amount): base(entity.Name)
 		{
-		}
-
-		public Entry(string	name, Transaction transaction, Account account, decimal amount): base(name)
-		{
+			//Entity = entity;
 			Transaction = transaction;
 			Account = account;
 			Amount = amount;
 		}
 
-		//public long Id { get; init; }
-		
 		[Column(TypeName = "money")]
-		public decimal Amount { get; init; }
+		public long Amount { get; init; }
 		public long TransactionId { get; set; }
-		public Transaction Transaction { get; init; }
-		//public string? Description { get; set; }
+		public Transaction Transaction { get; set; }
 		public long AccountId { get; set; }
 		public Account Account { get; init; }
-		internal static Transaction NullTransaction => new Transaction("NullTransaction") { Description = "The Null Transaction" };
+		//public long EntityId { get; set; }
+		//public Entity Entity { get; set; }
+
+
+		// these are provide to make reflection work when building a datacontext.
+		private Entry(long amount) : base("NullTransaction")
+		{
+			//Entity = default!;
+			Transaction = default!;
+			Account = default!;
+			Amount = amount;
+		}
+		internal static Transaction NullTransaction => new Transaction("NullTransaction");
 	}
 }

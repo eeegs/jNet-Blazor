@@ -1,0 +1,30 @@
+﻿
+div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+    div.tool {
+        background-color: antiquewhite;
+    }
+
+
+    div.left {
+        background-color: indianred;
+    }
+
+
+    div.main {
+        background-color: darkseagreen;
+    }
+
+
+    div.right {
+        background-color: steelblue;
+    }
+
+
+    div.task {
+        background-color: lightpink;
+    }

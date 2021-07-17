@@ -1,0 +1,48 @@
+﻿@using System.Drawing
+@namespace jNet.Blazor.Client.Pages
+@{
+    var al = Left.Coord.Radius * Math.Cos(Left.Angle * Tau);
+    var bl = -Left.Coord.Radius * Math.Sin(Left.Angle * Tau);
+    var ar = Right.Coord.Radius * Math.Cos(Right.Angle * Tau);
+    var br = -Right.Coord.Radius * Math.Sin(Right.Angle * Tau);
+    <path fill="none" stroke="@Fill.toHex()" stroke-width="1" d="m@(Left.Coord.Location.X + al) @(Left.Coord.Location.Y + bl)C@(Left.Coord.Location.X + al * Left.Strength) @(Left.Coord.Location.Y + bl * Left.Strength) @(Right.Coord.Location.X + ar * Right.Strength) @(Right.Coord.Location.Y + br * Right.Strength) @(Right.Coord.Location.X + ar) @(Right.Coord.Location.Y + br)" />
+    <Strength Radius="5" Fill="@Fill" Distance="@Left.Coord.Radius" Position="@Left.Coord.Location" @bind-Angle="@Left.Angle" @bind-Scale="@Left.Strength" />
+    <Strength Radius="5" Fill="@Fill" Distance="@Right.Coord.Radius" Position="@Right.Coord.Location" @bind-Angle="@Right.Angle" @bind-Scale="@Right.Strength" />
+
+    var mx = (Left.Coord.Location.X + Right.Coord.Location.X) / 2;
+    var my = (Left.Coord.Location.Y + Right.Coord.Location.Y) / 2;
+    var mr = (Left.Coord.Radius + Right.Coord.Radius);
+    var angle = Math.Atan2(-Left.Coord.Location.Y + Right.Coord.Location.Y, Left.Coord.Location.X - Right.Coord.Location.X) / Tau;
+    var ma = mx + mr * Math.Cos(Tau * (angle - .25));
+    var mb = my - mr * Math.Sin(Tau * (angle - .25));
+    var l1 = Left.Coord.Radius / Math.Sqrt(Math.Pow(Left.Coord.Location.X - ma, 2) + Math.Pow(Left.Coord.Location.Y - mb, 2));
+    var l2 = Right.Coord.Radius / Math.Sqrt(Math.Pow(Right.Coord.Location.X - ma, 2) + Math.Pow(Right.Coord.Location.Y - mb, 2));
+    var mx1 = Left.Coord.Location.X + l1 * (ma - Left.Coord.Location.X);
+    var my1 = Left.Coord.Location.Y + l1 * (mb - Left.Coord.Location.Y);
+    var mx2 = Right.Coord.Location.X + l2 * (ma - Right.Coord.Location.X);
+    var my2 = Right.Coord.Location.Y + l2 * (mb - Right.Coord.Location.Y);
+
+    <circle cx="@mx" cy="@my" r="1" fill="red" />
+    <circle cx="@ma" cy="@mb" r="1" fill="red" />
+    <path fill="none" stroke="green" stroke-width="1" d="m @mx1 @my1 Q @ma @mb @mx2 @my2" />
+
+    var ca = Math.Round(angle * 8) / 8;
+
+    var dx = Left.Coord.Location.X - Right.Coord.Location.X;
+    var dy = Left.Coord.Location.Y - Right.Coord.Location.Y;
+
+
+
+    var horz = Math.Abs(dx) > Math.Abs(dy);
+
+    if (horz)
+    {
+        <path fill="none" stroke="orange" stroke-width="1" d="m @(Left.Coord.Location.X - Math.Sign(dx) * Left.Coord.Radius) @Left.Coord.Location.Y L @(Right.Coord.Location.X + Math.Sign(dx) * Right.Coord.Radius) @Right.Coord.Location.Y" />
+    }
+    else
+    {
+        <path fill="none" stroke="orange" stroke-width="1" d="m @Left.Coord.Location.X @(Left.Coord.Location.Y - Math.Sign(dy) * Left.Coord.Radius) L @Right.Coord.Location.X @(Right.Coord.Location.Y + Math.Sign(dy) * Right.Coord.Radius)" />
+    }
+
+    <circle cx="@(Right.Coord.Radius * Math.Cos(ca * Tau) + Right.Coord.Location.X)" cy="@(Right.Coord.Radius * Math.Sin(ca * Tau) + Right.Coord.Location.Y)"    r="2" fill="red" />
+}

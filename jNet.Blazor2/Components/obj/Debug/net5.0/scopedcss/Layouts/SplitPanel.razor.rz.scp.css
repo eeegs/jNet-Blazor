@@ -1,0 +1,16 @@
+
+div.panelA[b-wss80f9rwg], div.panelB[b-wss80f9rwg] {
+    position: absolute;
+    width:auto;
+    height: auto;
+    left:0;
+    right:0;
+    top:0;
+    bottom: 0;
+}
+
+div.panelA[b-wss80f9rwg] {
+}
+
+div.panelB[b-wss80f9rwg] {
+}

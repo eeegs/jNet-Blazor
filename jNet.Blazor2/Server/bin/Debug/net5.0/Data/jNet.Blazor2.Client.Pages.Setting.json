@@ -1,0 +1,21 @@
+[
+  {
+    "Key": "fc47348b-5403-4e8f-94de-6674138b6354",
+    "UserName": "",
+    "Name": "",
+    "Variables": {
+      "A": {
+        "SplitPosition": 379,
+        "IsClosed": false
+      },
+      "B": {
+        "SplitPosition": 100,
+        "IsClosed": false
+      },
+      "Right": {
+        "SplitPosition": 273,
+        "IsClosed": false
+      }
+    }
+  }
+]

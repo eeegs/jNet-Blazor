@@ -1,0 +1,33 @@
+﻿@using jNet.Blazor2.Components.Layouts
+@inject 			Store Store
+
+<SplitPanel IsVertical="true">
+    <PanelA>@Tool</PanelA>
+    <PanelB>
+        <SplitPanel>
+            <PanelA>
+                <SplitPanel IsVertical="true">
+                    <PanelA>
+                        <SplitPanel>
+                            <PanelA>@Left</PanelA>
+                            <PanelB>@Main</PanelB>
+                        </SplitPanel>
+                    </PanelA>
+                    <PanelB>@Task</PanelB>
+                </SplitPanel>
+            </PanelA>
+            <PanelB>@Right</PanelB>
+        </SplitPanel>
+    </PanelB>
+</SplitPanel>
+
+@code
+{
+    [Parameter] public RenderFragment? Left { get; set; }
+    [Parameter] public RenderFragment? Main { get; set; }
+    [Parameter] public RenderFragment? Right { get; set; }
+    [Parameter] public RenderFragment? Tool { get; set; }
+    [Parameter] public RenderFragment? Task { get; set; }
+}
+
+

@@ -63,7 +63,6 @@ namespace jNet.Data.Model
 			Id = -1,
 		};
 
-
 		public class Config : IEntityTypeConfiguration<Entity>
 		{
 			public void Configure(EntityTypeBuilder<Entity> builder)

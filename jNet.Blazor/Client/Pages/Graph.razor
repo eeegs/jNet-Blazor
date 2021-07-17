@@ -1,0 +1,19 @@
+﻿@using System.Drawing
+@using System
+
+<p><button @onclick="@(()=> { Run(); })">Run</button>
+<button @onclick="@(()=> { RunAnimation = false; })">Pause</button>
+@count</p>
+
+<svg width="100%" height="100%">
+    @foreach (var c in circles)
+    {
+        var l = c;
+        <Sizable @bind-Radius="@c.Radius" Stroke="@c.Color" StrokeWidth="6" Position="@c.Location" />
+        <Draggable Radius="@(c.Radius-3)" Fill="@c.Color" @bind-Position="@c.Location" Text="@c.Text" FocusChanged="x=>Focused(x , l)" />
+    }
+    @foreach (var j in joins)
+    {
+        <Connector2 Left="@j.Left" Right="@j.Right" Fill="@Color.DarkSlateBlue" />
+    }
+</svg>

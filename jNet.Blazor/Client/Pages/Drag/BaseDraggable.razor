@@ -1,0 +1,15 @@
+﻿@using System.Drawing
+@namespace jNet.Blazor.Client.Pages
+
+    <g>
+        <circle @ref="@myTarget"
+                tabindex="5000"
+                cx="@X" cy="@Y" r="@(Radius)" fill="@Fill.toHex()" stroke="@Stroke.toHex()" stroke-width="@StrokeWidth"
+                @onpointerdown="@OnMouseDown"
+                @onpointerup="@OnMouseUp"
+                @onpointermove="@OnMouseMove"
+                @onfocus="()=>Focus(true)"
+                @onblur="()=>Focus(false)"
+                />
+        <text x="@X" y="@Y" text-anchor="middle" stroke="black" stroke-width="1px" alignment-baseline="middle">@Text</text>
+    </g>

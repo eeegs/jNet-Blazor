@@ -15,16 +15,16 @@ namespace jNet.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .UseIdentityColumns()
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("ProductVersion", "5.0.1");
+                .HasAnnotation("ProductVersion", "5.0.5")
+                .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("jNet.Data.Model.Account", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("AccountNumber")
                         .HasColumnType("nvarchar(max)");
@@ -77,7 +77,7 @@ namespace jNet.Data.Migrations
                             Direction = 0,
                             IsSummaryAccount = false,
                             ModifiedBy = "Scott",
-                            ModifiedDate = new DateTime(2021, 1, 12, 10, 4, 47, 285, DateTimeKind.Utc).AddTicks(6239),
+                            ModifiedDate = new DateTime(2021, 4, 19, 7, 46, 13, 914, DateTimeKind.Utc).AddTicks(7587),
                             Name = "Root",
                             ParentId = -1L,
                             Type = "Company"
@@ -109,7 +109,7 @@ namespace jNet.Data.Migrations
                         {
                             Id = -1L,
                             ModifiedBy = "Scott",
-                            ModifiedDate = new DateTime(2021, 1, 12, 10, 4, 47, 286, DateTimeKind.Utc).AddTicks(4713),
+                            ModifiedDate = new DateTime(2021, 4, 19, 7, 46, 13, 915, DateTimeKind.Utc).AddTicks(1902),
                             Name = "Default"
                         });
                 });
@@ -148,7 +148,7 @@ namespace jNet.Data.Migrations
                         {
                             Id = -1L,
                             ModifiedBy = "Scott",
-                            ModifiedDate = new DateTime(2021, 1, 12, 10, 4, 47, 817, DateTimeKind.Utc).AddTicks(9300),
+                            ModifiedDate = new DateTime(2021, 4, 19, 7, 46, 14, 292, DateTimeKind.Utc).AddTicks(8814),
                             Name = "Default"
                         });
                 });
@@ -218,7 +218,7 @@ namespace jNet.Data.Migrations
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("ModifiedBy")
                         .IsRequired()
@@ -240,7 +240,7 @@ namespace jNet.Data.Migrations
                         {
                             Id = -1L,
                             ModifiedBy = "Scott",
-                            ModifiedDate = new DateTime(2021, 1, 12, 10, 4, 47, 835, DateTimeKind.Utc).AddTicks(3413),
+                            ModifiedDate = new DateTime(2021, 4, 19, 7, 46, 14, 297, DateTimeKind.Utc).AddTicks(4563),
                             Name = "Default"
                         });
                 });
@@ -250,7 +250,7 @@ namespace jNet.Data.Migrations
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<long>("AccountId")
                         .HasColumnType("bigint");
@@ -319,7 +319,7 @@ namespace jNet.Data.Migrations
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<long>("BusinessId")
                         .HasColumnType("bigint");
@@ -334,7 +334,7 @@ namespace jNet.Data.Migrations
                     b.Property<DateTime>("ModifiedDate")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
-                        .HasDefaultValueSql("getdate()");
+                        .HasDefaultValueSql("getutcdate()");
 
                     b.Property<string>("Name")
                         .IsRequired()

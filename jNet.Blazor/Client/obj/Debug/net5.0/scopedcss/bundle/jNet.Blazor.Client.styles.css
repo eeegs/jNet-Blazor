@@ -1,11 +1,8 @@
 @import '_content/jNet.Blazor.Parts/jNet.Blazor.Parts.bundle.scp.css';
 
-/* /Pages/ContentEditor.razor.rz.scp.css */
-span[b-cbg3cidn9h] {
-    margin: 0;
-    border: 1px solid lightblue;
-    padding: 2px 0.1rem;
-    border-radius: 2px;
+/* /Pages/Drag/BaseDraggable.razor.rz.scp.css */
+circle:focus[b-iz52fhi7yb] {
+    fill-opacity: 0.5;
 }
 /* /Pages/DropDown/Drop.razor.rz.scp.css */
 
