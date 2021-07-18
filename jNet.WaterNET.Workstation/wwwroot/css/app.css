@@ -1,0 +1,44 @@
+﻿
+:root {
+    --main-bg-color: #134b5a;
+    --main-bg-colorL: #196174;
+    --main-bg-colorD: #0b323c;
+}
+
+@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
+
+html, body {
+    height: 100%;
+}
+
+#uicontainer {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    height: 100vh;
+    position: relative;
+}
+
+    #uicontainer > div {
+        flex-grow: 1;
+        position: relative;
+    }
+
+#blazor-error-ui {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+    #blazor-error-ui .dismiss {
+        cursor: pointer;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.5rem;
+    }

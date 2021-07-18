@@ -1,0 +1,29 @@
+﻿@page "/stuff"
+@using jNet.Client.UI.Splitters
+
+<div>
+    <MultiSplit IsVertical="@Direction" SplitColor="System.Drawing.Color.Red" @bind-Splits="@Splits">
+        hello
+    </MultiSplit>
+</div>
+<button @onclick="()=>Flip=!Flip">Flip</button>
+<button @onclick="()=>Direction=!Direction">Direction</button>
+<button @onclick="()=>CanClose=!CanClose">CanClose</button>
+<button @onclick="@Save">Save</button>
+<p>Splits: { @Splits[0], @Splits[1], @Splits[2] }</p>
+<div style="background-color:azure">
+    <SplitPanel @bind-Split="@this["A"].SplitPosition" IsVertical="@Direction" SplitColor="System.Drawing.Color.White">
+            <PanelA>
+                <SplitPanel @bind-Split="@this["B"].SplitPosition" IsVertical="@(!Direction)" SplitColor="System.Drawing.Color.White">
+                    <PanelA>A</PanelA>
+                    <PanelB>B</PanelB>
+                </SplitPanel>
+            </PanelA>
+            <PanelB>
+                <SplitPanel @bind-Split="@this["Right"].SplitPosition" IsVertical="@(!Direction)" SplitColor="System.Drawing.Color.White">
+                    <PanelA>C</PanelA>
+                    <PanelB>D</PanelB>
+                </SplitPanel>
+            </PanelB>
+        </SplitPanel>
+</div>

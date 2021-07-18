@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+	  <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Pages\Scripting.razor.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="5.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="5.0.8" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="3.10.0" />
+    <PackageReference Include="Microsoft.Fast.Components.FluentUI" Version="0.2.0" />
+    <PackageReference Include="System.Net.Http.Json" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\jNet.Client.Code\jNet.Client.Code.csproj" />
+    <ProjectReference Include="..\jNet.Client.UI\jNet.Client.UI.csproj" />
+    <ProjectReference Include="..\jNet.Shared.Code\jNet.Shared.Code.csproj" />
+    <ProjectReference Include="..\jNet.Workstation.UI\jNet.Workstation.UI.csproj" />
+  </ItemGroup>
+
+</Project>

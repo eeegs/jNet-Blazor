@@ -1,0 +1,14 @@
+div.layout[b-g1g0qquvj8] {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+div.tool[b-g1g0qquvj8] {
+    height: 40px;
+}
+
+div.main[b-g1g0qquvj8] {
+    flex-basis: 1;
+    height:100%;
+}

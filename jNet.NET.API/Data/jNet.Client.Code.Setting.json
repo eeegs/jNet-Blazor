@@ -1,0 +1,21 @@
+[
+  {
+    "Key": "6fe02466-bf8a-4cb8-be77-5a3cc1da564f",
+    "UserName": "",
+    "Name": "Index",
+    "Variables": {
+      "Right": {
+        "SplitPosition": 894,
+        "IsClosed": false
+      },
+      "Main": {
+        "SplitPosition": 1043,
+        "IsClosed": false
+      },
+      "Left": {
+        "SplitPosition": 299,
+        "IsClosed": false
+      }
+    }
+  }
+]

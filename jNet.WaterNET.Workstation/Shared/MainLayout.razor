@@ -1,0 +1,23 @@
+﻿@inherits LayoutComponentBase
+@using jNet.Client.UI.Splitters
+
+<div id="uicontainer">
+    <header>
+        The Taurie App
+    </header>
+    <div>
+        <SplitPanel>
+            <PanelA>
+                <nav>
+                    <NavMenu />
+                </nav>
+            </PanelA>
+            <PanelB>
+                <main>
+                    @Body
+                </main>
+            </PanelB>
+        </SplitPanel>
+    </div>
+    <footer>© @DateTime.Now.Year - Taurie Pty Ltd</footer>
+</div>

@@ -1,0 +1,26 @@
+﻿@using jNet.Client.UI.Splitters
+
+<h3>@Heading</h3>
+<div style="position:relative">
+
+    <Splitter ShowThumb="false" @bind-Split="@LabelWidth" SplitWidth="4">
+        <table>
+            @foreach (var f in Data.Fields)
+            {
+                var f2 = f;
+                var val = "";
+                if (Data.Store.TryGetValue(f2.Name, out var res))
+                {
+                    val = res.ToString();
+                }
+
+                <tr>
+                    <td class="labels" style="font-weight:@(f2.Required?"bold":"normal");width:@(LabelWidth+2)px">@f2.Name</td>
+                    <td class="values">
+                        <input type="text" value="@res" @onchange="@((c)=>OnChange(f2.Name,c))" />
+                    </td>
+                </tr>
+            }
+        </table>
+    </Splitter>
+</div>
