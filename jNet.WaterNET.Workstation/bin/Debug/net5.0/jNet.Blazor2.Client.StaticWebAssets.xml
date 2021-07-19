@@ -1,7 +1,0 @@
-﻿<StaticWebAssets Version="1.0">
-  <ContentRoot BasePath="/" Path="C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor2\Client\bin\Debug\net5.0\wwwroot\" />
-  <ContentRoot BasePath="/" Path="C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor2\Client\obj\Debug\net5.0\scopedcss\bundle\" />
-  <ContentRoot BasePath="_content/BlazorMonaco" Path="C:\Users\sscot\source\repos\BlazorMonaco\BlazorMonaco\wwwroot\" />
-  <ContentRoot BasePath="_content/jNet.Blazor2.Components" Path="C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor2\Components\obj\Debug\net5.0\scopedcss\projectbundle\" />
-  <ContentRoot BasePath="_content/jNet.Blazor2.Components" Path="C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor2\Components\wwwroot\" />
-</StaticWebAssets>

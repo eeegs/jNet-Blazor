@@ -1,8 +1,0 @@
-﻿<StaticWebAssets Version="1.0">
-  <ContentRoot BasePath="/" Path="C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.WaterNET.Workstation\bin\Debug\net5.0\wwwroot\" />
-  <ContentRoot BasePath="/" Path="C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.WaterNET.Workstation\obj\Debug\net5.0\scopedcss\bundle\" />
-  <ContentRoot BasePath="_content/jNet.Client.UI" Path="C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Client.UI\obj\Debug\net5.0\scopedcss\projectbundle\" />
-  <ContentRoot BasePath="_content/jNet.Client.UI" Path="C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Client.UI\wwwroot\" />
-  <ContentRoot BasePath="_content/jNet.Workstation.UI" Path="C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Workstation.UI\obj\Debug\net5.0\scopedcss\projectbundle\" />
-  <ContentRoot BasePath="_content/jNet.Workstation.UI" Path="C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Workstation.UI\wwwroot\" />
-</StaticWebAssets>

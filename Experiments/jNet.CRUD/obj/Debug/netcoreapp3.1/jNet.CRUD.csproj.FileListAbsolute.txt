@@ -1,9 +1,0 @@
-C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.CRUD\bin\Debug\netcoreapp3.1\jNet.CRUD.deps.json
-C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.CRUD\bin\Debug\netcoreapp3.1\jNet.CRUD.dll
-C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.CRUD\bin\Debug\netcoreapp3.1\jNet.CRUD.pdb
-C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.CRUD\obj\Debug\netcoreapp3.1\jNet.CRUD.csprojAssemblyReference.cache
-C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.CRUD\obj\Debug\netcoreapp3.1\jNet.CRUD.AssemblyInfoInputs.cache
-C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.CRUD\obj\Debug\netcoreapp3.1\jNet.CRUD.AssemblyInfo.cs
-C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.CRUD\obj\Debug\netcoreapp3.1\jNet.CRUD.csproj.CoreCompileInputs.cache
-C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.CRUD\obj\Debug\netcoreapp3.1\jNet.CRUD.dll
-C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.CRUD\obj\Debug\netcoreapp3.1\jNet.CRUD.pdb
