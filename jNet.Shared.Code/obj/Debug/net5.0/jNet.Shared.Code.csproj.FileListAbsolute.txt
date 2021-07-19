@@ -20,3 +20,4 @@ C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Shared.Code\obj\Debug\net5.0\
 C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Shared.Code\obj\Debug\net5.0\jNet.Shared.Code.dll
 C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Shared.Code\obj\Debug\net5.0\ref\jNet.Shared.Code.dll
 C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Shared.Code\obj\Debug\net5.0\jNet.Shared.Code.pdb
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Shared.Code\obj\Debug\net5.0\jNet.Shared.Code.csproj.AssemblyReference.cache

@@ -36,7 +36,6 @@ C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.NET.API\bin\Debug\n
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.NET.API\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Scripting.dll
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.NET.API\bin\Debug\net5.0\Microsoft.CodeAnalysis.Scripting.dll
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.NET.API\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.NET.API\bin\Debug\net5.0\Microsoft.Fast.Components.FluentUI.dll
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.NET.API\bin\Debug\net5.0\Microsoft.JSInterop.dll
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.NET.API\bin\Debug\net5.0\Microsoft.JSInterop.WebAssembly.dll
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.NET.API\bin\Debug\net5.0\System.IO.Pipelines.dll
@@ -254,3 +253,6 @@ C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.NET.API\obj\Debug\net5.0\jNet
 C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.NET.API\obj\Debug\net5.0\ref\jNet.NET.API.dll
 C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.NET.API\obj\Debug\net5.0\jNet.NET.API.pdb
 C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.NET.API\obj\Debug\net5.0\jNet.NET.API.genruntimeconfig.cache
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.NET.API\bin\Debug\net5.0\Data\jNet.Shared.Code.Definition.json
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.NET.API\bin\Debug\net5.0\Data\jNet.Shared.Code.Instance.json
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.NET.API\bin\Debug\net5.0\Data\jNet.Shared.Code.Link.json
