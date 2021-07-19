@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xtP/u535z8/lQADD7ODCLtMORpy6AY1E8iMbb9B8zrztjNgvj31YxBTmM8NLf31tHN80VJBPkxCjeLQnKzo0Rg==",
+  "dgSpecHash": "IFGeHuokoYXvUaXB+eMOjm8a2l3dDNqKIc2H//s06Mj9Rqh8dlGMJrkOpsW/UN+o6aBhtnp/k213p6YNxS61QA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Shared.Code\\jNet.Shared.Code.csproj",
+  "projectFilePath": "C:\\Users\\PeterGiles\\source\\github\\jNet-Blazor\\jNet.Shared.Code\\jNet.Shared.Code.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

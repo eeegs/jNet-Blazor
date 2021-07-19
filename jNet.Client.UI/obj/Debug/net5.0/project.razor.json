@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Blazor2\\Components\\jNet.Blazor2.Components.csproj",
+  "FilePath": "c:\\Users\\PeterGiles\\source\\github\\jNet-Blazor\\jNet.Client.UI\\jNet.Client.UI.csproj",
   "Configuration": {
     "ConfigurationName": "Default",
     "LanguageVersion": "5.0",
@@ -8,10 +8,95 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": -1885245736,
+        "HashCode": 317347700,
         "Kind": "Components.Component",
-        "Name": "jNet.Blazor2.Components.General.AsyncWarpper<T>",
-        "AssemblyName": "jNet.Blazor2.Components",
+        "Name": "jNet.Client.UI.Components.Inspector",
+        "AssemblyName": "jNet.Client.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Inspector"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Data",
+            "TypeName": "jNet.Client.UI.Components.InspectorData",
+            "Metadata": {
+              "Common.PropertyName": "Data"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Heading",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Heading"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "LabelWidth",
+            "TypeName": "System.Double",
+            "Metadata": {
+              "Common.PropertyName": "LabelWidth"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "jNet.Client.UI.Components.Inspector"
+        }
+      },
+      {
+        "HashCode": 9570185,
+        "Kind": "Components.Component",
+        "Name": "jNet.Client.UI.Components.Inspector",
+        "AssemblyName": "jNet.Client.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "jNet.Client.UI.Components.Inspector"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Data",
+            "TypeName": "jNet.Client.UI.Components.InspectorData",
+            "Metadata": {
+              "Common.PropertyName": "Data"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Heading",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Heading"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "LabelWidth",
+            "TypeName": "System.Double",
+            "Metadata": {
+              "Common.PropertyName": "LabelWidth"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "jNet.Client.UI.Components.Inspector",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -347401212,
+        "Kind": "Components.Component",
+        "Name": "jNet.Client.UI.General.AsyncWarpper<T>",
+        "AssemblyName": "jNet.Client.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -23,7 +108,7 @@
             "Kind": "Components.Component",
             "Name": "T",
             "TypeName": "System.Type",
-            "Documentation": "Specifies the type of the type parameter T for the jNet.Blazor2.Components.General.AsyncWarpper<T> component.",
+            "Documentation": "Specifies the type of the type parameter T for the jNet.Client.UI.General.AsyncWarpper<T> component.",
             "Metadata": {
               "Common.PropertyName": "T",
               "Components.TypeParameter": "True",
@@ -71,19 +156,19 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "jNet.Blazor2.Components.General.AsyncWarpper<T>",
+          "Common.TypeName": "jNet.Client.UI.General.AsyncWarpper<T>",
           "Components.GenericTyped": "True"
         }
       },
       {
-        "HashCode": 794774343,
+        "HashCode": -1165802985,
         "Kind": "Components.Component",
-        "Name": "jNet.Blazor2.Components.General.AsyncWarpper<T>",
-        "AssemblyName": "jNet.Blazor2.Components",
+        "Name": "jNet.Client.UI.General.AsyncWarpper<T>",
+        "AssemblyName": "jNet.Client.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "jNet.Blazor2.Components.General.AsyncWarpper"
+            "TagName": "jNet.Client.UI.General.AsyncWarpper"
           }
         ],
         "BoundAttributes": [
@@ -91,7 +176,7 @@
             "Kind": "Components.Component",
             "Name": "T",
             "TypeName": "System.Type",
-            "Documentation": "Specifies the type of the type parameter T for the jNet.Blazor2.Components.General.AsyncWarpper<T> component.",
+            "Documentation": "Specifies the type of the type parameter T for the jNet.Client.UI.General.AsyncWarpper<T> component.",
             "Metadata": {
               "Common.PropertyName": "T",
               "Components.TypeParameter": "True",
@@ -139,16 +224,16 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "jNet.Blazor2.Components.General.AsyncWarpper<T>",
+          "Common.TypeName": "jNet.Client.UI.General.AsyncWarpper<T>",
           "Components.GenericTyped": "True",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -1138485815,
+        "HashCode": 644433868,
         "Kind": "Components.ChildContent",
-        "Name": "jNet.Blazor2.Components.General.AsyncWarpper<T>.ChildContent",
-        "AssemblyName": "jNet.Blazor2.Components",
+        "Name": "jNet.Client.UI.General.AsyncWarpper<T>.ChildContent",
+        "AssemblyName": "jNet.Client.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -170,20 +255,20 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.None",
-          "Common.TypeName": "jNet.Blazor2.Components.General.AsyncWarpper<T>.ChildContent",
+          "Common.TypeName": "jNet.Client.UI.General.AsyncWarpper<T>.ChildContent",
           "Components.IsSpecialKind": "Components.ChildContent"
         }
       },
       {
-        "HashCode": -1288594585,
+        "HashCode": 1610130404,
         "Kind": "Components.ChildContent",
-        "Name": "jNet.Blazor2.Components.General.AsyncWarpper<T>.ChildContent",
-        "AssemblyName": "jNet.Blazor2.Components",
+        "Name": "jNet.Client.UI.General.AsyncWarpper<T>.ChildContent",
+        "AssemblyName": "jNet.Client.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
             "TagName": "ChildContent",
-            "ParentTag": "jNet.Blazor2.Components.General.AsyncWarpper"
+            "ParentTag": "jNet.Client.UI.General.AsyncWarpper"
           }
         ],
         "BoundAttributes": [
@@ -200,101 +285,16 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.None",
-          "Common.TypeName": "jNet.Blazor2.Components.General.AsyncWarpper<T>.ChildContent",
+          "Common.TypeName": "jNet.Client.UI.General.AsyncWarpper<T>.ChildContent",
           "Components.IsSpecialKind": "Components.ChildContent",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": 53720712,
+        "HashCode": -133604312,
         "Kind": "Components.Component",
-        "Name": "jNet.Blazor2.Components.Inspector",
-        "AssemblyName": "jNet.Blazor2.Components",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Inspector"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Data",
-            "TypeName": "jNet.Blazor2.Components.InspectorData",
-            "Metadata": {
-              "Common.PropertyName": "Data"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Heading",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Heading"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "LabelWidth",
-            "TypeName": "System.Double",
-            "Metadata": {
-              "Common.PropertyName": "LabelWidth"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "jNet.Blazor2.Components.Inspector"
-        }
-      },
-      {
-        "HashCode": -1989765525,
-        "Kind": "Components.Component",
-        "Name": "jNet.Blazor2.Components.Inspector",
-        "AssemblyName": "jNet.Blazor2.Components",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "jNet.Blazor2.Components.Inspector"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Data",
-            "TypeName": "jNet.Blazor2.Components.InspectorData",
-            "Metadata": {
-              "Common.PropertyName": "Data"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Heading",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Heading"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "LabelWidth",
-            "TypeName": "System.Double",
-            "Metadata": {
-              "Common.PropertyName": "LabelWidth"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "jNet.Blazor2.Components.Inspector",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1501038552,
-        "Kind": "Components.Component",
-        "Name": "jNet.Blazor2.Components.Layouts.MultiSplit",
-        "AssemblyName": "jNet.Blazor2.Components",
+        "Name": "jNet.Client.UI.Splitters.MultiSplit",
+        "AssemblyName": "jNet.Client.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -363,18 +363,18 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "jNet.Blazor2.Components.Layouts.MultiSplit"
+          "Common.TypeName": "jNet.Client.UI.Splitters.MultiSplit"
         }
       },
       {
-        "HashCode": -1711808748,
+        "HashCode": 401059083,
         "Kind": "Components.Component",
-        "Name": "jNet.Blazor2.Components.Layouts.MultiSplit",
-        "AssemblyName": "jNet.Blazor2.Components",
+        "Name": "jNet.Client.UI.Splitters.MultiSplit",
+        "AssemblyName": "jNet.Client.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "jNet.Blazor2.Components.Layouts.MultiSplit"
+            "TagName": "jNet.Client.UI.Splitters.MultiSplit"
           }
         ],
         "BoundAttributes": [
@@ -439,15 +439,15 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "jNet.Blazor2.Components.Layouts.MultiSplit",
+          "Common.TypeName": "jNet.Client.UI.Splitters.MultiSplit",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -1822203379,
+        "HashCode": 1381044760,
         "Kind": "Components.ChildContent",
-        "Name": "jNet.Blazor2.Components.Layouts.MultiSplit.ChildContent",
-        "AssemblyName": "jNet.Blazor2.Components",
+        "Name": "jNet.Client.UI.Splitters.MultiSplit.ChildContent",
+        "AssemblyName": "jNet.Client.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -457,34 +457,34 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.None",
-          "Common.TypeName": "jNet.Blazor2.Components.Layouts.MultiSplit.ChildContent",
+          "Common.TypeName": "jNet.Client.UI.Splitters.MultiSplit.ChildContent",
           "Components.IsSpecialKind": "Components.ChildContent"
         }
       },
       {
-        "HashCode": -1817612926,
+        "HashCode": 1093265889,
         "Kind": "Components.ChildContent",
-        "Name": "jNet.Blazor2.Components.Layouts.MultiSplit.ChildContent",
-        "AssemblyName": "jNet.Blazor2.Components",
+        "Name": "jNet.Client.UI.Splitters.MultiSplit.ChildContent",
+        "AssemblyName": "jNet.Client.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
             "TagName": "ChildContent",
-            "ParentTag": "jNet.Blazor2.Components.Layouts.MultiSplit"
+            "ParentTag": "jNet.Client.UI.Splitters.MultiSplit"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.None",
-          "Common.TypeName": "jNet.Blazor2.Components.Layouts.MultiSplit.ChildContent",
+          "Common.TypeName": "jNet.Client.UI.Splitters.MultiSplit.ChildContent",
           "Components.IsSpecialKind": "Components.ChildContent",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -972845643,
+        "HashCode": -2140890114,
         "Kind": "Components.Component",
-        "Name": "jNet.Blazor2.Components.Layouts.SplitPanel",
-        "AssemblyName": "jNet.Blazor2.Components",
+        "Name": "jNet.Client.UI.Splitters.SplitPanel",
+        "AssemblyName": "jNet.Client.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -521,7 +521,7 @@
           {
             "Kind": "Components.Component",
             "Name": "IsClosed",
-            "TypeName": "jNet.Blazor2.Components.Layouts.SplitPanel.Panel",
+            "TypeName": "jNet.Client.UI.Splitters.SplitPanel.Panel",
             "IsEnum": true,
             "Metadata": {
               "Common.PropertyName": "IsClosed"
@@ -530,7 +530,7 @@
           {
             "Kind": "Components.Component",
             "Name": "CanClose",
-            "TypeName": "jNet.Blazor2.Components.Layouts.SplitPanel.Panel",
+            "TypeName": "jNet.Client.UI.Splitters.SplitPanel.Panel",
             "IsEnum": true,
             "Metadata": {
               "Common.PropertyName": "CanClose"
@@ -604,7 +604,7 @@
           {
             "Kind": "Components.Component",
             "Name": "IsClosedChanged",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<jNet.Blazor2.Components.Layouts.SplitPanel.Panel>",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<jNet.Client.UI.Splitters.SplitPanel.Panel>",
             "Metadata": {
               "Common.PropertyName": "IsClosedChanged",
               "Components.EventCallback": "True"
@@ -613,18 +613,18 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "jNet.Blazor2.Components.Layouts.SplitPanel"
+          "Common.TypeName": "jNet.Client.UI.Splitters.SplitPanel"
         }
       },
       {
-        "HashCode": 546302796,
+        "HashCode": -1375136278,
         "Kind": "Components.Component",
-        "Name": "jNet.Blazor2.Components.Layouts.SplitPanel",
-        "AssemblyName": "jNet.Blazor2.Components",
+        "Name": "jNet.Client.UI.Splitters.SplitPanel",
+        "AssemblyName": "jNet.Client.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "jNet.Blazor2.Components.Layouts.SplitPanel"
+            "TagName": "jNet.Client.UI.Splitters.SplitPanel"
           }
         ],
         "BoundAttributes": [
@@ -657,7 +657,7 @@
           {
             "Kind": "Components.Component",
             "Name": "IsClosed",
-            "TypeName": "jNet.Blazor2.Components.Layouts.SplitPanel.Panel",
+            "TypeName": "jNet.Client.UI.Splitters.SplitPanel.Panel",
             "IsEnum": true,
             "Metadata": {
               "Common.PropertyName": "IsClosed"
@@ -666,7 +666,7 @@
           {
             "Kind": "Components.Component",
             "Name": "CanClose",
-            "TypeName": "jNet.Blazor2.Components.Layouts.SplitPanel.Panel",
+            "TypeName": "jNet.Client.UI.Splitters.SplitPanel.Panel",
             "IsEnum": true,
             "Metadata": {
               "Common.PropertyName": "CanClose"
@@ -740,7 +740,7 @@
           {
             "Kind": "Components.Component",
             "Name": "IsClosedChanged",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<jNet.Blazor2.Components.Layouts.SplitPanel.Panel>",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<jNet.Client.UI.Splitters.SplitPanel.Panel>",
             "Metadata": {
               "Common.PropertyName": "IsClosedChanged",
               "Components.EventCallback": "True"
@@ -749,15 +749,15 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "jNet.Blazor2.Components.Layouts.SplitPanel",
+          "Common.TypeName": "jNet.Client.UI.Splitters.SplitPanel",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -1026200801,
+        "HashCode": -868785010,
         "Kind": "Components.ChildContent",
-        "Name": "jNet.Blazor2.Components.Layouts.SplitPanel.PanelA",
-        "AssemblyName": "jNet.Blazor2.Components",
+        "Name": "jNet.Client.UI.Splitters.SplitPanel.PanelA",
+        "AssemblyName": "jNet.Client.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -767,34 +767,34 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.None",
-          "Common.TypeName": "jNet.Blazor2.Components.Layouts.SplitPanel.PanelA",
+          "Common.TypeName": "jNet.Client.UI.Splitters.SplitPanel.PanelA",
           "Components.IsSpecialKind": "Components.ChildContent"
         }
       },
       {
-        "HashCode": 1254503675,
+        "HashCode": -2089205032,
         "Kind": "Components.ChildContent",
-        "Name": "jNet.Blazor2.Components.Layouts.SplitPanel.PanelA",
-        "AssemblyName": "jNet.Blazor2.Components",
+        "Name": "jNet.Client.UI.Splitters.SplitPanel.PanelA",
+        "AssemblyName": "jNet.Client.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
             "TagName": "PanelA",
-            "ParentTag": "jNet.Blazor2.Components.Layouts.SplitPanel"
+            "ParentTag": "jNet.Client.UI.Splitters.SplitPanel"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.None",
-          "Common.TypeName": "jNet.Blazor2.Components.Layouts.SplitPanel.PanelA",
+          "Common.TypeName": "jNet.Client.UI.Splitters.SplitPanel.PanelA",
           "Components.IsSpecialKind": "Components.ChildContent",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": 1091963377,
+        "HashCode": -1255543305,
         "Kind": "Components.ChildContent",
-        "Name": "jNet.Blazor2.Components.Layouts.SplitPanel.PanelB",
-        "AssemblyName": "jNet.Blazor2.Components",
+        "Name": "jNet.Client.UI.Splitters.SplitPanel.PanelB",
+        "AssemblyName": "jNet.Client.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -804,34 +804,34 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.None",
-          "Common.TypeName": "jNet.Blazor2.Components.Layouts.SplitPanel.PanelB",
+          "Common.TypeName": "jNet.Client.UI.Splitters.SplitPanel.PanelB",
           "Components.IsSpecialKind": "Components.ChildContent"
         }
       },
       {
-        "HashCode": 489964100,
+        "HashCode": -14823540,
         "Kind": "Components.ChildContent",
-        "Name": "jNet.Blazor2.Components.Layouts.SplitPanel.PanelB",
-        "AssemblyName": "jNet.Blazor2.Components",
+        "Name": "jNet.Client.UI.Splitters.SplitPanel.PanelB",
+        "AssemblyName": "jNet.Client.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
             "TagName": "PanelB",
-            "ParentTag": "jNet.Blazor2.Components.Layouts.SplitPanel"
+            "ParentTag": "jNet.Client.UI.Splitters.SplitPanel"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.None",
-          "Common.TypeName": "jNet.Blazor2.Components.Layouts.SplitPanel.PanelB",
+          "Common.TypeName": "jNet.Client.UI.Splitters.SplitPanel.PanelB",
           "Components.IsSpecialKind": "Components.ChildContent",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -157764748,
+        "HashCode": -704730745,
         "Kind": "Components.Component",
-        "Name": "jNet.Blazor2.Components.Layouts.Splitter",
-        "AssemblyName": "jNet.Blazor2.Components",
+        "Name": "jNet.Client.UI.Splitters.Splitter",
+        "AssemblyName": "jNet.Client.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -900,18 +900,18 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "jNet.Blazor2.Components.Layouts.Splitter"
+          "Common.TypeName": "jNet.Client.UI.Splitters.Splitter"
         }
       },
       {
-        "HashCode": 401779447,
+        "HashCode": 256206738,
         "Kind": "Components.Component",
-        "Name": "jNet.Blazor2.Components.Layouts.Splitter",
-        "AssemblyName": "jNet.Blazor2.Components",
+        "Name": "jNet.Client.UI.Splitters.Splitter",
+        "AssemblyName": "jNet.Client.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "jNet.Blazor2.Components.Layouts.Splitter"
+            "TagName": "jNet.Client.UI.Splitters.Splitter"
           }
         ],
         "BoundAttributes": [
@@ -976,15 +976,15 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "jNet.Blazor2.Components.Layouts.Splitter",
+          "Common.TypeName": "jNet.Client.UI.Splitters.Splitter",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -605404085,
+        "HashCode": 672237913,
         "Kind": "Components.ChildContent",
-        "Name": "jNet.Blazor2.Components.Layouts.Splitter.ChildContent",
-        "AssemblyName": "jNet.Blazor2.Components",
+        "Name": "jNet.Client.UI.Splitters.Splitter.ChildContent",
+        "AssemblyName": "jNet.Client.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -994,34 +994,34 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.None",
-          "Common.TypeName": "jNet.Blazor2.Components.Layouts.Splitter.ChildContent",
+          "Common.TypeName": "jNet.Client.UI.Splitters.Splitter.ChildContent",
           "Components.IsSpecialKind": "Components.ChildContent"
         }
       },
       {
-        "HashCode": 834804396,
+        "HashCode": -474142919,
         "Kind": "Components.ChildContent",
-        "Name": "jNet.Blazor2.Components.Layouts.Splitter.ChildContent",
-        "AssemblyName": "jNet.Blazor2.Components",
+        "Name": "jNet.Client.UI.Splitters.Splitter.ChildContent",
+        "AssemblyName": "jNet.Client.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
             "TagName": "ChildContent",
-            "ParentTag": "jNet.Blazor2.Components.Layouts.Splitter"
+            "ParentTag": "jNet.Client.UI.Splitters.Splitter"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.None",
-          "Common.TypeName": "jNet.Blazor2.Components.Layouts.Splitter.ChildContent",
+          "Common.TypeName": "jNet.Client.UI.Splitters.Splitter.ChildContent",
           "Components.IsSpecialKind": "Components.ChildContent",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": 722631332,
+        "HashCode": 873969133,
         "Kind": "Components.Component",
-        "Name": "jNet.Blazor2.Components.Layouts.Split",
-        "AssemblyName": "jNet.Blazor2.Components",
+        "Name": "jNet.Client.UI.Splitters.Split",
+        "AssemblyName": "jNet.Client.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -1079,17 +1079,8 @@
           },
           {
             "Kind": "Components.Component",
-            "Name": "SplitChanged",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.Double>",
-            "Metadata": {
-              "Common.PropertyName": "SplitChanged",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
             "Name": "DragManager",
-            "TypeName": "jNet.Blazor2.Components.DragManager",
+            "TypeName": "jNet.Client.UI.General.DragManager",
             "Metadata": {
               "Common.PropertyName": "DragManager"
             }
@@ -1097,18 +1088,18 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "jNet.Blazor2.Components.Layouts.Split"
+          "Common.TypeName": "jNet.Client.UI.Splitters.Split"
         }
       },
       {
-        "HashCode": 513890397,
+        "HashCode": -1029895157,
         "Kind": "Components.Component",
-        "Name": "jNet.Blazor2.Components.Layouts.Split",
-        "AssemblyName": "jNet.Blazor2.Components",
+        "Name": "jNet.Client.UI.Splitters.Split",
+        "AssemblyName": "jNet.Client.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "jNet.Blazor2.Components.Layouts.Split"
+            "TagName": "jNet.Client.UI.Splitters.Split"
           }
         ],
         "BoundAttributes": [
@@ -1162,17 +1153,8 @@
           },
           {
             "Kind": "Components.Component",
-            "Name": "SplitChanged",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.Double>",
-            "Metadata": {
-              "Common.PropertyName": "SplitChanged",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
             "Name": "DragManager",
-            "TypeName": "jNet.Blazor2.Components.DragManager",
+            "TypeName": "jNet.Client.UI.General.DragManager",
             "Metadata": {
               "Common.PropertyName": "DragManager"
             }
@@ -1180,7 +1162,7 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "jNet.Blazor2.Components.Layouts.Split",
+          "Common.TypeName": "jNet.Client.UI.Splitters.Split",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -13208,10 +13190,10 @@
         }
       },
       {
-        "HashCode": 515567128,
+        "HashCode": -249918307,
         "Kind": "Components.Bind",
-        "Name": "jNet.Blazor2.Components.Layouts.MultiSplit",
-        "AssemblyName": "jNet.Blazor2.Components",
+        "Name": "jNet.Client.UI.Splitters.MultiSplit",
+        "AssemblyName": "jNet.Client.UI",
         "Documentation": "Binds the provided expression to the 'Splits' property and a change event delegate to the 'SplitsChanged' property of the component.",
         "CaseSensitive": true,
         "TagMatchingRules": [
@@ -13244,19 +13226,19 @@
           "Components.IsSpecialKind": "Components.Bind",
           "Components.Bind.ValueAttribute": "Splits",
           "Components.Bind.ChangeAttribute": "SplitsChanged",
-          "Common.TypeName": "jNet.Blazor2.Components.Layouts.MultiSplit"
+          "Common.TypeName": "jNet.Client.UI.Splitters.MultiSplit"
         }
       },
       {
-        "HashCode": -1526753329,
+        "HashCode": -898924880,
         "Kind": "Components.Bind",
-        "Name": "jNet.Blazor2.Components.Layouts.MultiSplit",
-        "AssemblyName": "jNet.Blazor2.Components",
+        "Name": "jNet.Client.UI.Splitters.MultiSplit",
+        "AssemblyName": "jNet.Client.UI",
         "Documentation": "Binds the provided expression to the 'Splits' property and a change event delegate to the 'SplitsChanged' property of the component.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "jNet.Blazor2.Components.Layouts.MultiSplit",
+            "TagName": "jNet.Client.UI.Splitters.MultiSplit",
             "Attributes": [
               {
                 "Name": "@bind-Splits",
@@ -13284,15 +13266,15 @@
           "Components.IsSpecialKind": "Components.Bind",
           "Components.Bind.ValueAttribute": "Splits",
           "Components.Bind.ChangeAttribute": "SplitsChanged",
-          "Common.TypeName": "jNet.Blazor2.Components.Layouts.MultiSplit",
+          "Common.TypeName": "jNet.Client.UI.Splitters.MultiSplit",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": 1099324163,
+        "HashCode": 165850265,
         "Kind": "Components.Bind",
-        "Name": "jNet.Blazor2.Components.Layouts.SplitPanel",
-        "AssemblyName": "jNet.Blazor2.Components",
+        "Name": "jNet.Client.UI.Splitters.SplitPanel",
+        "AssemblyName": "jNet.Client.UI",
         "Documentation": "Binds the provided expression to the 'Split' property and a change event delegate to the 'SplitChanged' property of the component.",
         "CaseSensitive": true,
         "TagMatchingRules": [
@@ -13325,14 +13307,14 @@
           "Components.IsSpecialKind": "Components.Bind",
           "Components.Bind.ValueAttribute": "Split",
           "Components.Bind.ChangeAttribute": "SplitChanged",
-          "Common.TypeName": "jNet.Blazor2.Components.Layouts.SplitPanel"
+          "Common.TypeName": "jNet.Client.UI.Splitters.SplitPanel"
         }
       },
       {
-        "HashCode": -882890071,
+        "HashCode": 369378794,
         "Kind": "Components.Bind",
-        "Name": "jNet.Blazor2.Components.Layouts.SplitPanel",
-        "AssemblyName": "jNet.Blazor2.Components",
+        "Name": "jNet.Client.UI.Splitters.SplitPanel",
+        "AssemblyName": "jNet.Client.UI",
         "Documentation": "Binds the provided expression to the 'IsClosed' property and a change event delegate to the 'IsClosedChanged' property of the component.",
         "CaseSensitive": true,
         "TagMatchingRules": [
@@ -13352,7 +13334,7 @@
           {
             "Kind": "Components.Bind",
             "Name": "@bind-IsClosed",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<jNet.Blazor2.Components.Layouts.SplitPanel.Panel>",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<jNet.Client.UI.Splitters.SplitPanel.Panel>",
             "IsEnum": true,
             "Documentation": "Binds the provided expression to the 'IsClosed' property and a change event delegate to the 'IsClosedChanged' property of the component.",
             "Metadata": {
@@ -13366,19 +13348,19 @@
           "Components.IsSpecialKind": "Components.Bind",
           "Components.Bind.ValueAttribute": "IsClosed",
           "Components.Bind.ChangeAttribute": "IsClosedChanged",
-          "Common.TypeName": "jNet.Blazor2.Components.Layouts.SplitPanel"
+          "Common.TypeName": "jNet.Client.UI.Splitters.SplitPanel"
         }
       },
       {
-        "HashCode": -450398825,
+        "HashCode": 1429322387,
         "Kind": "Components.Bind",
-        "Name": "jNet.Blazor2.Components.Layouts.SplitPanel",
-        "AssemblyName": "jNet.Blazor2.Components",
+        "Name": "jNet.Client.UI.Splitters.SplitPanel",
+        "AssemblyName": "jNet.Client.UI",
         "Documentation": "Binds the provided expression to the 'Split' property and a change event delegate to the 'SplitChanged' property of the component.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "jNet.Blazor2.Components.Layouts.SplitPanel",
+            "TagName": "jNet.Client.UI.Splitters.SplitPanel",
             "Attributes": [
               {
                 "Name": "@bind-Split",
@@ -13406,20 +13388,20 @@
           "Components.IsSpecialKind": "Components.Bind",
           "Components.Bind.ValueAttribute": "Split",
           "Components.Bind.ChangeAttribute": "SplitChanged",
-          "Common.TypeName": "jNet.Blazor2.Components.Layouts.SplitPanel",
+          "Common.TypeName": "jNet.Client.UI.Splitters.SplitPanel",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": 1522637461,
+        "HashCode": -978089427,
         "Kind": "Components.Bind",
-        "Name": "jNet.Blazor2.Components.Layouts.SplitPanel",
-        "AssemblyName": "jNet.Blazor2.Components",
+        "Name": "jNet.Client.UI.Splitters.SplitPanel",
+        "AssemblyName": "jNet.Client.UI",
         "Documentation": "Binds the provided expression to the 'IsClosed' property and a change event delegate to the 'IsClosedChanged' property of the component.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "jNet.Blazor2.Components.Layouts.SplitPanel",
+            "TagName": "jNet.Client.UI.Splitters.SplitPanel",
             "Attributes": [
               {
                 "Name": "@bind-IsClosed",
@@ -13434,7 +13416,7 @@
           {
             "Kind": "Components.Bind",
             "Name": "@bind-IsClosed",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<jNet.Blazor2.Components.Layouts.SplitPanel.Panel>",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<jNet.Client.UI.Splitters.SplitPanel.Panel>",
             "IsEnum": true,
             "Documentation": "Binds the provided expression to the 'IsClosed' property and a change event delegate to the 'IsClosedChanged' property of the component.",
             "Metadata": {
@@ -13448,15 +13430,15 @@
           "Components.IsSpecialKind": "Components.Bind",
           "Components.Bind.ValueAttribute": "IsClosed",
           "Components.Bind.ChangeAttribute": "IsClosedChanged",
-          "Common.TypeName": "jNet.Blazor2.Components.Layouts.SplitPanel",
+          "Common.TypeName": "jNet.Client.UI.Splitters.SplitPanel",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": 365292885,
+        "HashCode": -1246031121,
         "Kind": "Components.Bind",
-        "Name": "jNet.Blazor2.Components.Layouts.Splitter",
-        "AssemblyName": "jNet.Blazor2.Components",
+        "Name": "jNet.Client.UI.Splitters.Splitter",
+        "AssemblyName": "jNet.Client.UI",
         "Documentation": "Binds the provided expression to the 'Split' property and a change event delegate to the 'SplitChanged' property of the component.",
         "CaseSensitive": true,
         "TagMatchingRules": [
@@ -13489,19 +13471,19 @@
           "Components.IsSpecialKind": "Components.Bind",
           "Components.Bind.ValueAttribute": "Split",
           "Components.Bind.ChangeAttribute": "SplitChanged",
-          "Common.TypeName": "jNet.Blazor2.Components.Layouts.Splitter"
+          "Common.TypeName": "jNet.Client.UI.Splitters.Splitter"
         }
       },
       {
-        "HashCode": -1190250998,
+        "HashCode": 1375292952,
         "Kind": "Components.Bind",
-        "Name": "jNet.Blazor2.Components.Layouts.Splitter",
-        "AssemblyName": "jNet.Blazor2.Components",
+        "Name": "jNet.Client.UI.Splitters.Splitter",
+        "AssemblyName": "jNet.Client.UI",
         "Documentation": "Binds the provided expression to the 'Split' property and a change event delegate to the 'SplitChanged' property of the component.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "jNet.Blazor2.Components.Layouts.Splitter",
+            "TagName": "jNet.Client.UI.Splitters.Splitter",
             "Attributes": [
               {
                 "Name": "@bind-Split",
@@ -13529,7 +13511,7 @@
           "Components.IsSpecialKind": "Components.Bind",
           "Components.Bind.ValueAttribute": "Split",
           "Components.Bind.ChangeAttribute": "SplitChanged",
-          "Common.TypeName": "jNet.Blazor2.Components.Layouts.Splitter",
+          "Common.TypeName": "jNet.Client.UI.Splitters.Splitter",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -14195,41 +14177,41 @@
     ],
     "CSharpLanguageVersion": 900
   },
-  "RootNamespace": "jNet.Blazor2.Components",
+  "RootNamespace": "jNet.Client.UI",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Blazor2\\Components\\Layouts\\Splitter.razor",
-      "TargetPath": "Layouts\\Splitter.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Blazor2\\Components\\_Imports.razor",
+      "FilePath": "c:\\Users\\PeterGiles\\source\\github\\jNet-Blazor\\jNet.Client.UI\\_Imports.razor",
       "TargetPath": "_Imports.razor",
       "FileKind": "componentImport"
     },
     {
-      "FilePath": "c:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Blazor2\\Components\\Layouts\\Split.razor",
-      "TargetPath": "Layouts\\Split.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Blazor2\\Components\\Layouts\\SplitPanel.razor",
-      "TargetPath": "Layouts\\SplitPanel.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Blazor2\\Components\\Layouts\\MultiSplit.razor",
-      "TargetPath": "Layouts\\MultiSplit.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Blazor2\\Components\\Inspector\\Inspector.razor",
-      "TargetPath": "Inspector\\Inspector.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Blazor2\\Components\\General\\AsyncWarpper.razor",
+      "FilePath": "c:\\Users\\PeterGiles\\source\\github\\jNet-Blazor\\jNet.Client.UI\\General\\AsyncWarpper.razor",
       "TargetPath": "General\\AsyncWarpper.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\PeterGiles\\source\\github\\jNet-Blazor\\jNet.Client.UI\\Splitters\\Splitter.razor",
+      "TargetPath": "Splitters\\Splitter.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\PeterGiles\\source\\github\\jNet-Blazor\\jNet.Client.UI\\Splitters\\SplitPanel.razor",
+      "TargetPath": "Splitters\\SplitPanel.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\PeterGiles\\source\\github\\jNet-Blazor\\jNet.Client.UI\\Splitters\\Split.razor",
+      "TargetPath": "Splitters\\Split.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\PeterGiles\\source\\github\\jNet-Blazor\\jNet.Client.UI\\Splitters\\MultiSplit.razor",
+      "TargetPath": "Splitters\\MultiSplit.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\PeterGiles\\source\\github\\jNet-Blazor\\jNet.Client.UI\\Components\\Inspector.razor",
+      "TargetPath": "Components\\Inspector.razor",
       "FileKind": "component"
     }
   ],

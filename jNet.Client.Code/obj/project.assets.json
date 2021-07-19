@@ -27,26 +27,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sscot\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Users\\PeterGiles\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Client.Code\\jNet.Client.Code.csproj",
+      "projectUniqueName": "C:\\Users\\PeterGiles\\source\\github\\jNet-Blazor\\jNet.Client.Code\\jNet.Client.Code.csproj",
       "projectName": "jNet.Client.Code",
-      "projectPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Client.Code\\jNet.Client.Code.csproj",
-      "packagesPath": "C:\\Users\\sscot\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Client.Code\\obj\\",
+      "projectPath": "C:\\Users\\PeterGiles\\source\\github\\jNet-Blazor\\jNet.Client.Code\\jNet.Client.Code.csproj",
+      "packagesPath": "C:\\Users\\PeterGiles\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PeterGiles\\source\\github\\jNet-Blazor\\jNet.Client.Code\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\sscot\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\PeterGiles\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,8 +57,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Shared.Code\\jNet.Shared.Code.csproj": {
-              "projectPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Shared.Code\\jNet.Shared.Code.csproj"
+            "C:\\Users\\PeterGiles\\source\\github\\jNet-Blazor\\jNet.Shared.Code\\jNet.Shared.Code.csproj": {
+              "projectPath": "C:\\Users\\PeterGiles\\source\\github\\jNet-Blazor\\jNet.Shared.Code\\jNet.Shared.Code.csproj"
             }
           }
         }
@@ -90,7 +87,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

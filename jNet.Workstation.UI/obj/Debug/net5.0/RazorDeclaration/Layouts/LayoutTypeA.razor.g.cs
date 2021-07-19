@@ -13,21 +13,21 @@ namespace jNet.Workstation.UI.Layouts
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Workstation.UI\_Imports.razor"
+#line 1 "C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Workstation.UI\_Imports.razor"
+#line 2 "C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\_Imports.razor"
 using jNet.Workstation.UI.Layouts;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 1 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Workstation.UI\Layouts\LayoutTypeA.razor"
+#line 1 "C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\Layouts\LayoutTypeA.razor"
 using jNet.Client.UI.Splitters;
 
 #line default

@@ -13,7 +13,7 @@ namespace jNet.Client.UI
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Client.UI\_Imports.razor"
+#line 1 "C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Client.UI\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default

@@ -13,21 +13,21 @@ namespace jNet.Client.UI.Splitters
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Client.UI\_Imports.razor"
+#line 1 "C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Client.UI\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 1 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Client.UI\Splitters\Split.razor"
+#line 1 "C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Client.UI\Splitters\Split.razor"
 using System.Drawing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Client.UI\Splitters\Split.razor"
+#line 2 "C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Client.UI\Splitters\Split.razor"
 using jNet.Client.UI.General;
 
 #line default
@@ -41,7 +41,7 @@ using jNet.Client.UI.General;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 17 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Client.UI\Splitters\Split.razor"
+#line 17 "C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Client.UI\Splitters\Split.razor"
  
     ElementReference Divider;
     [Parameter] public int Index { get; set; } = 0;
