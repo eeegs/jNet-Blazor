@@ -12,21 +12,21 @@ namespace jNet.Client.UI
     using System.Linq;
     using System.Threading.Tasks;
 #nullable restore
-#line 1 "C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Client.UI\_Imports.razor"
+#line 1 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Client.UI\_Imports.razor"
 using Microsoft.AspNetCore.Components;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Client.UI\_Imports.razor"
+#line 2 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Client.UI\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 1 "C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Client.UI\Components\Inspector.razor"
+#line 1 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Client.UI\Components\Inspector.razor"
 using jNet.Client.UI.Splitters;
 
 #line default

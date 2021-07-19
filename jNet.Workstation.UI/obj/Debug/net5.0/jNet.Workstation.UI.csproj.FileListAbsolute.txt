@@ -81,3 +81,6 @@ C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5
 C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\RazorDeclaration\Layouts\LayoutTypeB.razor.g.cs
 C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\Razor\Layouts\LayoutTypeB.razor.g.cs
 C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\scopedcss\Layouts\LayoutTypeB.razor.rz.scp.css
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Workstation.UI\obj\Debug\net5.0\RazorDeclaration\Layouts\LayoutTypeB.razor.g.cs
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Workstation.UI\obj\Debug\net5.0\Razor\Layouts\LayoutTypeB.razor.g.cs
+C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Workstation.UI\obj\Debug\net5.0\scopedcss\Layouts\LayoutTypeB.razor.rz.scp.css

@@ -33,7 +33,6 @@ C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.WaterNET.Workstatio
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.WaterNET.Workstation\bin\Debug\net5.0\wwwroot\_framework\Microsoft.Extensions.Logging.Abstractions.dll.gz
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.WaterNET.Workstation\bin\Debug\net5.0\wwwroot\_framework\Microsoft.Extensions.Options.dll.gz
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.WaterNET.Workstation\bin\Debug\net5.0\wwwroot\_framework\Microsoft.Extensions.Primitives.dll.gz
-C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.WaterNET.Workstation\bin\Debug\net5.0\wwwroot\_framework\Microsoft.Fast.Components.FluentUI.dll.gz
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.WaterNET.Workstation\bin\Debug\net5.0\wwwroot\_framework\Microsoft.JSInterop.dll.gz
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.WaterNET.Workstation\bin\Debug\net5.0\wwwroot\_framework\Microsoft.JSInterop.WebAssembly.dll.gz
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.WaterNET.Workstation\bin\Debug\net5.0\wwwroot\_framework\System.IO.Pipelines.dll.gz
@@ -289,7 +288,6 @@ C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.WaterNET.Workstatio
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.WaterNET.Workstation\bin\Debug\net5.0\wwwroot\_framework\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.WaterNET.Workstation\bin\Debug\net5.0\wwwroot\_framework\Microsoft.Extensions.Options.dll
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.WaterNET.Workstation\bin\Debug\net5.0\wwwroot\_framework\Microsoft.Extensions.Primitives.dll
-C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.WaterNET.Workstation\bin\Debug\net5.0\wwwroot\_framework\Microsoft.Fast.Components.FluentUI.dll
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.WaterNET.Workstation\bin\Debug\net5.0\wwwroot\_framework\Microsoft.JSInterop.dll
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.WaterNET.Workstation\bin\Debug\net5.0\wwwroot\_framework\Microsoft.JSInterop.WebAssembly.dll
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.WaterNET.Workstation\bin\Debug\net5.0\wwwroot\_framework\System.IO.Pipelines.dll
@@ -575,7 +573,6 @@ C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.WaterNET.Workstatio
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.WaterNET.Workstation\obj\Debug\net5.0\build-gz\QonjgazL.gz
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.WaterNET.Workstation\obj\Debug\net5.0\build-gz\P3QFcJ+O.gz
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.WaterNET.Workstation\obj\Debug\net5.0\build-gz\QVwUrE5H.gz
-C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.WaterNET.Workstation\obj\Debug\net5.0\build-gz\YeoRks0F.gz
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.WaterNET.Workstation\obj\Debug\net5.0\build-gz\YKZppsEn.gz
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.WaterNET.Workstation\obj\Debug\net5.0\build-gz\qDXL3j1c.gz
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.WaterNET.Workstation\obj\Debug\net5.0\build-gz\e3P420ca.gz
