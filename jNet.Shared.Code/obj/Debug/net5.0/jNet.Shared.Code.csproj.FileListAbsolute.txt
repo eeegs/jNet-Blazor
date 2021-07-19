@@ -9,3 +9,14 @@ C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Shared.Code\obj\Deb
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Shared.Code\obj\Debug\net5.0\jNet.Shared.Code.dll
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Shared.Code\obj\Debug\net5.0\ref\jNet.Shared.Code.dll
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Shared.Code\obj\Debug\net5.0\jNet.Shared.Code.pdb
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Shared.Code\bin\Debug\net5.0\jNet.Shared.Code.deps.json
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Shared.Code\bin\Debug\net5.0\jNet.Shared.Code.dll
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Shared.Code\bin\Debug\net5.0\ref\jNet.Shared.Code.dll
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Shared.Code\bin\Debug\net5.0\jNet.Shared.Code.pdb
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Shared.Code\obj\Debug\net5.0\jNet.Shared.Code.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Shared.Code\obj\Debug\net5.0\jNet.Shared.Code.AssemblyInfoInputs.cache
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Shared.Code\obj\Debug\net5.0\jNet.Shared.Code.AssemblyInfo.cs
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Shared.Code\obj\Debug\net5.0\jNet.Shared.Code.csproj.CoreCompileInputs.cache
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Shared.Code\obj\Debug\net5.0\jNet.Shared.Code.dll
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Shared.Code\obj\Debug\net5.0\ref\jNet.Shared.Code.dll
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Shared.Code\obj\Debug\net5.0\jNet.Shared.Code.pdb

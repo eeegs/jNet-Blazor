@@ -27,7 +27,7 @@ namespace jNet.WaterNET.Workstation.Pages
 		{
 			if (Store is not null)
 			{
-				//makedata(store);
+				//makedata(Store);
 				settings = (await Store.Get<Setting>(q => q.Name == nameof(Stuff))).FirstOrDefault() ?? settings;
 				Store.Set(settings);
 			}

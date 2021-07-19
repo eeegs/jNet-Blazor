@@ -38,3 +38,18 @@ div.main[b-g1g0qquvj8] {
     flex-basis: 1;
     height:100%;
 }
+/* _content/jNet.Workstation.UI/Layouts/LayoutTypeB.razor.rz.scp.css */
+div.layout[b-e6mz80xulb] {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+div.tool[b-e6mz80xulb] {
+    height: 40px;
+}
+
+div.main[b-e6mz80xulb] {
+    flex-basis: 1;
+    height:100%;
+}

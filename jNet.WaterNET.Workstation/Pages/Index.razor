@@ -2,24 +2,26 @@
 @using jNet.Workstation.UI.Layouts
 @using jNet.Workstation.UI.General
 
-<LayoutTypeA Settings="@settings">
+<LayoutTypeB Settings="@settings">
     <Tool>
         <button @onclick="@Save">Save</button>
     </Tool>
-    <Left><Window Title="Left"></Window></Left>
-    <Main>
-        <Window Title="Main">
-            <div>
-                <FluentCard>
-                    <img src="https://via.placeholder.com/300x200/414141" />
-                    <h2>Hello World!</h2>
-                    <p>This is some text <a href="stuff">click me</a>.</p>
-                    <FluentButton Appearance="Appearance.Accent">Click Me</FluentButton>
-                </FluentCard>
-            </div>
+    <Left>
+        <Window Title="Left">
+            <jNet.Client.UI.General.AsyncWarpper Context="Context" DataPromise="@Nodes()">
+                @if (Context is not null)
+                {<Tree Nodes="@Context"></Tree> }
+                else
+                { <p>Wait for a tree</p>}
+            </jNet.Client.UI.General.AsyncWarpper>
         </Window>
-    </Main>
-    <Right><Window Title="Right"></Window></Right>
-    <Task><Window Title="Task"></Window></Task>
-</LayoutTypeA>
+    </Left>
+
+    <Right>
+        <Window Title="Right">
+            <p>@SelectedDefinition?.Name</p>
+        </Window>
+    </Right>
+
+</LayoutTypeB>
 

@@ -110,7 +110,7 @@
           "dependencies": {
             "Microsoft.AspNetCore.Components.Web": {
               "target": "Package",
-              "version": "[5.0.7, )"
+              "version": "[5.0.8, )"
             }
           },
           "imports": [
@@ -253,10 +253,6 @@
             "Microsoft.CodeAnalysis.CSharp.Scripting": {
               "target": "Package",
               "version": "[3.10.0, )"
-            },
-            "Microsoft.Fast.Components.FluentUI": {
-              "target": "Package",
-              "version": "[0.2.0, )"
             },
             "System.Net.Http.Json": {
               "target": "Package",

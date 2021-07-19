@@ -11,9 +11,15 @@ namespace jNet.Client.UI.Splitters
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
-    using Microsoft.AspNetCore.Components;
 #nullable restore
 #line 1 "C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Client.UI\_Imports.razor"
+using Microsoft.AspNetCore.Components;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Client.UI\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
@@ -49,7 +55,7 @@ using jNet.Client.UI.General;
     [Parameter] public bool ShowThumb { get; set; } = true;
     [Parameter] public double Position { get; set; } = 50;
     [Parameter] public int SplitWidth { get; set; } = 5;
-    [Parameter] public Color SplitColor { get; set; } = Color.Transparent;
+    [Parameter] public System.Drawing.Color SplitColor { get; set; } = System.Drawing.Color.Transparent;
     //[Parameter] public EventCallback<double> SplitChanged { get; set; }
     [Parameter] public DragManager? DragManager { get; set; }
     string SplitColorHex => $"#{SplitColor.R:x2}{SplitColor.G:x2}{SplitColor.B:x2}{SplitColor.A:x2}";

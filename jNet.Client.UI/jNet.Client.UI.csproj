@@ -11,11 +11,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.8" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\jNet.Shared.Code\jNet.Shared.Code.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Components\Tree - Copy.razor.cs">
+      <DependentUpon>Tree.razor.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,12 @@
+﻿
+@namespace jNet.Client.UI
+
+
+<fluent-tree-view render-collapsed-nodes="@false">
+
+ 
+        @foreach (var node in Nodes)
+        {
+    <TreeNodeView Node="@node"></TreeNodeView>
+    }
+        </fluent-tree-view>

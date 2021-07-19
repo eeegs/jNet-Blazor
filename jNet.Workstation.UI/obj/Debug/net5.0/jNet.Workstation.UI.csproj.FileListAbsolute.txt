@@ -38,3 +38,46 @@ C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Workstation.UI\obj\
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Workstation.UI\obj\Debug\net5.0\jNet.Workstation.UI.dll
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Workstation.UI\obj\Debug\net5.0\ref\jNet.Workstation.UI.dll
 C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Workstation.UI\obj\Debug\net5.0\jNet.Workstation.UI.pdb
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\jNet.Workstation.UI.csproj.AssemblyReference.cache
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\jNet.Workstation.UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\jNet.Workstation.UI.AssemblyInfoInputs.cache
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\jNet.Workstation.UI.AssemblyInfo.cs
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\jNet.Workstation.UI.csproj.CoreCompileInputs.cache
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\jNet.Workstation.UI.RazorComponent.input.cache
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\RazorDeclaration\General\Window.razor.g.cs
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\RazorDeclaration\Layouts\LayoutTypeA.razor.g.cs
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\jNet.Workstation.UI.RazorComponent.output.cache
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\bin\Debug\net5.0\jNet.Client.UI.StaticWebAssets.xml
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\bin\Debug\net5.0\jNet.Workstation.UI.StaticWebAssets.xml
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\bin\Debug\net5.0\jNet.Workstation.UI.deps.json
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\bin\Debug\net5.0\jNet.Workstation.UI.dll
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\bin\Debug\net5.0\ref\jNet.Workstation.UI.dll
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\bin\Debug\net5.0\jNet.Workstation.UI.pdb
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\bin\Debug\net5.0\jNet.Client.Code.dll
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\bin\Debug\net5.0\jNet.Client.UI.dll
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\bin\Debug\net5.0\jNet.Shared.Code.dll
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\bin\Debug\net5.0\jNet.Client.Code.pdb
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\bin\Debug\net5.0\jNet.Client.UI.pdb
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\bin\Debug\net5.0\jNet.Shared.Code.pdb
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\RazorDeclaration\jNet.Workstation.UI.dll
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\jNet.Workstation.UI.TagHelpers.input.cache
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\jNet.Workstation.UI.TagHelpers.output.cache
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\jNet.Workstation.UI.RazorCoreGenerate.cache
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\Razor\_Imports.razor.g.cs
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\Razor\General\Window.razor.g.cs
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\Razor\Layouts\LayoutTypeA.razor.g.cs
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\staticwebassets\jNet.Workstation.UI.StaticWebAssets.Manifest.cache
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\staticwebassets\jNet.Workstation.UI.StaticWebAssets.xml
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\scopedcss\General\Window.razor.rz.scp.css
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\scopedcss\Layouts\LayoutTypeA.razor.rz.scp.css
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\scopedcss\bundle\jNet.Workstation.UI.styles.css
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\scopedcss\projectbundle\jNet.Workstation.UI.bundle.scp.css
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\jNet.Workstation.UI.RazorTargetAssemblyInfo.cache
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\jNet.Workstation.UI.csproj.CopyComplete
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\jNet.Workstation.UI.dll
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\ref\jNet.Workstation.UI.dll
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\jNet.Workstation.UI.pdb
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\RazorDeclaration\Layouts\LayoutTypeB.razor.g.cs
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\Razor\Layouts\LayoutTypeB.razor.g.cs
+C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.Workstation.UI\obj\Debug\net5.0\scopedcss\Layouts\LayoutTypeB.razor.rz.scp.css

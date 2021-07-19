@@ -72,9 +72,13 @@ namespace jNet.Shared.Code
 		public Guid? ParentKey { get; init; }
 		public string Name { get; set; } = "";
 
-		public Definition(Definition? parentDefinition = null)
+        public Definition()
+        {
+
+        }
+		public Definition(Definition parentDefinition)
 		{
-			ParentKey = parentDefinition?.Key;
+			ParentKey = parentDefinition.Key;
 		}
 	}
 }

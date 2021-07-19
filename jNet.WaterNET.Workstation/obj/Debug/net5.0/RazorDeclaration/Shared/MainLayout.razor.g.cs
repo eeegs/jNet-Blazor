@@ -70,28 +70,28 @@ using Microsoft.JSInterop;
 #nullable disable
 #nullable restore
 #line 9 "C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.WaterNET.Workstation\_Imports.razor"
-using jNet.WaterNET.Workstation;
+using jNet.Client.UI;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 10 "C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.WaterNET.Workstation\_Imports.razor"
-using jNet.WaterNET.Workstation.Pages;
+using jNet.WaterNET.Workstation;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 11 "C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.WaterNET.Workstation\_Imports.razor"
-using jNet.WaterNET.Workstation.Shared;
+using jNet.WaterNET.Workstation.Pages;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 12 "C:\Users\PeterGiles\source\github\jNet-Blazor\jNet.WaterNET.Workstation\_Imports.razor"
-using Microsoft.Fast.Components.FluentUI;
+using jNet.WaterNET.Workstation.Shared;
 
 #line default
 #line hidden

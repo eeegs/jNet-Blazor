@@ -82,7 +82,7 @@
           "build/net5.0/_._": {}
         }
       },
-      "Microsoft.AspNetCore.Components.WebAssembly.Server/5.0.7": {
+      "Microsoft.AspNetCore.Components.WebAssembly.Server/5.0.8": {
         "type": "package",
         "compile": {
           "lib/net5.0/Microsoft.AspNetCore.Components.WebAssembly.Server.dll": {}
@@ -528,18 +528,6 @@
         },
         "runtime": {
           "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {}
-        }
-      },
-      "Microsoft.Fast.Components.FluentUI/0.2.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "5.0.5"
-        },
-        "compile": {
-          "lib/net5.0/Microsoft.Fast.Components.FluentUI.dll": {}
-        },
-        "runtime": {
-          "lib/net5.0/Microsoft.Fast.Components.FluentUI.dll": {}
         }
       },
       "Microsoft.JSInterop/5.0.8": {
@@ -999,7 +987,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "5.0.7",
+          "Microsoft.AspNetCore.Components.Web": "5.0.8",
           "jNet.Shared.Code": "1.0.0"
         },
         "compile": {
@@ -1025,7 +1013,6 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebAssembly": "5.0.8",
           "Microsoft.CodeAnalysis.CSharp.Scripting": "3.10.0",
-          "Microsoft.Fast.Components.FluentUI": "0.2.0",
           "System.Net.Http.Json": "5.0.0",
           "jNet.Client.Code": "1.0.0",
           "jNet.Client.UI": "1.0.0",
@@ -1154,10 +1141,10 @@
         "microsoft.aspnetcore.components.webassembly.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Components.WebAssembly.Server/5.0.7": {
-      "sha512": "dCg5hZHqLBDebnFacUmgKw2tSQ/apl/RSHHjOUjF3suNlqopMcPVTqZ//0Lrh7UmlKS2C0j71yB6B/dR1axIsw==",
+    "Microsoft.AspNetCore.Components.WebAssembly.Server/5.0.8": {
+      "sha512": "vpgzQtwfs8smVoXKX7CK+/xJOo9rWeuODrlGFKVYz2FJ6goGlU+dbIDIyMXRJ4rwwgYehR/08DUnY4eta0YY5Q==",
       "type": "package",
-      "path": "microsoft.aspnetcore.components.webassembly.server/5.0.7",
+      "path": "microsoft.aspnetcore.components.webassembly.server/5.0.8",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -1167,7 +1154,7 @@
         "build/Microsoft.AspNetCore.Components.WebAssembly.Server.targets",
         "lib/net5.0/Microsoft.AspNetCore.Components.WebAssembly.Server.dll",
         "lib/net5.0/Microsoft.AspNetCore.Components.WebAssembly.Server.xml",
-        "microsoft.aspnetcore.components.webassembly.server.5.0.7.nupkg.sha512",
+        "microsoft.aspnetcore.components.webassembly.server.5.0.8.nupkg.sha512",
         "microsoft.aspnetcore.components.webassembly.server.nuspec",
         "tools/BlazorDebugProxy/BrowserDebugHost.dll",
         "tools/BlazorDebugProxy/BrowserDebugHost.runtimeconfig.json",
@@ -1837,18 +1824,6 @@
         "microsoft.extensions.primitives.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
-      ]
-    },
-    "Microsoft.Fast.Components.FluentUI/0.2.0": {
-      "sha512": "K3IziWZ6lnh318zs0W/Mn8hT8FTfo78PMofhtLWygz5kiAuejyME/CCy1Mli9uL23se13EH+e+YCAJEJze3vlQ==",
-      "type": "package",
-      "path": "microsoft.fast.components.fluentui/0.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net5.0/Microsoft.Fast.Components.FluentUI.dll",
-        "microsoft.fast.components.fluentui.0.2.0.nupkg.sha512",
-        "microsoft.fast.components.fluentui.nuspec"
       ]
     },
     "Microsoft.JSInterop/5.0.8": {
@@ -3673,7 +3648,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "Microsoft.AspNetCore.Components.WebAssembly.Server >= 5.0.7",
+      "Microsoft.AspNetCore.Components.WebAssembly.Server >= 5.0.8",
       "jNet.Shared.Code >= 1.0.0",
       "jNet.WaterNET.Workstation >= 1.0.0"
     ]
@@ -3730,7 +3705,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebAssembly.Server": {
             "target": "Package",
-            "version": "[5.0.7, )"
+            "version": "[5.0.8, )"
           }
         },
         "imports": [

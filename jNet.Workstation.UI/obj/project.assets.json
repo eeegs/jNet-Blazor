@@ -159,7 +159,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "5.0.7",
+          "Microsoft.AspNetCore.Components.Web": "5.0.8",
           "jNet.Shared.Code": "1.0.0"
         },
         "compile": {

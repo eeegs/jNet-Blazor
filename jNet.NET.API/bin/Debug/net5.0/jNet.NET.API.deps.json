@@ -33,7 +33,7 @@
     ".NETCoreApp,Version=v5.0": {
       "jNet.NET.API/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Components.WebAssembly.Server": "5.0.7",
+          "Microsoft.AspNetCore.Components.WebAssembly.Server": "5.0.8",
           "jNet.Shared.Code": "1.0.0",
           "jNet.WaterNET.Workstation": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
@@ -401,11 +401,11 @@
           "lib/net5.0/Microsoft.AspNetCore.Components.WebAssembly.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Components.WebAssembly.Server/5.0.7": {
+      "Microsoft.AspNetCore.Components.WebAssembly.Server/5.0.8": {
         "runtime": {
           "lib/net5.0/Microsoft.AspNetCore.Components.WebAssembly.Server.dll": {
-            "assemblyVersion": "5.0.7.0",
-            "fileVersion": "5.0.721.26309"
+            "assemblyVersion": "5.0.8.0",
+            "fileVersion": "5.0.821.31805"
           }
         },
         "compile": {
@@ -750,20 +750,6 @@
         }
       },
       "Microsoft.Extensions.Primitives/5.0.0": {},
-      "Microsoft.Fast.Components.FluentUI/0.2.0": {
-        "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "5.0.8"
-        },
-        "runtime": {
-          "lib/net5.0/Microsoft.Fast.Components.FluentUI.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        },
-        "compile": {
-          "lib/net5.0/Microsoft.Fast.Components.FluentUI.dll": {}
-        }
-      },
       "Microsoft.JSInterop/5.0.8": {
         "runtime": {
           "lib/net5.0/Microsoft.JSInterop.dll": {
@@ -798,7 +784,11 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Collections.Immutable/5.0.0": {},
+      "System.Collections.Immutable/5.0.0": {
+        "compile": {
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {}
+        }
+      },
       "System.Diagnostics.Debug/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.2",
@@ -882,7 +872,11 @@
         }
       },
       "System.Memory/4.5.4": {},
-      "System.Net.Http.Json/5.0.0": {},
+      "System.Net.Http.Json/5.0.0": {
+        "compile": {
+          "lib/net5.0/System.Net.Http.Json.dll": {}
+        }
+      },
       "System.ObjectModel/4.3.0": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -933,7 +927,11 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Reflection.Metadata/5.0.0": {},
+      "System.Reflection.Metadata/5.0.0": {
+        "compile": {
+          "lib/netstandard2.0/System.Reflection.Metadata.dll": {}
+        }
+      },
       "System.Reflection.Primitives/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.2",
@@ -962,7 +960,11 @@
           "Microsoft.NETCore.Targets": "1.1.0"
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/5.0.0": {},
+      "System.Runtime.CompilerServices.Unsafe/5.0.0": {
+        "compile": {
+          "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
       "System.Runtime.Extensions/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.2",
@@ -1049,7 +1051,6 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebAssembly": "5.0.8",
           "Microsoft.CodeAnalysis.CSharp.Scripting": "3.10.0",
-          "Microsoft.Fast.Components.FluentUI": "0.2.0",
           "System.Net.Http.Json": "5.0.0",
           "jNet.Client.Code": "1.0.0",
           "jNet.Client.UI": "1.0.0",
@@ -2776,12 +2777,12 @@
       "path": "microsoft.aspnetcore.components.webassembly/5.0.8",
       "hashPath": "microsoft.aspnetcore.components.webassembly.5.0.8.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Components.WebAssembly.Server/5.0.7": {
+    "Microsoft.AspNetCore.Components.WebAssembly.Server/5.0.8": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-dCg5hZHqLBDebnFacUmgKw2tSQ/apl/RSHHjOUjF3suNlqopMcPVTqZ//0Lrh7UmlKS2C0j71yB6B/dR1axIsw==",
-      "path": "microsoft.aspnetcore.components.webassembly.server/5.0.7",
-      "hashPath": "microsoft.aspnetcore.components.webassembly.server.5.0.7.nupkg.sha512"
+      "sha512": "sha512-vpgzQtwfs8smVoXKX7CK+/xJOo9rWeuODrlGFKVYz2FJ6goGlU+dbIDIyMXRJ4rwwgYehR/08DUnY4eta0YY5Q==",
+      "path": "microsoft.aspnetcore.components.webassembly.server/5.0.8",
+      "hashPath": "microsoft.aspnetcore.components.webassembly.server.5.0.8.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Metadata/5.0.8": {
       "type": "package",
@@ -2929,13 +2930,6 @@
       "sha512": "sha512-cI/VWn9G1fghXrNDagX9nYaaB/nokkZn0HYAawGaELQrl8InSezfe9OnfPZLcJq3esXxygh3hkq2c3qoV3SDyQ==",
       "path": "microsoft.extensions.primitives/5.0.0",
       "hashPath": "microsoft.extensions.primitives.5.0.0.nupkg.sha512"
-    },
-    "Microsoft.Fast.Components.FluentUI/0.2.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-K3IziWZ6lnh318zs0W/Mn8hT8FTfo78PMofhtLWygz5kiAuejyME/CCy1Mli9uL23se13EH+e+YCAJEJze3vlQ==",
-      "path": "microsoft.fast.components.fluentui/0.2.0",
-      "hashPath": "microsoft.fast.components.fluentui.0.2.0.nupkg.sha512"
     },
     "Microsoft.JSInterop/5.0.8": {
       "type": "package",

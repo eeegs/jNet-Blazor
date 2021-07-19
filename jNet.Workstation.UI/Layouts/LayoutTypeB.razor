@@ -1,0 +1,13 @@
+﻿@using jNet.Client.UI.Splitters
+
+<div class="layout">
+    <div class="tool">
+        @Tool
+    </div>
+    <div class="main">
+        <SplitPanel @bind-Split="@this["Right"].SplitPosition">
+            <PanelA>@Left</PanelA>
+            <PanelB>@Right</PanelB>
+        </SplitPanel>
+    </div>
+</div>

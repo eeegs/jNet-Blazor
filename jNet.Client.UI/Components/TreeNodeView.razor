@@ -1,0 +1,13 @@
+﻿
+@namespace jNet.Client.UI
+
+<fluent-tree-item  @onclick="@Node.OnSelected" @onclick:stopPropagation>
+
+
+    @Node.Text
+    @foreach (var child in Node.Children)
+    {
+<TreeNodeView Node="@child"></TreeNodeView>}
+
+
+</fluent-tree-item>

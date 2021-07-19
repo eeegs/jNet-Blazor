@@ -9594,6 +9594,39 @@
         }
       },
       {
+        "HashCode": -1690133183,
+        "Kind": "Components.Component",
+        "Name": "jNet.Client.UI.Components.Tree",
+        "AssemblyName": "jNet.Client.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Tree"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "jNet.Client.UI.Components.Tree"
+        }
+      },
+      {
+        "HashCode": 1755435781,
+        "Kind": "Components.Component",
+        "Name": "jNet.Client.UI.Components.Tree",
+        "AssemblyName": "jNet.Client.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "jNet.Client.UI.Components.Tree"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "jNet.Client.UI.Components.Tree",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -347401212,
         "Kind": "Components.Component",
         "Name": "jNet.Client.UI.General.AsyncWarpper<T>",

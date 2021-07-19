@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "HA3wJwZc3ydxKlxf1J5Sd1KVUBOAmZ3hWm9Nlb6638wCShKrxrlgDtLc9bndMtKUKzUHHt6HLama1rYs/XyQLQ==",
+  "dgSpecHash": "I3FUkoA2zSpcBk9dJ5JQVKwSpdMdrjhbSpqgaxIQB+ppDJVCG+NoAmNn1rddud989J0xE2m/vVdImlrWCBxhXA==",
   "success": true,
   "projectFilePath": "C:\\Users\\PeterGiles\\source\\github\\jNet-Blazor\\jNet.NET.API\\jNet.NET.API.csproj",
   "expectedPackageFiles": [
@@ -10,7 +10,7 @@
     "C:\\Users\\PeterGiles\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\5.0.8\\microsoft.aspnetcore.components.forms.5.0.8.nupkg.sha512",
     "C:\\Users\\PeterGiles\\.nuget\\packages\\microsoft.aspnetcore.components.web\\5.0.8\\microsoft.aspnetcore.components.web.5.0.8.nupkg.sha512",
     "C:\\Users\\PeterGiles\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\5.0.8\\microsoft.aspnetcore.components.webassembly.5.0.8.nupkg.sha512",
-    "C:\\Users\\PeterGiles\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.server\\5.0.7\\microsoft.aspnetcore.components.webassembly.server.5.0.7.nupkg.sha512",
+    "C:\\Users\\PeterGiles\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.server\\5.0.8\\microsoft.aspnetcore.components.webassembly.server.5.0.8.nupkg.sha512",
     "C:\\Users\\PeterGiles\\.nuget\\packages\\microsoft.aspnetcore.metadata\\5.0.8\\microsoft.aspnetcore.metadata.5.0.8.nupkg.sha512",
     "C:\\Users\\PeterGiles\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.2\\microsoft.codeanalysis.analyzers.3.3.2.nupkg.sha512",
     "C:\\Users\\PeterGiles\\.nuget\\packages\\microsoft.codeanalysis.common\\3.10.0\\microsoft.codeanalysis.common.3.10.0.nupkg.sha512",
@@ -32,7 +32,6 @@
     "C:\\Users\\PeterGiles\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\PeterGiles\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
     "C:\\Users\\PeterGiles\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
-    "C:\\Users\\PeterGiles\\.nuget\\packages\\microsoft.fast.components.fluentui\\0.2.0\\microsoft.fast.components.fluentui.0.2.0.nupkg.sha512",
     "C:\\Users\\PeterGiles\\.nuget\\packages\\microsoft.jsinterop\\5.0.8\\microsoft.jsinterop.5.0.8.nupkg.sha512",
     "C:\\Users\\PeterGiles\\.nuget\\packages\\microsoft.jsinterop.webassembly\\5.0.8\\microsoft.jsinterop.webassembly.5.0.8.nupkg.sha512",
     "C:\\Users\\PeterGiles\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",

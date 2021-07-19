@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zl0+a3f1wIIYfuGN2t0UJwmPMeWOp00mhgQhbEu1TC+vgVy2a0si3iS6NQoYpEihfIa6wwiglHfJ3kuuBTKUFA==",
+  "dgSpecHash": "QOrJItHuMVUNb7gGA2Sa4NLUHGsHdqj3b4l4GUQWSSZS+gPO8Hpm3yqgHT2cC5aofqUcZ2bwFt9mU+5W4MYl5A==",
   "success": true,
   "projectFilePath": "C:\\Users\\PeterGiles\\source\\github\\jNet-Blazor\\jNet.WaterNET.Workstation\\jNet.WaterNET.Workstation.csproj",
   "expectedPackageFiles": [
@@ -32,7 +32,6 @@
     "C:\\Users\\PeterGiles\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\PeterGiles\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
     "C:\\Users\\PeterGiles\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
-    "C:\\Users\\PeterGiles\\.nuget\\packages\\microsoft.fast.components.fluentui\\0.2.0\\microsoft.fast.components.fluentui.0.2.0.nupkg.sha512",
     "C:\\Users\\PeterGiles\\.nuget\\packages\\microsoft.jsinterop\\5.0.8\\microsoft.jsinterop.5.0.8.nupkg.sha512",
     "C:\\Users\\PeterGiles\\.nuget\\packages\\microsoft.jsinterop.webassembly\\5.0.8\\microsoft.jsinterop.webassembly.5.0.8.nupkg.sha512",
     "C:\\Users\\PeterGiles\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",

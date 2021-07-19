@@ -21,7 +21,7 @@
     [Parameter] public bool ShowThumb { get; set; } = true;
     [Parameter] public double Position { get; set; } = 50;
     [Parameter] public int SplitWidth { get; set; } = 5;
-    [Parameter] public Color SplitColor { get; set; } = Color.Transparent;
+    [Parameter] public System.Drawing.Color SplitColor { get; set; } = System.Drawing.Color.Transparent;
     //[Parameter] public EventCallback<double> SplitChanged { get; set; }
     [Parameter] public DragManager? DragManager { get; set; }
     string SplitColorHex => $"#{SplitColor.R:x2}{SplitColor.G:x2}{SplitColor.B:x2}{SplitColor.A:x2}";

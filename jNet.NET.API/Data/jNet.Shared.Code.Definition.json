@@ -1,0 +1,47 @@
+[
+  {
+    "Key": "3c7e3b3a-1b6f-4fc6-8e46-22fe1ba42dd3",
+    "DefinitionFields": [
+      {
+        "Name": "Brand",
+        "Type": 0,
+        "Required": true
+      }
+    ],
+    "InstanceFields": [
+      {
+        "Name": "Serial#",
+        "Type": 0,
+        "Required": true
+      }
+    ],
+    "Ports": [],
+    "ParentKey": null,
+    "Name": "Pump"
+  },
+  {
+    "Key": "efc16359-eaf8-4e38-924c-ea4b9f6f59a4",
+    "DefinitionFields": [
+      {
+        "Name": "Model number",
+        "Type": 0,
+        "Required": false
+      },
+      {
+        "Name": "Model name",
+        "Type": 0,
+        "Required": true
+      }
+    ],
+    "InstanceFields": [
+      {
+        "Name": "Age",
+        "Type": 1,
+        "Required": false
+      }
+    ],
+    "Ports": [],
+    "ParentKey": "3c7e3b3a-1b6f-4fc6-8e46-22fe1ba42dd3",
+    "Name": "Davie"
+  }
+]

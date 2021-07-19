@@ -1,4 +1,5 @@
 ﻿@using jNet.Client.UI.Splitters
+@namespace jNet.Client.UI
 
 <h3>@Heading</h3>
 <div style="position:relative">
@@ -14,13 +15,12 @@
                     val = res.ToString();
                 }
 
-                <tr>
-                    <td class="labels" style="font-weight:@(f2.Required?"bold":"normal");width:@(LabelWidth+2)px">@f2.Name</td>
-                    <td class="values">
-                        <input type="text" value="@res" @onchange="@((c)=>OnChange(f2.Name,c))" />
-                    </td>
-                </tr>
-            }
+<tr>
+    <td class="labels" style="font-weight:@(f2.Required?"bold":"normal");width:@(LabelWidth+2)px">@f2.Name</td>
+    <td class="values">
+        <input type="text" value="@res" @onchange="@((c)=>OnChange(f2.Name,c))" />
+    </td>
+</tr>}
         </table>
     </Splitter>
 </div>

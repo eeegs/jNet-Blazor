@@ -1,0 +1,14 @@
+﻿div.layout {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+div.tool {
+    height: 40px;
+}
+
+div.main {
+    flex-basis: 1;
+    height:100%;
+}
