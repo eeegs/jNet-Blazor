@@ -204,7 +204,7 @@
       "jNet.Client.UI.dll": "sha256-OsgX8pj803KLStiSxhDTKfJQEmxvD9l5\/4LJthhUF00=",
       "jNet.Shared.Code.dll": "sha256-ojQtQrhQkaD0Z9z3B0UHANmJLc8naqBioMdufjQGrgY=",
       "jNet.Workstation.UI.dll": "sha256-H\/aUzDfB8UdXhBYZAeeABRd9v7BJGsmBrv\/ogT4M1mM=",
-      "jNet.WaterNET.Workstation.dll": "sha256-XLZHZqY5mwxPnDDkabP3+TF8MMkKR0jIUItIthb7ILE="
+      "jNet.WaterNET.Workstation.dll": "sha256-Hzoiv+2fxx8PSNmqoB1xyvCNTKCGD1yOt7+AJEqFu0A="
     },
     "lazyAssembly": null,
     "pdb": {
@@ -212,7 +212,7 @@
       "jNet.Client.UI.pdb": "sha256-N8duTPLSoOwWxgh\/30lJcvtJa44t1c1DtTMpKL5iU\/8=",
       "jNet.Shared.Code.pdb": "sha256-5dxrCbUoejCBu\/2nE+Vy0PmXthJJoedSNVAP1P8DPwk=",
       "jNet.Workstation.UI.pdb": "sha256-Y5Wd7NRF18CiDPTFCblc2oAx\/AwjXmzo1RMU8OmCszM=",
-      "jNet.WaterNET.Workstation.pdb": "sha256-M9nPRdfYJE5rewP64AXhwLN4T19Lw5Q2x5NAvOnVqU4="
+      "jNet.WaterNET.Workstation.pdb": "sha256-SmMh2F1BhM87E2v2unPJ5HYb0Jb07exnEwS6KAOu0Kg="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-2OdnPsDgJyoSaSlvebGMRd2MxC+4UIqparqVrQZAFDE=",

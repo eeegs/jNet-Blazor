@@ -9,11 +9,30 @@
         "IsClosed": false
       },
       "Main": {
-        "SplitPosition": 524,
+        "SplitPosition": 942,
         "IsClosed": false
       },
       "Left": {
-        "SplitPosition": 299,
+        "SplitPosition": 262,
+        "IsClosed": false
+      }
+    }
+  },
+  {
+    "Key": "ab364e40-21ab-4867-a162-401ec001341c",
+    "UserName": "",
+    "Name": "Stuff",
+    "Variables": {
+      "A": {
+        "SplitPosition": 528,
+        "IsClosed": false
+      },
+      "B": {
+        "SplitPosition": 209,
+        "IsClosed": false
+      },
+      "Right": {
+        "SplitPosition": 130,
         "IsClosed": false
       }
     }

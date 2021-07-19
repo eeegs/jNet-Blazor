@@ -9,11 +9,19 @@
         "IsClosed": false
       },
       "Main": {
-        "SplitPosition": 1043,
+        "SplitPosition": 524,
         "IsClosed": false
       },
       "Left": {
         "SplitPosition": 299,
+        "IsClosed": false
+      },
+      "A": {
+        "SplitPosition": 466,
+        "IsClosed": false
+      },
+      "B": {
+        "SplitPosition": 167,
         "IsClosed": false
       }
     }

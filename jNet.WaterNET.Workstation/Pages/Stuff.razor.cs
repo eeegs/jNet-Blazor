@@ -3,6 +3,7 @@ using jNet.Shared.Code;
 using Microsoft.AspNetCore.Components;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace jNet.WaterNET.Workstation.Pages
@@ -10,7 +11,7 @@ namespace jNet.WaterNET.Workstation.Pages
 
 	public partial class Stuff
 	{
-		[Inject] Store? store { get; set; }
+		[Inject] Store? Store { get; set; }
 
 		Task<Instance?> Instance = Task.FromResult<Instance?>(default);
 
@@ -20,15 +21,15 @@ namespace jNet.WaterNET.Workstation.Pages
 
 		double[] Splits = { 50, 100, 200 };
 
-		private Setting settings = new();
+		private Setting settings = new() {Name= nameof(Stuff) } ;
 
 		protected async override Task OnParametersSetAsync()
 		{
-			if (store is not null)
+			if (Store is not null)
 			{
 				//makedata(store);
-				Instance = store.Get<Instance>(1);
-				settings = await store.Get<Setting>(new Guid("fc47348b-5403-4e8f-94de-6674138b6354")) ?? settings;
+				settings = (await Store.Get<Setting>(q => q.Name == nameof(Stuff))).FirstOrDefault() ?? settings;
+				Store.Set(settings);
 			}
 			await base.OnParametersSetAsync();
 		}
@@ -70,9 +71,9 @@ namespace jNet.WaterNET.Workstation.Pages
 
 		Task Save()
 		{
-			if (store is not null)
+			if (Store is not null)
 			{
-				return store.Save();
+				return Store.Save();
 			}
 			return Task.CompletedTask;
 		}

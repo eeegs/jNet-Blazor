@@ -11,12 +11,12 @@ namespace jNet.WaterNET.Workstation.Pages
 	{
 		[Inject] Store? Store { get; set; }
 
-		Setting settings = new() { Name = "Index" };
+		Setting settings = new() { Name = nameof(Index) };
 		protected async override Task OnInitializedAsync()
 		{
 			if (Store is not null)
 			{
-				settings = await Store.Get<Setting>(new Guid("6fe02466-bf8a-4cb8-be77-5a3cc1da564f")) ?? settings;
+				settings = (await Store.Get<Setting>(q=>q.Name== nameof(Index))).FirstOrDefault() ?? settings;
 				Store.Set(settings);
 			}
 			await base.OnInitializedAsync();
