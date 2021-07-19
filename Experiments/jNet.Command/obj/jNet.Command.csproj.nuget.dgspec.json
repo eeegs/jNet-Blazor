@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Command\\jNet.Command.csproj": {}
+    "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Command\\jNet.Command.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Command\\jNet.Command.csproj": {
+    "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Command\\jNet.Command.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Command\\jNet.Command.csproj",
+        "projectUniqueName": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Command\\jNet.Command.csproj",
         "projectName": "jNet.Command",
-        "projectPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Command\\jNet.Command.csproj",
+        "projectPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Command\\jNet.Command.csproj",
         "packagesPath": "C:\\Users\\sscot\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Command\\obj\\",
+        "outputPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Command\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -33,8 +33,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Data\\jNet.Data.csproj": {
-                "projectPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Data\\jNet.Data.csproj"
+              "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Data\\jNet.Data.csproj": {
+                "projectPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Data\\jNet.Data.csproj"
               }
             }
           }
@@ -83,14 +83,14 @@
         }
       }
     },
-    "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Data\\jNet.Data.csproj": {
+    "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Data\\jNet.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Data\\jNet.Data.csproj",
+        "projectUniqueName": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Data\\jNet.Data.csproj",
         "projectName": "jNet.Data",
-        "projectPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Data\\jNet.Data.csproj",
+        "projectPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Data\\jNet.Data.csproj",
         "packagesPath": "C:\\Users\\sscot\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Data\\obj\\",
+        "outputPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

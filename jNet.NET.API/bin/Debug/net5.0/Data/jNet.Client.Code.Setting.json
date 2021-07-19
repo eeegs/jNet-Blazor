@@ -5,15 +5,15 @@
     "Name": "Index",
     "Variables": {
       "Right": {
-        "SplitPosition": 912,
+        "SplitPosition": 894,
         "IsClosed": false
       },
       "Main": {
-        "SplitPosition": 992,
+        "SplitPosition": 1043,
         "IsClosed": false
       },
       "Left": {
-        "SplitPosition": 280,
+        "SplitPosition": 299,
         "IsClosed": false
       }
     }

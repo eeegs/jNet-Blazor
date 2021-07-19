@@ -12,28 +12,28 @@ namespace jNet.Blazor.Parts
     using System.Linq;
     using System.Threading.Tasks;
 #nullable restore
-#line 1 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\_Imports.razor"
+#line 1 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\Experiments\jNet.Blazor\Parts\_Imports.razor"
 using Microsoft.AspNetCore.Components;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\_Imports.razor"
+#line 2 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\Experiments\jNet.Blazor\Parts\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\_Imports.razor"
+#line 3 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\Experiments\jNet.Blazor\Parts\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\Form\FieldTextArea.razor"
+#line 2 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\Experiments\jNet.Blazor\Parts\Form\FieldTextArea.razor"
 using System.Diagnostics.CodeAnalysis;
 
 #line default
@@ -47,7 +47,7 @@ using System.Diagnostics.CodeAnalysis;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 7 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\Form\FieldTextArea.razor"
+#line 7 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\Experiments\jNet.Blazor\Parts\Form\FieldTextArea.razor"
        
     // placeholder="@Placeholder" title="@Title" readonly="@ReadOnly" required="@Required" disabled="@IsAKey"
 

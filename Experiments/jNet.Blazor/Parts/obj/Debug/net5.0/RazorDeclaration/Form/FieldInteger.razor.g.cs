@@ -12,35 +12,35 @@ namespace jNet.Blazor.Parts
     using System.Linq;
     using System.Threading.Tasks;
 #nullable restore
-#line 1 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\_Imports.razor"
+#line 1 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\Experiments\jNet.Blazor\Parts\_Imports.razor"
 using Microsoft.AspNetCore.Components;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\_Imports.razor"
+#line 2 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\Experiments\jNet.Blazor\Parts\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\_Imports.razor"
+#line 3 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\Experiments\jNet.Blazor\Parts\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\Form\FieldInteger.razor"
+#line 2 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\Experiments\jNet.Blazor\Parts\Form\FieldInteger.razor"
 using System.Globalization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\Form\FieldInteger.razor"
+#line 3 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\Experiments\jNet.Blazor\Parts\Form\FieldInteger.razor"
 using System.Diagnostics.CodeAnalysis;
 
 #line default
@@ -54,7 +54,7 @@ using System.Diagnostics.CodeAnalysis;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 8 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\Form\FieldInteger.razor"
+#line 8 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\Experiments\jNet.Blazor\Parts\Form\FieldInteger.razor"
        
     [Parameter] public string ParsingErrorMessage { get; set; } = "The {0} field must be a number.";
     [Parameter] public IntergerType Type { get; set; } = IntergerType.Number;

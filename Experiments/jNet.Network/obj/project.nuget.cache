@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0ELXVaFsWeOxQFNsWLG5oqtz0oCkMo0zd68suhw6U630IkxFnCujZu9mPajqVLJ63xghmgA0epEB5nIa8T6PSQ==",
+  "dgSpecHash": "3/5ywGj3WCa9RI2ZonNLQnHNlW41v/xzufNAn05KQwU8TuycAEl4ukbK0rw5RFEN44EDaVIwwHkrqT8c2v/09A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Network\\jNet.Network.csproj",
+  "projectFilePath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Network\\jNet.Network.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sscot\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],

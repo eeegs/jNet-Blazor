@@ -353,24 +353,6 @@
           "lib/net5.0/Microsoft.JSInterop.WebAssembly.dll": {}
         }
       },
-      "Microsoft.NETCore.Platforms/1.1.1": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard1.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard1.0/_._": {}
-        }
-      },
-      "Microsoft.NETCore.Targets/1.1.3": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard1.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard1.0/_._": {}
-        }
-      },
       "System.IO.Pipelines/5.0.1": {
         "type": "package",
         "compile": {
@@ -387,45 +369,6 @@
         },
         "runtime": {
           "lib/net5.0/System.Net.Http.Json.dll": {}
-        }
-      },
-      "System.Runtime/4.3.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.1",
-          "Microsoft.NETCore.Targets": "1.1.3"
-        },
-        "compile": {
-          "ref/netstandard1.5/System.Runtime.dll": {}
-        }
-      },
-      "jNet.Autoform/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "5.0.5",
-          "jNet.CRUD": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/jNet.Autoform.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/jNet.Autoform.dll": {}
-        }
-      },
-      "jNet.Blazor.Parts/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "5.0.5",
-          "System.Runtime": "4.3.1",
-          "jNet.CRUD": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/jNet.Blazor.Parts.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/jNet.Blazor.Parts.dll": {}
         }
       },
       "jNet.Blazor.Shared/1.0.0": {
@@ -805,36 +748,6 @@
           "lib/net5.0/Microsoft.JSInterop.WebAssembly.dll": {}
         }
       },
-      "Microsoft.NETCore.Platforms/1.1.1": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard1.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard1.0/_._": {}
-        }
-      },
-      "Microsoft.NETCore.Targets/1.1.3": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard1.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard1.0/_._": {}
-        }
-      },
-      "runtime.any.System.Runtime/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Private.Uri": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard1.5/System.Runtime.dll": {}
-        }
-      },
       "System.IO.Pipelines/5.0.1": {
         "type": "package",
         "compile": {
@@ -851,56 +764,6 @@
         },
         "runtime": {
           "lib/net5.0/System.Net.Http.Json.dll": {}
-        }
-      },
-      "System.Private.Uri/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.1.0"
-        },
-        "compile": {
-          "ref/netstandard/_._": {}
-        }
-      },
-      "System.Runtime/4.3.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.1",
-          "Microsoft.NETCore.Targets": "1.1.3",
-          "runtime.any.System.Runtime": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.5/System.Runtime.dll": {}
-        }
-      },
-      "jNet.Autoform/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "5.0.5",
-          "jNet.CRUD": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/jNet.Autoform.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/jNet.Autoform.dll": {}
-        }
-      },
-      "jNet.Blazor.Parts/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "5.0.5",
-          "System.Runtime": "4.3.1",
-          "jNet.CRUD": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/jNet.Blazor.Parts.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/jNet.Blazor.Parts.dll": {}
         }
       },
       "jNet.Blazor.Shared/1.0.0": {
@@ -1478,63 +1341,6 @@
         "microsoft.jsinterop.webassembly.nuspec"
       ]
     },
-    "Microsoft.NETCore.Platforms/1.1.1": {
-      "sha512": "TMBuzAHpTenGbGgk0SMTwyEkyijY/Eae4ZGsFNYJvAr/LDn1ku3Etp3FPxChmDp5HHF3kzJuoaa08N0xjqAJfQ==",
-      "type": "package",
-      "path": "microsoft.netcore.platforms/1.1.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/netstandard1.0/_._",
-        "microsoft.netcore.platforms.1.1.1.nupkg.sha512",
-        "microsoft.netcore.platforms.nuspec",
-        "runtime.json"
-      ]
-    },
-    "Microsoft.NETCore.Targets/1.1.3": {
-      "sha512": "3Wrmi0kJDzClwAC+iBdUBpEKmEle8FQNsCs77fkiOIw/9oYA07bL1EZNX0kQ2OMN3xpwvl0vAtOCYY3ndDNlhQ==",
-      "type": "package",
-      "path": "microsoft.netcore.targets/1.1.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/netstandard1.0/_._",
-        "microsoft.netcore.targets.1.1.3.nupkg.sha512",
-        "microsoft.netcore.targets.nuspec",
-        "runtime.json"
-      ]
-    },
-    "runtime.any.System.Runtime/4.3.0": {
-      "sha512": "fRS7zJgaG9NkifaAxGGclDDoRn9HC7hXACl52Or06a/fxdzDajWb5wov3c6a+gVSlekRoexfjwQSK9sh5um5LQ==",
-      "type": "package",
-      "path": "runtime.any.system.runtime/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/netcore50/System.Runtime.dll",
-        "lib/netstandard1.5/System.Runtime.dll",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/netstandard/_._",
-        "runtime.any.system.runtime.4.3.0.nupkg.sha512",
-        "runtime.any.system.runtime.nuspec",
-        "runtimes/aot/lib/netcore50/_._"
-      ]
-    },
     "System.IO.Pipelines/5.0.1": {
       "sha512": "qEePWsaq9LoEEIqhbGe6D5J8c9IqQOUuTzzV6wn1POlfdLkJliZY3OlB0j0f17uMWlqZYjH7txj+2YbyrIA8Yg==",
       "type": "package",
@@ -1583,122 +1389,6 @@
         "version.txt"
       ]
     },
-    "System.Private.Uri/4.3.0": {
-      "sha512": "I4SwANiUGho1esj4V4oSlPllXjzCZDE+5XXso2P03LW2vOda2Enzh8DWOxwN6hnrJyp314c7KuVu31QYhRzOGg==",
-      "type": "package",
-      "path": "system.private.uri/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "ref/netstandard/_._",
-        "system.private.uri.4.3.0.nupkg.sha512",
-        "system.private.uri.nuspec"
-      ]
-    },
-    "System.Runtime/4.3.1": {
-      "sha512": "abhfv1dTK6NXOmu4bgHIONxHyEqFjW8HwXPmpY9gmll+ix9UNo4XDcmzJn6oLooftxNssVHdJC1pGT9jkSynQg==",
-      "type": "package",
-      "path": "system.runtime/4.3.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/net462/System.Runtime.dll",
-        "lib/portable-net45+win8+wp80+wpa81/_._",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/net462/System.Runtime.dll",
-        "ref/netcore50/System.Runtime.dll",
-        "ref/netcore50/System.Runtime.xml",
-        "ref/netcore50/de/System.Runtime.xml",
-        "ref/netcore50/es/System.Runtime.xml",
-        "ref/netcore50/fr/System.Runtime.xml",
-        "ref/netcore50/it/System.Runtime.xml",
-        "ref/netcore50/ja/System.Runtime.xml",
-        "ref/netcore50/ko/System.Runtime.xml",
-        "ref/netcore50/ru/System.Runtime.xml",
-        "ref/netcore50/zh-hans/System.Runtime.xml",
-        "ref/netcore50/zh-hant/System.Runtime.xml",
-        "ref/netstandard1.0/System.Runtime.dll",
-        "ref/netstandard1.0/System.Runtime.xml",
-        "ref/netstandard1.0/de/System.Runtime.xml",
-        "ref/netstandard1.0/es/System.Runtime.xml",
-        "ref/netstandard1.0/fr/System.Runtime.xml",
-        "ref/netstandard1.0/it/System.Runtime.xml",
-        "ref/netstandard1.0/ja/System.Runtime.xml",
-        "ref/netstandard1.0/ko/System.Runtime.xml",
-        "ref/netstandard1.0/ru/System.Runtime.xml",
-        "ref/netstandard1.0/zh-hans/System.Runtime.xml",
-        "ref/netstandard1.0/zh-hant/System.Runtime.xml",
-        "ref/netstandard1.2/System.Runtime.dll",
-        "ref/netstandard1.2/System.Runtime.xml",
-        "ref/netstandard1.2/de/System.Runtime.xml",
-        "ref/netstandard1.2/es/System.Runtime.xml",
-        "ref/netstandard1.2/fr/System.Runtime.xml",
-        "ref/netstandard1.2/it/System.Runtime.xml",
-        "ref/netstandard1.2/ja/System.Runtime.xml",
-        "ref/netstandard1.2/ko/System.Runtime.xml",
-        "ref/netstandard1.2/ru/System.Runtime.xml",
-        "ref/netstandard1.2/zh-hans/System.Runtime.xml",
-        "ref/netstandard1.2/zh-hant/System.Runtime.xml",
-        "ref/netstandard1.3/System.Runtime.dll",
-        "ref/netstandard1.3/System.Runtime.xml",
-        "ref/netstandard1.3/de/System.Runtime.xml",
-        "ref/netstandard1.3/es/System.Runtime.xml",
-        "ref/netstandard1.3/fr/System.Runtime.xml",
-        "ref/netstandard1.3/it/System.Runtime.xml",
-        "ref/netstandard1.3/ja/System.Runtime.xml",
-        "ref/netstandard1.3/ko/System.Runtime.xml",
-        "ref/netstandard1.3/ru/System.Runtime.xml",
-        "ref/netstandard1.3/zh-hans/System.Runtime.xml",
-        "ref/netstandard1.3/zh-hant/System.Runtime.xml",
-        "ref/netstandard1.5/System.Runtime.dll",
-        "ref/netstandard1.5/System.Runtime.xml",
-        "ref/netstandard1.5/de/System.Runtime.xml",
-        "ref/netstandard1.5/es/System.Runtime.xml",
-        "ref/netstandard1.5/fr/System.Runtime.xml",
-        "ref/netstandard1.5/it/System.Runtime.xml",
-        "ref/netstandard1.5/ja/System.Runtime.xml",
-        "ref/netstandard1.5/ko/System.Runtime.xml",
-        "ref/netstandard1.5/ru/System.Runtime.xml",
-        "ref/netstandard1.5/zh-hans/System.Runtime.xml",
-        "ref/netstandard1.5/zh-hant/System.Runtime.xml",
-        "ref/portable-net45+win8+wp80+wpa81/_._",
-        "ref/win8/_._",
-        "ref/wp80/_._",
-        "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.runtime.4.3.1.nupkg.sha512",
-        "system.runtime.nuspec"
-      ]
-    },
-    "jNet.Autoform/1.0.0": {
-      "type": "project",
-      "path": "../../jNet.Autoform/jNet.Autoform.csproj",
-      "msbuildProject": "../../jNet.Autoform/jNet.Autoform.csproj"
-    },
-    "jNet.Blazor.Parts/1.0.0": {
-      "type": "project",
-      "path": "../../jNet.Blazor.Parts/jNet.Blazor.Parts.csproj",
-      "msbuildProject": "../../jNet.Blazor.Parts/jNet.Blazor.Parts.csproj"
-    },
     "jNet.Blazor.Shared/1.0.0": {
       "type": "project",
       "path": "../Shared/jNet.Blazor.Shared.csproj",
@@ -1712,13 +1402,13 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Autoform\\jNet.Autoform.csproj",
+      "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Blazor.Parts\\jNet.Blazor.Parts.csproj",
       "Microsoft.AspNetCore.Components.WebAssembly >= 5.0.5",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 5.0.5",
       "Microsoft.Authentication.WebAssembly.Msal >= 5.0.5",
       "Microsoft.Extensions.Http >= 5.0.0",
       "System.Net.Http.Json >= 5.0.0",
-      "jNet.Autoform >= 1.0.0",
-      "jNet.Blazor.Parts >= 1.0.0",
       "jNet.Blazor.Shared >= 1.0.0",
       "jNet.CRUD >= 1.0.0"
     ]
@@ -1731,11 +1421,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Blazor\\Client\\jNet.Blazor.Client.csproj",
+      "projectUniqueName": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Blazor\\Client\\jNet.Blazor.Client.csproj",
       "projectName": "jNet.Blazor.Client",
-      "projectPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Blazor\\Client\\jNet.Blazor.Client.csproj",
+      "projectPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Blazor\\Client\\jNet.Blazor.Client.csproj",
       "packagesPath": "C:\\Users\\sscot\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Blazor\\Client\\obj\\",
+      "outputPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Blazor\\Client\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -1757,17 +1447,17 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Autoform\\jNet.Autoform.csproj": {
-              "projectPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Autoform\\jNet.Autoform.csproj"
+            "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Autoform\\jNet.Autoform.csproj": {
+              "projectPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Autoform\\jNet.Autoform.csproj"
             },
-            "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Blazor.Parts\\jNet.Blazor.Parts.csproj": {
-              "projectPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Blazor.Parts\\jNet.Blazor.Parts.csproj"
+            "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Blazor.Parts\\jNet.Blazor.Parts.csproj": {
+              "projectPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Blazor.Parts\\jNet.Blazor.Parts.csproj"
             },
-            "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Blazor\\Shared\\jNet.Blazor.Shared.csproj": {
-              "projectPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Blazor\\Shared\\jNet.Blazor.Shared.csproj"
+            "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Blazor\\Shared\\jNet.Blazor.Shared.csproj": {
+              "projectPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Blazor\\Shared\\jNet.Blazor.Shared.csproj"
             },
-            "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.CRUD\\jNet.CRUD.csproj": {
-              "projectPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.CRUD\\jNet.CRUD.csproj"
+            "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.CRUD\\jNet.CRUD.csproj": {
+              "projectPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.CRUD\\jNet.CRUD.csproj"
             }
           }
         }
@@ -1833,5 +1523,27 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Blazor.Parts\\jNet.Blazor.Parts.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Blazor.Parts\\jNet.Blazor.Parts.csproj",
+      "targetGraphs": [
+        "net5.0",
+        "net5.0/browser-wasm"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Autoform\\jNet.Autoform.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Autoform\\jNet.Autoform.csproj",
+      "targetGraphs": [
+        "net5.0",
+        "net5.0/browser-wasm"
+      ]
+    }
+  ]
 }

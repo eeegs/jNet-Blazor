@@ -208,10 +208,6 @@
     },
     "lazyAssembly": null,
     "pdb": {
-      "jNet.Client.Code.pdb": "sha256-+yIaxiXcJFZ+Qo28AqNdhuJuu\/9x6f3Dh2Mh6th2Tvs=",
-      "jNet.Client.UI.pdb": "sha256-N8duTPLSoOwWxgh\/30lJcvtJa44t1c1DtTMpKL5iU\/8=",
-      "jNet.Shared.Code.pdb": "sha256-5dxrCbUoejCBu\/2nE+Vy0PmXthJJoedSNVAP1P8DPwk=",
-      "jNet.Workstation.UI.pdb": "sha256-Y5Wd7NRF18CiDPTFCblc2oAx\/AwjXmzo1RMU8OmCszM=",
       "jNet.WaterNET.Workstation.pdb": "sha256-M9nPRdfYJE5rewP64AXhwLN4T19Lw5Q2x5NAvOnVqU4="
     },
     "runtime": {

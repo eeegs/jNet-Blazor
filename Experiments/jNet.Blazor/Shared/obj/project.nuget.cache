@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i0dTWIzS6Yzx5TeNaXPPrfqDg0EAORS8HN1E47H7r8knUvH2H6fG+/iyZiiQ0M8hq/AwQRLtZpYRY2LM/KNlfQ==",
+  "dgSpecHash": "+Tcn5+eKCFRSkiixT3npHjkz7OXCWIU63bPbxxja8QodGUL6cfFX9QGva7B7x6eUX4Fadmu3dlpsI1ucEsHT8w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Blazor\\Shared\\jNet.Blazor.Shared.csproj",
+  "projectFilePath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Blazor\\Shared\\jNet.Blazor.Shared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sscot\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.5\\microsoft.aspnetcore.authorization.5.0.5.nupkg.sha512",
     "C:\\Users\\sscot\\.nuget\\packages\\microsoft.aspnetcore.components\\5.0.5\\microsoft.aspnetcore.components.5.0.5.nupkg.sha512",

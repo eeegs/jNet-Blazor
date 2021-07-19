@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "piKFeX1MzSmqlgQLKFxvNxWqUOhK2K9gJhf5Ivsk0XstSg4qV35xxUpP+2kHTvBiK0cUaLfInUOPnmxEr593uw==",
+  "dgSpecHash": "MjFAUHsQWdh047E1a6KiL/TCXQ9BfYCXwGeHYaKhR7Tumx8mmSUEHV5GJrF/Hr0P18i7kZx8msrydUJsgnJsug==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Roslyn\\jNet.Roslyn.csproj",
+  "projectFilePath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Roslyn\\jNet.Roslyn.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sscot\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.2\\microsoft.codeanalysis.analyzers.3.3.2.nupkg.sha512",
     "C:\\Users\\sscot\\.nuget\\packages\\microsoft.codeanalysis.common\\3.10.0\\microsoft.codeanalysis.common.3.10.0.nupkg.sha512",

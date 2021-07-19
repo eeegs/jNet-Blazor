@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "15q8ScAmwOxWdvMrCC5oNyE1zPwGkPSq0oPzznjH0gbhOG2RYPXCzL+KGMr31wjRAoFBGmguLJgXgEfOJSllTg==",
+  "dgSpecHash": "3+cySH0llY+q1TIwqUV3GG5ivsL92Kc275o/8kt1S5MtcnpbryJpUAoq5TShxrKsRFtfvuHVTWeYLTT+aUWtBw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Command\\jNet.Command.csproj",
+  "projectFilePath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Command\\jNet.Command.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sscot\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\sscot\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2H7hf7WghgIxCyAf8TnQp53JhDpsC++e4mhFoLNf5wqeQ9zNhn+Yi0J6VMVaDxRUcVN+7UIOZsQSlrukczvlbQ==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Blazor\\Server\\jNet.Blazor.Server.csproj",
+  "dgSpecHash": "QAHubXYJBuFMFiAam2/bbtJ0FrMfz2P00m/aLsX8v2qPNXbUd9xkIurGqb9etik/9HM/G5WNKBb0R2IgAOjkwg==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Blazor\\Server\\jNet.Blazor.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sscot\\.nuget\\packages\\azure.core\\1.4.1\\azure.core.1.4.1.nupkg.sha512",
     "C:\\Users\\sscot\\.nuget\\packages\\azure.identity\\1.2.3\\azure.identity.1.2.3.nupkg.sha512",
@@ -61,7 +61,6 @@
     "C:\\Users\\sscot\\.nuget\\packages\\microsoft.jsinterop\\5.0.5\\microsoft.jsinterop.5.0.5.nupkg.sha512",
     "C:\\Users\\sscot\\.nuget\\packages\\microsoft.jsinterop.webassembly\\5.0.5\\microsoft.jsinterop.webassembly.5.0.5.nupkg.sha512",
     "C:\\Users\\sscot\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
-    "C:\\Users\\sscot\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",
     "C:\\Users\\sscot\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\sscot\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
@@ -75,7 +74,6 @@
     "C:\\Users\\sscot\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\sscot\\.nuget\\packages\\system.net.http.json\\5.0.0\\system.net.http.json.5.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\sscot\\.nuget\\packages\\system.runtime\\4.3.1\\system.runtime.4.3.1.nupkg.sha512",
     "C:\\Users\\sscot\\.nuget\\packages\\system.runtime.caching\\4.7.0\\system.runtime.caching.4.7.0.nupkg.sha512",
     "C:\\Users\\sscot\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
@@ -88,5 +86,33 @@
     "C:\\Users\\sscot\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.2\\system.threading.tasks.extensions.4.5.2.nupkg.sha512",
     "C:\\Users\\sscot\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Blazor.Parts\\jNet.Blazor.Parts.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Blazor.Parts\\jNet.Blazor.Parts.csproj",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Autoform\\jNet.Autoform.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Autoform\\jNet.Autoform.csproj",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Detected package downgrade: Microsoft.EntityFrameworkCore.SqlServer from 5.0.7 to 5.0.5. Reference the package directly from the project to select a different version. \r\n jNet.Blazor.Server -> jNet.Data -> Microsoft.EntityFrameworkCore.SqlServer (>= 5.0.7) \r\n jNet.Blazor.Server -> Microsoft.EntityFrameworkCore.SqlServer (>= 5.0.5)",
+      "libraryId": "Microsoft.EntityFrameworkCore.SqlServer",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

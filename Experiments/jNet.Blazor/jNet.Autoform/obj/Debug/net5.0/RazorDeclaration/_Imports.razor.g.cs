@@ -13,21 +13,21 @@ namespace jNet.Autoform
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Autoform\_Imports.razor"
+#line 1 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\Experiments\jNet.Blazor\jNet.Autoform\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Autoform\_Imports.razor"
+#line 2 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\Experiments\jNet.Blazor\jNet.Autoform\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Autoform\_Imports.razor"
+#line 3 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\Experiments\jNet.Blazor\jNet.Autoform\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default

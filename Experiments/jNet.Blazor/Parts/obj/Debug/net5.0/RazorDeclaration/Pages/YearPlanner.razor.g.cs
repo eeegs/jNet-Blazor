@@ -11,35 +11,35 @@ namespace jNet.Blazor.Parts.Pages
     using System.Collections.Generic;
     using System.Threading.Tasks;
 #nullable restore
-#line 1 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\_Imports.razor"
+#line 1 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\Experiments\jNet.Blazor\Parts\_Imports.razor"
 using Microsoft.AspNetCore.Components;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\_Imports.razor"
+#line 2 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\Experiments\jNet.Blazor\Parts\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\_Imports.razor"
+#line 3 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\Experiments\jNet.Blazor\Parts\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 1 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\Pages\YearPlanner.razor"
+#line 1 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\Experiments\jNet.Blazor\Parts\Pages\YearPlanner.razor"
 using System.Linq;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\Pages\YearPlanner.razor"
+#line 2 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\Experiments\jNet.Blazor\Parts\Pages\YearPlanner.razor"
 using System.Globalization;
 
 #line default
@@ -53,7 +53,7 @@ using System.Globalization;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 47 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\jNet.Blazor.Parts\Pages\YearPlanner.razor"
+#line 47 "C:\Users\sscot\OneDrive\Development Files\Projects\jNet\Experiments\jNet.Blazor\Parts\Pages\YearPlanner.razor"
        
     private int year;
     private int month;

@@ -169,16 +169,6 @@
         "compile": {
           "ref/netstandard1.5/System.Runtime.dll": {}
         }
-      },
-      "jNet.CRUD/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "compile": {
-          "bin/placeholder/jNet.CRUD.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/jNet.CRUD.dll": {}
-        }
       }
     }
   },
@@ -552,18 +542,13 @@
         "system.runtime.4.3.1.nupkg.sha512",
         "system.runtime.nuspec"
       ]
-    },
-    "jNet.CRUD/1.0.0": {
-      "type": "project",
-      "path": "../jNet.CRUD/jNet.CRUD.csproj",
-      "msbuildProject": "../jNet.CRUD/jNet.CRUD.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Blazor\\jNet.CRUD\\jNet.CRUD.csproj",
       "Microsoft.AspNetCore.Components.Web >= 5.0.5",
-      "System.Runtime >= 4.3.1",
-      "jNet.CRUD >= 1.0.0"
+      "System.Runtime >= 4.3.1"
     ]
   },
   "packageFolders": {
@@ -574,11 +559,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Blazor.Parts\\jNet.Blazor.Parts.csproj",
+      "projectUniqueName": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Blazor\\Parts\\jNet.Blazor.Parts.csproj",
       "projectName": "jNet.Blazor.Parts",
-      "projectPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Blazor.Parts\\jNet.Blazor.Parts.csproj",
+      "projectPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Blazor\\Parts\\jNet.Blazor.Parts.csproj",
       "packagesPath": "C:\\Users\\sscot\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Blazor.Parts\\obj\\",
+      "outputPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Blazor\\Parts\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -600,8 +585,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.CRUD\\jNet.CRUD.csproj": {
-              "projectPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.CRUD\\jNet.CRUD.csproj"
+            "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Blazor\\jNet.CRUD\\jNet.CRUD.csproj": {
+              "projectPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Blazor\\jNet.CRUD\\jNet.CRUD.csproj"
             }
           }
         }
@@ -640,8 +625,19 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Blazor\\jNet.CRUD\\jNet.CRUD.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Blazor\\jNet.CRUD\\jNet.CRUD.csproj",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

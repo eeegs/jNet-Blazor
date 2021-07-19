@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Blazor.Parts\\jNet.Blazor.Parts.csproj": {}
+    "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Blazor\\Parts\\jNet.Blazor.Parts.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Blazor.Parts\\jNet.Blazor.Parts.csproj": {
+    "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Blazor\\Parts\\jNet.Blazor.Parts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Blazor.Parts\\jNet.Blazor.Parts.csproj",
+        "projectUniqueName": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Blazor\\Parts\\jNet.Blazor.Parts.csproj",
         "projectName": "jNet.Blazor.Parts",
-        "projectPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Blazor.Parts\\jNet.Blazor.Parts.csproj",
+        "projectPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Blazor\\Parts\\jNet.Blazor.Parts.csproj",
         "packagesPath": "C:\\Users\\sscot\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.Blazor.Parts\\obj\\",
+        "outputPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Blazor\\Parts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -33,8 +33,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.CRUD\\jNet.CRUD.csproj": {
-                "projectPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.CRUD\\jNet.CRUD.csproj"
+              "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Blazor\\jNet.CRUD\\jNet.CRUD.csproj": {
+                "projectPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\Experiments\\jNet.Blazor\\jNet.CRUD\\jNet.CRUD.csproj"
               }
             }
           }
@@ -73,66 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.CRUD\\jNet.CRUD.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.CRUD\\jNet.CRUD.csproj",
-        "projectName": "jNet.CRUD",
-        "projectPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.CRUD\\jNet.CRUD.csproj",
-        "packagesPath": "C:\\Users\\sscot\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sscot\\OneDrive\\Development Files\\Projects\\jNet\\jNet.CRUD\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\sscot\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net5.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
