@@ -1,0 +1,37 @@
+﻿@page "/map"
+@using jNet.Mapbox
+
+<div style="display:flex; flex-direction:column;height:100%">
+    <div style="flex-basis: 50%">
+        <Map Zoom="10" MapStyle="MapStyle.Outdoors" @ref="@Map">
+            <PointSource Items="@data" Convertor="@Data2PointData" TKey="string" T="Data">
+                @if (show)
+                {
+                    <Layer Items="@data" TKey="string" T="Data"
+                           @bind-Selected="@selected"
+                           Type="@LayerType.circle"
+                           Color="@System.Drawing.Color.AliceBlue"
+                           OnClicked="@boo"
+                           />
+                }
+            </PointSource>
+            <Popup Item="@selected" @ref="@Popup" AutoClose="@false" >
+                @context?.Id
+            </Popup>
+        </Map>
+        <button @onclick="@(()=> show = !show)">Toggle</button>
+    </div>
+</div>
+
+@code
+{
+    bool show = true;
+
+    Data? selected;
+
+
+    void boo(Layer<Data, string>.ClickData data)
+    {
+        Popup?.Show(data.LngLat);
+    }
+}

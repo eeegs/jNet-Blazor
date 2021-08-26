@@ -1,0 +1,28 @@
+﻿@namespace jNet.Accounts.Components
+@{
+    var alerts = AlertBarService?.Entries() ?? new List<KeyValuePair<long, (Status, string, bool)>>();
+    var count = alerts.Count;
+
+
+    //style="height: calc(var(--alert-height) * @(count))"
+    int i = 0;
+}
+
+<alertbar>
+    @foreach (var alert in alerts)
+    {
+        <alertitem style="top:@(32 * i)px"
+                   @key="@alert.Key"
+                   class="@(alert.Value.status.ToString().ToLowerInvariant()) @(alert.Value.fade?"fade":"")">
+            <span></span>
+            <alertmessage>
+                @alert.Value.msg
+            </alertmessage>
+            <span @onclick="@(()=>AlertBarService?.Remove(alert.Key))">X</span>
+        </alertitem>
+        @if (!alert.Value.fade)
+        {
+            i++;
+        }
+    }
+</alertbar>

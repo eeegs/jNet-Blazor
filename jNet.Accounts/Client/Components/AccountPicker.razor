@@ -1,0 +1,32 @@
+﻿
+@using jNet.Accounts.Shared.Model;
+
+
+<Dropdown @ref="@picker">
+    <Editor>
+        <input value="@currentText" @oninput="OnInput" />
+    </Editor>
+    <Picker>
+        @if (typing)
+        {
+            <ItemList Items="@results()" T="Account" Selected="Selected" SelectedChanged="@OnSelected">
+                <text>@context.AccountNumber @context.Name</text>
+            </ItemList>
+        }
+        else
+        {
+            <Tree Selected="@Selected" SelectedChanged="@OnSelected" T="Account"
+                  GetParent="@(AStore.ParentOf)"
+                  Items="@AStore.ChildrenOf()"
+                  GetChildren="@(AStore.ChildrenOf)"
+                  HasChildren="@(AStore.AnyChildren)">
+                <ChildContent>
+                    @context.Name
+                </ChildContent>
+                <NodeContent>
+                    <b>@context.Name</b>
+                </NodeContent>
+            </Tree>
+        }
+    </Picker>
+</Dropdown>

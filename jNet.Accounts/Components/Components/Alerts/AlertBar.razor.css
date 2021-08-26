@@ -1,0 +1,44 @@
+﻿
+alertbar {
+    display: block;
+    z-index: 20;
+}
+
+alertitem {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-content: stretch;
+    padding: 0 0.25rem;
+    height: var(--alert-height);
+    line-height: var(--alert-height);
+    text-align: center;
+    transition: opacity 1000ms;
+    transition: top 250ms;
+    opacity: .9;
+}
+
+
+    alertitem.fade {
+        opacity: 0;
+    }
+
+    alertitem > alertmessage {
+        flex-grow: 1;
+    }
+
+    alertitem.note {
+        background-color: var(--messageNote);
+    }
+
+    alertitem.warning {
+        background-color: var(--messageWarning);
+    }
+
+    alertitem.error {
+        background-color: var(--messageError);
+    }
+
+    alertitem.critical {
+        background-color: var(--messageCritical);
+    }

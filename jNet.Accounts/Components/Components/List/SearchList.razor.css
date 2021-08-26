@@ -1,0 +1,28 @@
+﻿.dropdown {
+    display: inline-block;
+    position: relative;
+    background-color: Window;
+}
+
+input {
+    border: 1px solid rgb(0 0 0 / 25%);
+    /*        box-shadow: 0 1px 2px 0 rgb(0 0 0 / 50%);*/
+    font-size: 1rem;
+    padding: 6px;
+    height: 2rem;
+}
+
+.dropcontent {
+    min-width: 5rem;
+    width: 100%;
+    top: calc(1.333333rem + 6px);
+    position: absolute;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 20;
+    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.25);
+    height: 12rem;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    padding: 1px 0;
+}

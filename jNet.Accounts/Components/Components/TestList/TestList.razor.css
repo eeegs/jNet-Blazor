@@ -1,0 +1,7 @@
+﻿
+
+li:focus
+{
+    background-color: Highlight;
+    color: HighlightText;
+}

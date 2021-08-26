@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace jNet.WaterNET.Workstation.Pages
+namespace jNet.WaterNET.Workstation
 {
 
 	public partial class Stuff
@@ -23,12 +23,13 @@ namespace jNet.WaterNET.Workstation.Pages
 
 		private Setting settings = new() {Name= nameof(Stuff) } ;
 
+
 		protected async override Task OnParametersSetAsync()
 		{
 			if (Store is not null)
 			{
 				//makedata(Store);
-				settings = (await Store.Get<Setting>(q => q.Name == nameof(Stuff))).FirstOrDefault() ?? settings;
+				settings = await Store.GetSetting<Stuff>("scott.egan@tpg.com.au");
 				Store.Set(settings);
 			}
 			await base.OnParametersSetAsync();

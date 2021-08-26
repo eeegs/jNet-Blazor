@@ -1,0 +1,29 @@
+﻿@namespace jNet.Accounts.Components
+@using Microsoft.AspNetCore.Components.Forms
+@typeparam T
+
+<div>
+    <div class="listheader">
+        <button><Icon I="I.Add" /></button>
+        <button><Icon I="I.DeleteRows" /></button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <td></td>
+                @HeaderTemplate
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Items)
+            {
+                <tr @onfocusout="@OnChange">
+                    <td>
+                        <input type="checkbox" @onchange="@(e=>CheckOnChange(e, item))" />
+                    </td>
+                    @RowTemplate(item)
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

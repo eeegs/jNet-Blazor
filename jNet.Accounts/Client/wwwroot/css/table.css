@@ -1,0 +1,28 @@
+﻿
+.datatable {
+    empty-cells: show;
+    cursor: default;
+}
+
+    .datatable > thead
+    {
+        background-color: WindowFrame;
+        color: white;
+    }
+
+    .datatable > tbody > tr.selected {
+        background-color: var(--std-selected-color);
+        color: var(--text-selected-color);
+    }
+
+    .datatable > tbody > tr:hover {
+        filter: brightness(95%);
+    }
+
+    .datatable > tbody > tr:nth-child(2n+1):not(.selected) {
+        background-color: var(--row-alt-color);
+    }
+
+    .datatable > tbody > tr:nth-child(2n):not(.selected) {
+        background-color: var(--std-back-color);
+    }

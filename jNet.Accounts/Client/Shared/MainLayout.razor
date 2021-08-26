@@ -1,0 +1,28 @@
+@inherits LayoutComponentBase
+
+<div id="uicontainer">
+    <aside>
+        <header>
+        </header>
+        <nav>
+            <NavMenu />
+        </nav>
+        <footer>
+            <NavLink href="settings">
+                <i class="fas fa-cog"></i>
+                <span>Project settings</span>
+            </NavLink>
+        </footer>
+    </aside>
+    <main>
+        <MenuBar></MenuBar>
+        <ToolBar></ToolBar>
+        <AlertBar></AlertBar>
+        <fix>
+            <workspace>
+                @Body
+            </workspace>
+        </fix>
+        <StatusBar></StatusBar>
+    </main>
+</div>

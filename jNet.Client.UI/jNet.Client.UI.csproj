@@ -18,10 +18,4 @@
     <ProjectReference Include="..\jNet.Shared.Code\jNet.Shared.Code.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Compile Update="Components\Tree - Copy.razor.cs">
-      <DependentUpon>Tree.razor.cs</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
 </Project>

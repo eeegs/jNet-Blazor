@@ -1,0 +1,24 @@
+﻿@namespace jNet.Accounts.Components
+@inherits KeyboardSpt
+@typeparam T
+
+<label accesskey="l">
+    He<u>l</u>lo:
+    <input value="A" />
+</label>
+<div @ref="@keyTarget">
+    <input tabindex="@(isOpen ? -1 : 0)" @ref="@itemRefs[-1]" value="@Selected" />
+    <Icon I="I.CaretDownSolid8" />
+    @if (isOpen)
+    {
+        <ul @onfocusout="@LostFocus">
+            @for (int i = 0; i < 5; i++)
+            {
+                var loc = i;
+                var fi = FocusIndex == i ? 0 : -1;
+                <li tabindex="@fi" @ref="@itemRefs[loc]" @onclick="@(()=>SetSelected(loc))">@('A' + loc)</li>
+            }
+        </ul>
+    }
+</div>
+<input value="C" />

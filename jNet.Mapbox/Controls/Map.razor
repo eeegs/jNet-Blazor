@@ -1,0 +1,8 @@
+﻿@namespace jNet.Mapbox
+@implements IAsyncDisposable
+
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+<div @ref="@MapDiv"></div>
+<CascadingValue Value="this">
+    @ChildContent
+</CascadingValue>

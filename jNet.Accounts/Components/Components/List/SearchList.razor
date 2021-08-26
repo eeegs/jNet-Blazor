@@ -1,0 +1,10 @@
+﻿@namespace jNet.Accounts.Components
+@typeparam T
+
+<div class="dropdown" >
+    <input @oninput="OnTyping" value="@text" @onblur="@Close"/>
+    <div class="dropcontent" style="display:@(popup?"block":"none")">
+        <ItemList Items="@results" @bind-Selected="@picked" ChildContent="@ChildContent" T="T">
+        </ItemList>
+    </div>
+</div>

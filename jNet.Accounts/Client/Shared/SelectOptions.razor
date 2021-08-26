@@ -1,0 +1,14 @@
+﻿@typeparam T
+
+@{
+    var vals = Enum.GetValues(typeof(T));
+    foreach (var e in vals)
+    {
+        <option value="@e">@e</option>
+    }
+}
+
+@code
+{
+    [Parameter] public T EnumList { get; set; } = default!;
+}

@@ -1,0 +1,42 @@
+﻿    <EditForm Model="@Account">
+        <DataAnnotationsValidator />
+        <div>
+            <label>Id</label>
+            <input value="@Account.Key.ToString()" readonly />
+        </div>
+        <div>
+            <label>Name</label>
+            <InputText @bind-Value="@Account.Name" />
+        </div>
+        <div class="c6">
+            <label>Number</label>
+            <InputText @bind-Value="@Account.AccountNumber" />
+            <ValidationMessage For="@(()=>Account.AccountNumber)" />
+        </div>
+        <div class="c6">
+            <label>Type</label>
+            <InputSelect @bind-Value="@Account.Type">
+                <SelectOptions EnumList="@Account.Type"></SelectOptions>
+            </InputSelect>
+        </div>
+        <div>
+            <label>Normal transaction type</label>
+            <InputRadioGroup @bind-Value="@Account.DefaultEntryType">
+                <RadioOptions EnumList="@Account.DefaultEntryType"></RadioOptions>
+            </InputRadioGroup>
+        </div>
+        <div>
+            <label>Normal transaction tax</label>
+            <InputSelect @bind-Value="@Account.TaxTypeKey">
+                <option value="">None</option>
+                @foreach (var t in XStore)
+                {
+                    <option value="@t.Name">@t.Name</option>
+                }
+            </InputSelect>
+        </div>
+        <div>
+            <label>Description</label>
+            <InputTextArea @bind-Value="@Account.Description" />
+        </div>
+    </EditForm>

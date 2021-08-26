@@ -1,0 +1,12 @@
+﻿@namespace jNet.Mapbox
+@typeparam T
+@implements IAsyncDisposable
+
+<div @ref="@popupRef" style="position:absolute; width:0;height:0;overflow:hidden;">
+    <div>
+        @if (ChildContent != null)
+        {
+            <text>@ChildContent(Item)</text>
+        }
+    </div>
+</div>

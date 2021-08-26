@@ -45,16 +45,29 @@ namespace jNet.Client.Code
 		public async Task<T?> Get<T>(Guid key)
 			where T : IHaveKey
 		{
-			var res = retrieve<T>(key);
+			var res = Retrieve<T>(key);
 			if (res is null)
 			{
 				await Load<T>();
-				res = retrieve<T>(key);
+				res = Retrieve<T>(key);
 			}
 			return res;
 		}
 
-		private T? retrieve<T>(Guid key)
+		public async Task<Setting> GetSetting<T>(string userName)
+			where T : class
+		{
+			var type = typeof(T).FullName ?? "x";
+			var res = store.OfType<Setting>().Where(q => q.Name == type && q.UserName == userName).SingleOrDefault();
+			if (res is null)
+			{
+				res = await httpClient.GetFromJsonAsync<Setting>($"api/Settings/{type}/{userName}") ?? new() { Name = type, UserName = userName };
+				Set(res);
+			}
+			return res;
+		}
+
+		private T? Retrieve<T>(Guid key)
 			where T : IHaveKey
 		{
 			if (store.TryGetValue(key, out var val))
@@ -84,25 +97,25 @@ namespace jNet.Client.Code
 			var types = store.Values.ToLookup(q => q.GetType().FullName);
 			foreach (var items in types)
 			{
-				await httpClient.PostAsJsonAsync($"api/Store/{items.Key}", items, new System.Text.Json.JsonSerializerOptions { WriteIndented = true });
+				if (items.Key == typeof(Setting).FullName)
+				{
+					await httpClient.PostAsJsonAsync($"api/Settings/", items, new System.Text.Json.JsonSerializerOptions { WriteIndented = true });
+				}
+				else
+				{
+					await httpClient.PostAsJsonAsync($"api/Store/{items.Key}", items, new System.Text.Json.JsonSerializerOptions { WriteIndented = true });
+				}
 			}
 		}
 
 		public async Task Load<T>()
 			where T : IHaveKey
 		{
-			try
+			//await Task.Delay(1000);
+			var result = await httpClient.GetFromJsonAsync<IEnumerable<T>>($"api/Store/{typeof(T).FullName}");
+			if (result is not null)
 			{
-				//await Task.Delay(1000);
-				var result = await httpClient.GetFromJsonAsync<IEnumerable<T>>($"api/Store/{typeof(T).FullName}");
-				if (result is not null)
-				{
-					foreach (var i in result) Set(i);
-				}
-			}
-			catch (Exception)
-			{
-				throw;
+				foreach (var i in result) Set(i);
 			}
 		}
 	}

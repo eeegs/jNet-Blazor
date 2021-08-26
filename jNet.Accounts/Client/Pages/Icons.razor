@@ -1,0 +1,15 @@
+﻿@page "/icons"
+
+<h3>Icons</h3>
+
+Search: <input type="search" @oninput="SearchChanged"/>
+
+<div style="display:flex;font-size:24px;color:cornflowerblue;flex-wrap:wrap;">
+
+    @foreach (var i in list)
+    {
+        <div style="padding:4px;" title="@(((I)i).ToString())">
+            <Icon I="@((I)i)" />
+        </div>
+    }
+</div>

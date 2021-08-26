@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace jNet.WaterNET.Workstation.Pages
+namespace jNet.WaterNET.Workstation
 {
 
 	public class DefinitionTreeNode: TreeNode
@@ -59,7 +59,7 @@ namespace jNet.WaterNET.Workstation.Pages
 		{
 			if (Store is not null)
 			{
-				settings = (await Store.Get<Setting>(q=>q.Name== nameof(Index))).FirstOrDefault() ?? settings;
+				settings = await Store.GetSetting<Index>("scott.egan@tpg.com.au");
 				Store.Set(settings);
 			}
 			await base.OnInitializedAsync();

@@ -1,0 +1,40 @@
+﻿
+@font-face {
+    font-family: FabricMDL2Icons;
+    src: url("/_content/jNet.Accounts.Components/icons/fabric-icons.woff") format('woff');
+}
+
+i {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-family: FabricMDL2Icons;
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    cursor: pointer;
+}
+
+.s16 {
+    font-size: 16px;
+}
+
+.s24 {
+    font-size: 24px;
+}
+
+.s32 {
+    font-size: 32px;
+}
+
+.s48 {
+    font-size: 48px;
+}
+
+.s64 {
+    font-size: 64px;
+}
+
+.s128 {
+    font-size: 128px;
+}

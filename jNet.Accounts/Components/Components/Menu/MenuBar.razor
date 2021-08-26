@@ -1,0 +1,33 @@
+﻿@namespace jNet.Accounts.Components
+@implements IDisposable
+
+@inject MenuBarService MenuBarService
+
+@if (MenuBarService is not null)
+{
+    int i = 1;
+    <menubar @onfocusout="@OnLostfocus">
+        @foreach (var menu in MenuBarService.Menus())
+        {
+            <menuitem tabindex="@(i++)"
+                      class="@(opened==menu?"open":"")"
+                      @key="@menu"
+                      @onpointerover="@((e)=>OnOver(e, menu))"
+                      @onpointerdown="@((e)=>OnDown(e, menu))"
+                      @onfocusout="@OnLostfocus">
+                @menu
+                @if (opened == menu)
+                {
+                    <menustrip>
+                        @foreach (var item in MenuBarService.Entries(menu))
+                        {
+                            <text>@item.Value</text>
+                        }
+                    </menustrip>
+                    @*<menustrip style="display: @(opened==menu?"block":"none")"></menustrip>*@
+                }
+                @*<fluent-menu></fluent-menu>*@
+            </menuitem>
+        }
+    </menubar>
+}

@@ -1,0 +1,19 @@
+﻿panel {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+}
+
+first {
+    flex-grow: 1;
+    background-color: rgb(0 0 0 / 0.1);
+    backdrop-filter: blur(2px);
+}
+
+second {
+    min-width: 20vw;
+    background-color: var(--std-back-color);
+}

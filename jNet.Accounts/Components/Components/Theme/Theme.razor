@@ -1,0 +1,13 @@
+﻿@namespace jNet.Accounts.Components
+
+@inject ThemeService ThemeService;
+
+<style>
+    :root {
+        @foreach(var t in ThemeService.Entries)
+        {
+            var x = (MarkupString)$"{t}: {ThemeService[t]};";
+            <text>@x</text>
+	    }
+    }
+</style>

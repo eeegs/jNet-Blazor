@@ -1,4 +1,7 @@
 using jNet.Client.Code;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Components.Authorization;
+using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -15,7 +18,13 @@ namespace jNet.WaterNET.Workstation
 			builder.RootComponents.Add<App>("#app");
 
 			builder.Services.AddTransient(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+
+			//builder.Services.AddScoped<AuthenticationStateProvider, FakeAuth>();
+			//builder.Services.AddScoped<SignOutSessionStateManager>();
+			//builder.Services.AddScoped<IRemoteAuthenticationService,  >();
 			builder.Services.AddScoped<Store>();
+			builder.Services.AddOptions();
+			builder.Services.AddAuthorizationCore();
 			await builder.Build().RunAsync();
 		}
 	}

@@ -1,6 +1,7 @@
 ﻿@page "/main"
 @using jNet.Workstation.UI.Layouts
 @using jNet.Workstation.UI.General
+@namespace jNet.WaterNET.Workstation
 
 <LayoutTypeB Settings="@settings">
     <Tool>
@@ -9,9 +10,9 @@
     <Left>
         <Window Title="Left">
             <p>Scott's new thing</p>
-            <jNet.Client.UI.General.AsyncWarpper Context="Context" DataPromise="@Nodes()">
-                @if (Context is not null)
-                {<Tree Nodes="@Context"></Tree> }
+            <jNet.Client.UI.General.AsyncWarpper DataPromise="@Nodes()">
+                @if (@context is not null)
+                {<Tree Nodes="@context"></Tree> }
                 else
                 { <p>Wait for a tree</p>}
             </jNet.Client.UI.General.AsyncWarpper>

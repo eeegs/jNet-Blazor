@@ -14,9 +14,5 @@
     <ProjectReference Include="..\jNet.WaterNET.Workstation\jNet.WaterNET.Workstation.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Data\" />
-  </ItemGroup>
-
 
 </Project>

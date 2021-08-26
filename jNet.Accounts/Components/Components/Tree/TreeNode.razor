@@ -1,0 +1,51 @@
+﻿@using System.Linq
+@namespace jNet.Accounts.Components
+@typeparam T
+
+@{
+    var hasChildren = _hasChildren(Value);
+    var isSelected = _isSelected(Value);
+    var isOpen = _isOpen(Value);
+    var isFocused = Tree.Focused == this;
+
+    if (Parent is not null)
+    {
+        <div class="node">
+            @for (int i = 0; i < Depth; i++)
+            {
+                <div class="dent"></div>
+            }
+            <div class="dent">
+                @if (isOpen)
+                {
+                    <Icon I="I.CaretSolidDown" OnClick="@Collapse" />
+                }
+                else
+                {
+                    if (hasChildren)
+                    {
+                        <Icon I="I.CaretSolidRight" OnClick="@Expand" />
+                    }
+                }
+            </div>
+            <div @onpointerdown="Select"
+                 @onpointerover="SetFocus"
+                 @ref="@NodeElement"
+                 class="text @(isSelected ? "selected" : "") @(isFocused?"focused":"")">
+                @(hasChildren ? (Tree.NodeContent ?? Tree.ChildContent)(Value) : Tree.ChildContent(Value))
+            </div>
+        </div>
+    }
+
+    if (isOpen || Parent is null)
+    {
+        if (Depth < 5)
+        {
+            var kids = _getChildren(Value);
+            foreach (var child in kids)
+            {
+                <TreeNode Value="@child" Depth="@(Depth + 1)" T="T" Parent="@this" Selected="@Selected" />
+            }
+        }
+    }
+}

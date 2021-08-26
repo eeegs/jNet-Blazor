@@ -1,0 +1,19 @@
+﻿@namespace jNet.Accounts.Components
+@implements IDisposable
+
+@if (PanelService is not null)
+{
+    if (PanelService.Content is not null)
+    {
+        if (PanelService.IsOpen)
+        {
+            <panel style="flex-direction: @flex_direction.Try(PanelService.Location)">
+                <first>
+                </first>
+                <second tabindex="0" @onfocusout="@Close" autofocus="true">
+                    @PanelService.Content
+                </second>
+            </panel>
+        }
+    }
+}

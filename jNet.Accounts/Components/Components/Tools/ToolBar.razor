@@ -1,0 +1,14 @@
+﻿@namespace jNet.Accounts.Components
+@implements IDisposable
+
+<toolbar>
+    @if (ToolBarService is not null)
+    {
+        foreach (var section in ToolBarService.Entries())
+        {
+            <toolstrip @key="@section.Key">
+                @section.Value
+            </toolstrip>
+        }
+    }
+</toolbar>

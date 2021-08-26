@@ -1,0 +1,45 @@
+﻿@using jNet.Accounts.Shared.Model
+
+<EditForm Model="@Transaction">
+    <DataAnnotationsValidator />
+    <div>
+        <label for="Key">Id</label>
+        <input value="@Transaction.Key.ToString()" readonly id="Key" />
+    </div>
+    <div>
+        <label for="Name">Reference</label>
+        <InputText @bind-Value="@Transaction.Name" id="Name" />
+    </div>
+    <div>
+        <label for="TransactionDate">Date</label>
+        <InputDate @bind-Value="@Transaction.TransactionDate" id="TransactionDate" />
+        <ValidationMessage For="@(()=>Transaction.TransactionDate)" />
+    </div>
+    <div>
+        <label for="Note">Note</label>
+        <InputTextArea @bind-Value="@Transaction.Note" rows="5" id="Note" />
+    </div>
+    <div>
+        <label>Note</label>
+        <ListEditor Items="@Transaction.Entries">
+            <HeaderTemplate>
+                <th>Account</th>
+                <th>Credit</th>
+                <th>Debit</th>
+                <th>Note</th>
+                <th>Tax</th>
+            </HeaderTemplate>
+            <RowTemplate Context="row">
+                <td>@row.AccountKey</td>
+                <td>@(row.Type== EntryType.Credit?row.Amount:"")</td>
+                <td>@(row.Type== EntryType.Debit?row.Amount:"")</td>
+                <td>@row.Note</td>
+                <td>@row.TaxTypeKey</td>
+            </RowTemplate>
+        </ListEditor>
+    </div>
+
+
+
+
+</EditForm>

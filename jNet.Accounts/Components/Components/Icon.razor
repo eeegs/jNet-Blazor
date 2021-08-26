@@ -1,0 +1,21 @@
+﻿@namespace jNet.Accounts.Components
+
+@{
+    var style = Color.IsEmpty ? "" : $"color:{Color.toHex()};";
+    var @class = Size == Size.inherit ? "" : Size.ToString().ToLowerInvariant();
+
+
+
+    RenderFragment frag = (style, @class, OnClick.HasDelegate) switch
+    {
+        ("", "", false) => @<i>@html</i>,
+        (_, "", false) => @<i class="@(@class)">@html</i>,
+        ("", _, false) => @<i style="@style">@html</i>,
+        (_, _, false) => @<i class="@(@class)" style="@style">@html</i>,
+        ("", "", true) => @<i @onpointerdown="@Clicked">@html</i>,
+        (_, "", true) => @<i @onpointerdown="@Clicked" class="@(@class)">@html</i>,
+        ("", _, true) => @<i @onpointerdown="@Clicked" style="@style">@html</i>,
+        (_, _, true) => @<i @onpointerdown="@Clicked" class="@(@class)" style="@style">@html</i>,
+    };
+}
+@frag

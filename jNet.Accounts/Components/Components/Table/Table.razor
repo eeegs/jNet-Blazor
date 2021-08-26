@@ -1,0 +1,76 @@
+﻿@namespace jNet.Accounts.Components
+@typeparam T
+
+<MultiSplit Splits="@Widths" SplitsChanged="SplitsChanged" ShowThumb="false">
+    <div class="flexor">
+        <table class="@CssClass">
+            <colgroup>
+                @foreach (var w in splits)
+                {
+                    <col width="@(w)px" />
+                }
+            </colgroup>
+            @if (HeaderTemplate is not null)
+            {
+                <thead>
+                    <tr>
+                        @HeaderTemplate
+                    </tr>
+                </thead>
+            }
+        </table>
+        <div class="scroller">
+            <table class="@CssClass">
+                <colgroup>
+                    @foreach (var w in splits)
+                    {
+                        <col width="@(w)px" />
+                    }
+                </colgroup>
+                <tbody>
+                    @foreach (var i in GetChildren(default))
+                    {
+                        var x = new Row(i.Item, Expanded.Contains(i.Item), _ => Toggle(i.Item), i.Depth);
+                        var isSelected = EqualityComparer<T>.Default.Equals(Selected, i.Item);
+                        var hasChildren = GetItems(i.Item).Any();
+
+                        <tr @key="GetItemKey(i.Item)" @onclick="@(()=>SetSelected(i.Item))" class="@(isSelected?"selected":"")">
+                            @if (!hasChildren)
+                            {
+                                <text>@RowTemplate(x)</text>
+                            }
+                            else
+                            {
+                                if (x.IsOpen)
+                                {
+                                    <text>@((OpenRowTemplate??RowTemplate)(x))</text>
+                                }
+                                else
+                                {
+                                    <text>@((ClosedRowTemplate ?? RowTemplate)(x))</text>
+                                }
+                            }
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        @if (FooterTemplate is not null)
+        {
+            <table class="@CssClass">
+                <colgroup>
+                    Component1.razor
+                    @foreach (var w in splits)
+                    {
+                        <col width="@(w)px" />
+                    }
+                </colgroup>
+                <thead>
+                    <tr>
+                        @FooterTemplate
+                    </tr>
+                </thead>
+            </table>
+        }
+    </div>
+</MultiSplit>

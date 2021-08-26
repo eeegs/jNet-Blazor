@@ -1,0 +1,22 @@
+﻿
+div.flexor {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+div.scroller {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+div.scroller > ::deep table {
+    width: 100%;
+}
+
+
+tr.selected {
+    background-color: var(--std-selected-color);
+    color: var(--text-selected-color);
+}

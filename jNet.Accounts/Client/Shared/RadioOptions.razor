@@ -1,0 +1,18 @@
+﻿@typeparam T
+
+@{
+    int i = 1;
+    var vals = Enum.GetValues(typeof(T));
+    foreach (var e in vals)
+    {
+        var id = $"{typeof(T).Name}_{i++}";
+
+        <InputRadio Value="@(e)" id="@id" />
+        <label for="@id">@e</label>
+    }
+}
+
+@code
+{
+    [Parameter] public T EnumList { get; set; } = default!;
+}

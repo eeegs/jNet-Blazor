@@ -6,6 +6,10 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="5.0.8" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<ProjectReference Include="..\jNet.Shared.Code\jNet.Shared.Code.csproj" />
 	</ItemGroup>
 

@@ -1,0 +1,28 @@
+﻿@namespace jNet.Accounts.Components
+@implements IDisposable
+
+@inject StatusBarService StatusBarService
+
+<statusbar>
+    @if (StatusBarService is not null)
+    {
+        <statusstrip style="justify-content:flex-start">
+            @foreach (var section in StatusBarService.Entries(Position.Left))
+            {
+                @section.Value
+            }
+        </statusstrip>
+        <statusstrip style="justify-content:center">
+            @foreach (var section in StatusBarService.Entries(Position.Centre))
+            {
+                @section.Value
+            }
+        </statusstrip>
+        <statusstrip style="justify-content:flex-end">
+            @foreach (var section in StatusBarService.Entries(Position.Right))
+            {
+                @section.Value
+            }
+        </statusstrip>
+    }
+</statusbar>

@@ -1,0 +1,26 @@
+﻿
+div.node {
+    display: flex;
+    cursor: default;
+    white-space: nowrap;
+}
+
+div.dent {
+    width: 1rem;
+}
+
+div.text {
+    flex-grow: 1;
+    background-color: var(--std-back-color);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+    div.text.selected {
+        background-color: var(--std-selected-color);
+        color: var(--text-selected-color);
+    }
+
+    :focus div.text.focused {
+        filter: brightness(75%);
+    }

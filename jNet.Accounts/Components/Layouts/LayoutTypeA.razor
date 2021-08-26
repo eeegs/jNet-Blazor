@@ -1,0 +1,16 @@
+﻿@namespace jNet.Accounts.Components
+
+<SplitPanel @bind-Split="@this["Right"].SplitPosition">
+    <PanelA>
+        <SplitPanel IsVertical="true" @bind-Split="@this["Main"].SplitPosition">
+            <PanelA>
+                <SplitPanel @bind-Split="@this["Left"].SplitPosition">
+                    <PanelA>@Left</PanelA>
+                    <PanelB>@Main</PanelB>
+                </SplitPanel>
+            </PanelA>
+            <PanelB>@Task</PanelB>
+        </SplitPanel>
+    </PanelA>
+    <PanelB>@Right</PanelB>
+</SplitPanel>

@@ -1,0 +1,9 @@
+[
+  {
+    "Key": "GST",
+    "Name": "GST",
+    "Formula": 0.1,
+    "DebitAccountKey": "8edce012-7da2-4613-829f-f027b0c8bd0a",
+    "CreditAccountKey": "9d51e509-a103-4feb-bfe2-41c3bb52a13c"
+  }
+]

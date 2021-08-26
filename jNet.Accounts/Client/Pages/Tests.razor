@@ -1,0 +1,20 @@
+﻿@page "/tests"
+@using jNet.Accounts.Shared.Model
+
+@(Selected?.Name ?? "Fred")
+
+<hr />
+
+<AsyncWrapper DataPromise="@AStore.LoadTask" Context="data">
+    <TestList T="Account"></TestList>
+   
+    @*<ItemList Items="@data" @bind-Selected="@Selected" Context="item" T="Account">
+        @item.AccountNumber: @item.Name
+    </ItemList>*@ 
+</AsyncWrapper>
+
+<ToolStrip>
+    <button @onclick="@Create"><Icon I="I.MachineLearning" /></button>
+    <button @onclick="@OpenPanel"><Icon I="I.OpenPane" /></button>
+</ToolStrip>
+

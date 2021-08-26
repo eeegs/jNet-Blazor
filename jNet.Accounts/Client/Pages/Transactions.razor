@@ -1,0 +1,27 @@
+﻿@page "/transactions"
+
+@{
+    var x = "Fred";
+    var i = 0;
+}
+
+<ListEditor Items="@Entries" Validator="@Validator">
+    <HeaderTemplate>
+        <th>@x</th>
+        <th>Type</th>
+        <th>Amount</th>
+    </HeaderTemplate>
+    <RowTemplate>
+        <td>@($"{x}[{++i}]")</td>
+        <td>
+            <select value="@((int)context.Type)">
+                <option value="-1">Debit</option>
+                <option value="1">Credit</option>
+            </select>
+        </td>
+        <td><input value="@context.Amount" type="number"></td>
+    </RowTemplate>
+</ListEditor>
+
+<datalist id="entryTypes">
+</datalist>

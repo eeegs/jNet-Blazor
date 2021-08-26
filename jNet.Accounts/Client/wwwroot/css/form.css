@@ -1,0 +1,76 @@
+﻿form {
+/*    background-color: #f6f7fc;
+*/    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 32rem;
+}
+
+    form label {
+        font-weight: bold;
+        font-size: small;
+        display: block;
+        padding-top: 0.9rem;
+        padding-bottom: 0.1rem;
+        line-height: 1rem;
+        padding-left: 7px;
+        height: 2rem;
+    }
+
+    form input:not([type=radio]):not([type=checkbox]), form select, form textarea {
+        resize: vertical;
+        width: 100%;
+        border: 1px solid rgb(0 0 0 / 25%);
+/*        box-shadow: 0 1px 2px 0 rgb(0 0 0 / 50%);
+*/        font-size: 1rem;
+        padding: 6px;
+        height: 2rem;
+    }
+
+        form input:not([type=radio]):not([type=checkbox]).invalid, form select.invalid, form textarea.invalid {
+            box-shadow: 0 1px 2px 0 rgb(255 0 0 / 50%);
+        }
+
+    form > div {
+        position: relative;
+        padding: 0 0.5rem;
+        flex: 0 0 100%
+    }
+
+    form select {
+        padding: 4px 2px;
+    }
+
+    form input[type=radio] + label, form input[type=checkbox] + label {
+        font-size: unset;
+        font-weight: normal;
+        padding-right: 1rem;
+        padding-top: 8px;
+        display: inline-block;
+    }
+
+    form input[type=radio], form input[type=checkbox] {
+        margin-left: 6px;
+    }
+
+    form textarea {
+        resize: vertical;
+    }
+
+.validationMessage {
+    display: none;
+}
+
+input.invalid {
+    color: red;
+}
+
+
+    input.invalid + .v {
+        color: red;
+        padding-left: 5px;
+        position: absolute;
+        line-height: 1rem;
+        display: block;
+        font-size: small;
+    }

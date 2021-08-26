@@ -1,0 +1,12 @@
+﻿
+@namespace jNet.Accounts.Components
+@inherits KeyboardSpt
+@typeparam T
+
+<CascadingValue Value="@this" IsFixed="@true">
+    <div tabindex="0"
+         class="tree"
+         @ref="@keyTarget">
+        <TreeNode T="T" Depth="@(-1)" Selected="@Selected" />
+    </div>
+</CascadingValue>

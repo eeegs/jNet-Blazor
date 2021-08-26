@@ -1,0 +1,33 @@
+﻿
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul {
+    line-height: 1.333333rem;
+    display: block;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+li {
+    white-space: nowrap;
+    display: block;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: var(--std-back-color);
+    cursor: default;
+}
+
+    li.selected {
+        background-color: var(--std-selected-color);
+        color: var(--text-selected-color);
+    }
+
+    :focus li.focused {
+        filter: brightness(75%);
+    }

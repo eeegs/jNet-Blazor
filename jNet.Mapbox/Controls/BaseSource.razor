@@ -1,0 +1,9 @@
+﻿@namespace jNet.Mapbox
+@implements IAsyncDisposable
+
+@if (ChildContent != null)
+{
+    <CascadingValue Value="this">
+        @ChildContent
+    </CascadingValue>
+}

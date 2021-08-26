@@ -1,0 +1,19 @@
+{
+  "Key": "0efeff80-bce2-4a8a-b4f6-c2356382986c",
+  "UserName": "scott.egan@tpg.com.au",
+  "Name": "jNet.WaterNET.Workstation.Stuff",
+  "Variables": {
+    "A": {
+      "SplitPosition": 579,
+      "IsClosed": false
+    },
+    "B": {
+      "SplitPosition": 214,
+      "IsClosed": false
+    },
+    "Right": {
+      "SplitPosition": 90,
+      "IsClosed": false
+    }
+  }
+}

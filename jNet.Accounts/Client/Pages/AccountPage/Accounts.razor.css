@@ -1,0 +1,9 @@
+﻿
+div {
+    display: flex;
+}
+
+::deep td.money {
+    text-align: right;
+    min-width: var(--money-cell-minwidth);
+}

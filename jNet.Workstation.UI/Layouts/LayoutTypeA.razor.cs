@@ -1,4 +1,4 @@
-﻿using jNet.Client.Code;
+﻿using jNet.Shared.Code;
 using Microsoft.AspNetCore.Components;
 using System;
 using System.Collections.Generic;
