@@ -25,22 +25,18 @@ namespace jNet.Mapbox
 		sky
 	}
 
-	public partial class Layer<T, TKey> : ComponentBase, IAsyncDisposable
-		where T : IHaveId<TKey>
+	public partial class Layer : ComponentBase, IAsyncDisposable
 	{
-		public record ClickData(TKey Id, double[] LngLat);
-		[Parameter] public IEnumerable<T> Items { get; set; } = Enumerable.Empty<T>();
-		[Parameter] public T? Selected { get; set; }
-		[Parameter] public EventCallback<T?> SelectedChanged { get; set; }
+		public record ClickData(string Id, double[] LngLat);
 		[CascadingParameter] public Map Map { get; set; } = default!;
 		[CascadingParameter] public BaseSource Source { get; set; } = default!;
 		[Inject] MapBoxService MapBoxService { get; set; } = default!;
 		[Parameter] public Color Color { get; set; } = Color.FromArgb(123, 255, 20);
 		[Parameter] public Color OtherColor { get; set; } = Color.Empty;
 		[Parameter] public LayerType Type { get; set; } = LayerType.circle;
-		[Parameter] public EventCallback<ClickData> OnClicked { get; set; }
+		[Parameter] public EventCallback<object> OnClicked { get; set; }
 
-		DotNetObjectReference<Layer<T, TKey>>? callbackRef;
+		DotNetObjectReference<Layer>? callbackRef;
 
 		internal string Id => GetHashCode().ToString();
 
@@ -59,13 +55,13 @@ namespace jNet.Mapbox
 				var colorname = FillColorName(Type);
 				if(colorname != null)
 				{
-					data.paint[$"{colorname}-color"] = new object[] { "case", new object[] { "has", $"{colorname}-color" }, new object[] { "get", $"{colorname}-color" }, Color.toHex() };
+					data.paint[$"{colorname}-color"] = new object[] { "case", new object[] { "has", $"color" }, new object[] { "get", $"color" }, Color.toHex() };
 				}
 
 				var linecolorname = LineColorName(Type);
 				if (linecolorname != null)
 				{
-					data.paint[$"{linecolorname}-color"] = new object[] { "case", new object[] { "has", $"{linecolorname}-color" }, new object[] { "get", $"{linecolorname}-color" }, OtherColor.toHex() };
+					data.paint[$"{linecolorname}-color"] = new object[] { "case", new object[] { "has", $"edge-color" }, new object[] { "get", $"edge-color" }, OtherColor.toHex() };
 				}
 
 
@@ -83,13 +79,8 @@ namespace jNet.Mapbox
 		[JSInvokable]
 		public async Task LayerClickedCallback(ClickData data)
 		{
-			var x = Items.SingleOrDefault(q => q.Id.Equals(data.Id));
-			if(!EqualityComparer<T>.Default.Equals(Selected))
-			{
-				Selected = x;
-				await SelectedChanged.InvokeAsync(x);
-			}
-			await OnClicked.InvokeAsync(data);
+			var item = await Source.SetSelected(data);
+			await OnClicked.InvokeAsync(item);
 		}
 
 		ValueTask IAsyncDisposable.DisposeAsync()

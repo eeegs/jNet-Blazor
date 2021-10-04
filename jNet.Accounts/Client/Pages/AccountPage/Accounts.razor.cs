@@ -45,7 +45,7 @@ namespace jNet.Accounts.Client.Pages.AccountPage
 
 		void SetSelected()
 		{
-			selected = AStore[Guid.Parse("2dad5ffb-68d4-440f-8fba-a7ed4e9fc5df")];
+			selected = AStore["2dad5ffb-68d4-440f-8fba-a7ed4e9fc5df"];
 		}
 	}
 }

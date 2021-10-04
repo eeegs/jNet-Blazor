@@ -80,6 +80,11 @@ namespace jNet.Accounts.Components
 			await SetFocus(item);
 		}
 
+		async Task OnLeave(T item)
+		{
+			await SetFocus(item);
+		}
+
 		protected override bool OnKeyDown(string key, Modifiers modifiers)
 		{
 			bool aligntTopTop = false;

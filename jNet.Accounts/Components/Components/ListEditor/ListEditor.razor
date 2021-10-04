@@ -4,7 +4,7 @@
 
 <div>
     <div class="listheader">
-        <button><Icon I="I.Add" /></button>
+        <button disabled="@(CreateItem == null)"><Icon I="I.Add" /></button>
         <button><Icon I="I.DeleteRows" /></button>
     </div>
     <table>
@@ -19,7 +19,7 @@
             {
                 <tr @onfocusout="@OnChange">
                     <td>
-                        <input type="checkbox" @onchange="@(e=>CheckOnChange(e, item))" />
+                        <input type="checkbox" @onchange="@(e=>CheckOnChange(e, item))" checked="@Selected.Contains(item)" />
                     </td>
                     @RowTemplate(item)
                 </tr>

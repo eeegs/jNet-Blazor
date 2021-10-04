@@ -11,7 +11,8 @@
             <li @ref="@refs[i]"
                 class="@(i.Equals(Selected) ? "selected" : "") @(i.Equals(focused) ? "focused" : "")"
                 @onclick="@(() => OnSelect(i))"
-                @onpointerover="@(()=>OnEnter(i))">
+                @onpointerover="@(()=>OnEnter(i))"
+                @onpointerout="@(()=>OnLeave(i))">
                 @ChildContent(i)
             </li>
         }

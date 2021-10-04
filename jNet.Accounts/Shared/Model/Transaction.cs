@@ -4,18 +4,34 @@ using System.Linq;
 
 namespace jNet.Accounts.Shared.Model
 {
-	public class Transaction : BaseData, IHaveKey<Guid>
+	public class Entity : BaseData, IHaveKey
+	{
+		[Flags]
+		public enum EntityType
+		{
+			Individual = 1,
+			Supplier = 2,
+			Customer = 4,
+			Employee = 3,
+		}
+
+		public string Key { get; init; } = Guid.NewGuid().ToString();
+	}
+
+
+	public class Transaction : BaseData, IHaveKey
 	{
 		private DateTimeOffset transactionDate;
 
 		public Transaction(string name)
 		{
 			Name = name;
-			Key = Guid.NewGuid();
+			Key = Guid.NewGuid().ToString();
 			TransactionDate = DateTimeOffset.Now;
 		}
 
-		public Guid Key { get; init; }
+		public string Key { get; init; }
+		public string? EntityKey { get; set; }
 		public string? Note { get; set; }
 		public int FY { get; private set; }
 

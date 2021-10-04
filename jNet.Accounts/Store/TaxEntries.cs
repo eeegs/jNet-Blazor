@@ -4,7 +4,7 @@ using System.Net.Http;
 
 namespace jNet.Accounts.Store
 {
-	public class TaxEntries : Store<TaxEntry, string>
+	public class TaxEntries : Store<TaxEntry>
 	{
 		public TaxEntries(HttpClient httpClient) : base(httpClient)
 		{

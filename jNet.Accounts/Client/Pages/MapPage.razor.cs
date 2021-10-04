@@ -21,7 +21,7 @@ namespace jNet.Accounts.Client.Pages
 			return base.OnInitializedAsync();
 		}
 
-		public class Data: IHaveId<string>
+		public class Data : IHaveId
 		{
 
 			public double Lat;
@@ -43,6 +43,6 @@ namespace jNet.Accounts.Client.Pages
 			new Data("D") { Color = Color.Yellow, Lng = 148.926902, Lat=-35.097927 },
 		};
 
-		Func<Data, BaseSource.PointData> Data2PointData => d => new BaseSource.PointData(d.Id, new[] { d.Lng, d.Lat }, d.Color);
+		Func<Data, FeatureData<double[]>> Data2PointData => d => new (d.Id, new[] { new[] { d.Lng, d.Lat } }, d.Color);
 	}
 }

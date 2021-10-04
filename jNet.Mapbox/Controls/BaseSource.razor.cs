@@ -9,7 +9,6 @@ namespace jNet.Mapbox
 {
 	public partial class BaseSource : ComponentBase, IAsyncDisposable
 	{
-		public record PointData(string Id, double[] LngLat, Color Color);
 		[Parameter] public RenderFragment? ChildContent { get; set; }
 		[CascadingParameter] public Map Map { get; set; } = default!;
 		[Inject] protected MapBoxService MapBoxService { get; set; } = default!;
@@ -18,12 +17,15 @@ namespace jNet.Mapbox
 			await base.OnAfterRenderAsync(firstRender);
 
 			if (firstRender)
-			{ 
+			{
 				var data = new
 				{
 					type = "geojson",
 					promoteId = "feature-id",
-					data = new { }
+					data = new {
+						type = "FeatureCollection",
+						features = Array.Empty<object>()
+					}
 				};
 				await Map.Loaded;
 				await MapBoxService.ExecuteAsync("CreateSource", Map.Id, Id, data);
@@ -35,6 +37,11 @@ namespace jNet.Mapbox
 		ValueTask IAsyncDisposable.DisposeAsync()
 		{
 			return MapBoxService.ExecuteAsync("DeleteSource", Map.Id, Id);
+		}
+
+		internal virtual Task<object?> SetSelected(Layer.ClickData data)
+		{
+			return Task.FromResult((object?)null);
 		}
 	}
 }

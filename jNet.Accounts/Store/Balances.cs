@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace jNet.Accounts.Store
 {
-	public class Balances : Store<Balance, Guid>
+	public class Balances : Store<Balance>
 	{
 		public Balances(HttpClient httpClient) : base(httpClient) { }
 

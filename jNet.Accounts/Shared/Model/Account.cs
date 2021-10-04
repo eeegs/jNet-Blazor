@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 namespace jNet.Accounts.Shared.Model
 {
 
-	public class Account : BaseData, IHaveKey<Guid>
+	public class Account : BaseData, IHaveKey
 	{
 		public Account()
 		{
 		}
 
+		public Account(string name, EntryType? entryType = null, string? description = null) : this(name, null, entryType, description) { }
 		public Account(string name, Account? parent, EntryType? entryType = null, string? description = null)
 		{
 			Name = name;
@@ -29,14 +30,14 @@ namespace jNet.Accounts.Shared.Model
 			}
 		}
 
-		public Guid Key { get; init; } = Guid.NewGuid();
+		public string Key { get; init; } = Guid.NewGuid().ToString();
 		public string? Description { get; set; }
 		public AccountType Type { get; set; }
 		public EntryType DefaultEntryType { get; set; }
 
 		[Required]
 		public string AccountNumber { get; set; } = "";
-		public Guid ParentKey { get; set; }
+		public string? ParentKey { get; set; }
 		public bool IsSummaryAccount { get; set; }
 		public string? TaxTypeKey { get; set; }
 		public string Specialisation { get; set; } = "";

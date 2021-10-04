@@ -1,0 +1,27 @@
+﻿@namespace jNet.Accounts.Components
+@inherits KeyboardSpt
+@typeparam T
+
+<ul @ref="@keyTarget"
+    @onfocus="@OnFocus"
+    @onfocusin="@OnFocus"
+    @onfocusout="@OnFocus"
+    tabindex="@(focused is null? 0: -1 )"
+    >
+    @if (Items != default)
+    {
+        foreach (var i in items)
+        {
+            var f = i == focused;
+            var s = i == selected;
+
+
+            <li @ref="@refs[i]"
+                tabindex="@(f? 0: -1)"
+                @onclick="@(()=>SetSelected(i))"
+                class="@(s? "selected": null)">
+                @ChildContent(i)
+            </li>
+        }
+    }
+</ul>

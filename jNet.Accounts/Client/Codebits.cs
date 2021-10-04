@@ -8,7 +8,7 @@ namespace jNet.Accounts.Client
 	{
 		public static void CreateAccounts(Store.Accounts astore, Store.TaxEntries xstore, Store.Transactions tstore)
 		{
-			var a = new Account("Assets", null, EntryType.Debit) { Type = AccountType.Asset, AccountNumber = "1000" };
+			var a = new Account("Assets", EntryType.Debit) { Type = AccountType.Asset, AccountNumber = "1000" };
 			var ac = new Account("Current Assets", a) { Type = AccountType.Asset, AccountNumber = "1100" };
 			var acb = new Account("Bank", ac) { Type = AccountType.Asset, AccountNumber = "1110" };
 			var acc = new Account("Cash on hand", ac) { Type = AccountType.Asset, AccountNumber = "1120" };
@@ -21,7 +21,7 @@ namespace jNet.Accounts.Client
 			var ano = new Account("Office Equipment", an) { Type = AccountType.Asset, AccountNumber = "1220" };
 			var anc = new Account("Company Car", an) { Type = AccountType.Asset, AccountNumber = "1230" };
 			var anp = new Account("Plant and Machinery", an) { Type = AccountType.Asset, AccountNumber = "1240" };
-			var l = new Account("Liabilities", null, EntryType.Credit) { Type = AccountType.Liability, AccountNumber = "2000" };
+			var l = new Account("Liabilities", EntryType.Credit) { Type = AccountType.Liability, AccountNumber = "2000" };
 			var lc = new Account("Current liabilities", l) { Type = AccountType.Liability, AccountNumber = "2100" };
 			var lcb = new Account("Bank Overdraft", lc) { Type = AccountType.Liability, AccountNumber = "2110" };
 			var lcc = new Account("Creditors", lc) { Type = AccountType.Liability, AccountNumber = "2120" };
@@ -32,14 +32,14 @@ namespace jNet.Accounts.Client
 			var lnc = new Account("Company Car Loan", ln) { Type = AccountType.Liability, AccountNumber = "2210" };
 			var lne = new Account("Equipment Loan", ln) { Type = AccountType.Liability, AccountNumber = "2220" };
 			var lnl = new Account("Long Term Loan", ln) { Type = AccountType.Liability, AccountNumber = "2230" };
-			var e = new Account("Equity", null, EntryType.Credit) { Type = AccountType.Equity, AccountNumber = "3000" };
+			var e = new Account("Equity", EntryType.Credit) { Type = AccountType.Equity, AccountNumber = "3000" };
 			var eo = new Account("Owners Capital", e) { Type = AccountType.Equity, AccountNumber = "3110" };
 			var er = new Account("Retained Earnings", e) { Type = AccountType.Equity, AccountNumber = "3220" };
 			var ep = new Account("Current Profit", e) { Type = AccountType.Equity, AccountNumber = "3300" };
-			var r = new Account("Revenue", null, EntryType.Credit) { Type = AccountType.Revenue, AccountNumber = "4000" };
+			var r = new Account("Revenue", EntryType.Credit) { Type = AccountType.Revenue, AccountNumber = "4000" };
 			var rl = new Account("Licences", r) { Type = AccountType.Revenue, AccountNumber = "4100" };
-			var c = new Account("Cost of Goods Sold", null, EntryType.Debit) { Type = AccountType.CoGS, AccountNumber = "5000" };
-			var x = new Account("Expenses", null, EntryType.Debit) { Type = AccountType.Expense, AccountNumber = "6000" };
+			var c = new Account("Cost of Goods Sold", EntryType.Debit) { Type = AccountType.CoGS, AccountNumber = "5000" };
+			var x = new Account("Expenses", EntryType.Debit) { Type = AccountType.Expense, AccountNumber = "6000" };
 			var xx = new Account("Fixed", x) { Type = AccountType.Expense, AccountNumber = "6100" };
 			var xxr = new Account("Rent", xx) { Type = AccountType.Expense, AccountNumber = "6110" };
 			var xxw = new Account("Wages/salaries", xx) { Type = AccountType.Expense, AccountNumber = "6120" };
@@ -61,8 +61,8 @@ namespace jNet.Accounts.Client
 			var xfs = new Account("Farm Sheds", xf) { Type = AccountType.Expense, AccountNumber = "6440" };
 			var xfsr = new Account("Farm Shed Repair", xfs) { Type = AccountType.Expense, AccountNumber = "6441" };
 			var xfsm = new Account("Farm Shed Maintenance", xfs) { Type = AccountType.Expense, AccountNumber = "6442" };
-			var i = new Account("Other Income", null, EntryType.Credit) { Type = AccountType.OtherRevenue, AccountNumber = "8000" };
-			var o = new Account("Other Expense", null, EntryType.Debit) { Type = AccountType.OtherExpense, AccountNumber = "9000" };
+			var i = new Account("Other Income", EntryType.Credit) { Type = AccountType.OtherRevenue, AccountNumber = "8000" };
+			var o = new Account("Other Expense", EntryType.Debit) { Type = AccountType.OtherExpense, AccountNumber = "9000" };
 			var ob = new Account("Bank", o) { Type = AccountType.OtherExpense, AccountNumber = "9100" };
 			var obf = new Account("Fees", ob) { Type = AccountType.OtherExpense, AccountNumber = "9110" };
 			var obi = new Account("Interest", ob) { Type = AccountType.OtherExpense, AccountNumber = "9120" };

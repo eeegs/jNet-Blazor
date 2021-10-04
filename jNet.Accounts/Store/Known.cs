@@ -5,17 +5,16 @@ using System.Net.Http;
 
 namespace jNet.Accounts.Store
 {
-	public abstract class Known<T, Tk> : Store<T, Tk>
-		where T : IHaveKey<Tk>, new()
-		where Tk : notnull
+	public abstract class Known<T> : Store<T>
+		where T : IHaveKey, new()
 	{
 		protected Known(HttpClient httpClient) : base(httpClient)
 		{
 		}
 
-		public Dictionary<string, Tk> KnownEntities { get; init; } = new();
+		public Dictionary<string, string> KnownEntities { get; init; } = new();
 
-		public T this[string name]
+		public override T this[string name]
 		{
 			get
 			{

@@ -2,7 +2,7 @@
 
 namespace jNet.Accounts.Shared.Model
 {
-	public class TaxEntry : IHaveKey<string>, IHaveName
+	public class TaxEntry : IHaveKey, IHaveName
 	{
 		public TaxEntry() { }
 
@@ -16,7 +16,7 @@ namespace jNet.Accounts.Shared.Model
 		public string Key { get; init; } = "";
 		public string Name => Key;
 		public decimal Formula { get; set; } = 0.1m;
-		public Guid DebitAccountKey { get; set; }
-		public Guid CreditAccountKey { get; set; }
+		public string DebitAccountKey { get; set; } = string.Empty;
+		public string CreditAccountKey { get; set; } = string.Empty;
 	}
 }

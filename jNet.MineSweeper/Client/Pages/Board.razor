@@ -1,0 +1,32 @@
+﻿@implements IDisposable
+
+<h3>Board</h3>
+
+<div>
+    <div>
+        <button @onclick="@NewGame">New</button>
+        <label>@game.RemainingCount</label>
+        <label>@game.Time.ToString("m':'ss")</label>
+    </div>
+    <div class="board">
+        @for (int r = 0; r < Height; r++)
+        {
+            <div class="gamerow">
+                @foreach (var p in game.GetRow(r))
+                {
+                    <div @key="@p.Id" class="item">
+                        <div style="color:@p.Color"
+                     class="@(p.IsOpen?"pressed":"")"
+                     oncontextmenu="return false;"
+                     @onclick="@(e=>OnClick(e, p))"
+                     @onmouseup="@(e=>OnClick(e, p))">
+                            @p.Character
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</div>
+
+

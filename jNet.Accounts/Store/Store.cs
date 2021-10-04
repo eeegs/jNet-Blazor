@@ -51,14 +51,13 @@ namespace jNet.Accounts.Code
 		}
 	}
 
-	public abstract class Store<T, Tk> : BaseStore, IEnumerable<T>
-		where T : IHaveKey<Tk>
-		where Tk : notnull
+	public abstract class Store<T> : BaseStore, IEnumerable<T>
+		where T : IHaveKey
 	{
 		static readonly string _fullName = typeof(T).FullName ?? "how did this happen";
 		public static IEnumerable<T> Empty { get; } = Enumerable.Empty<T>();
 
-		readonly Dictionary<Tk, T> store = new();
+		readonly Dictionary<string, T> store = new();
 
 		protected Store(HttpClient httpClient) : base(httpClient)
 		{
@@ -67,12 +66,12 @@ namespace jNet.Accounts.Code
 		}
 
 		public bool isLoaded => Loaded;
-		public Task<Store<T, Tk>> LoadTask { get; }
+		public Task<Store<T>> LoadTask { get; }
 		protected bool Any(Func<T, bool> predicate) => store.Values.Any(predicate);
 		protected bool Any() => store.Values.Any();
 		public IEnumerable<T> Where(Func<T, bool> predicate) => store.Values.Where(predicate).ToList();
-		protected bool Exists(Tk key) => store.ContainsKey(key);
-		public virtual T this[Tk key] => store[key];
+		protected bool Exists(string key) => store.ContainsKey(key);
+		public virtual T this[string key] => store[key];
 		public void Set(IEnumerable<T> values) => SetInt(values);
 		public void Set(params T[] values) => SetInt(values);
 		void SetInt(IEnumerable<T> values)
@@ -100,7 +99,7 @@ namespace jNet.Accounts.Code
 				return res;
 			}
 		}
-		public bool Delete(Tk key)
+		public bool Delete(string key)
 		{
 			return store.Remove(key);
 		}
@@ -139,13 +138,12 @@ namespace jNet.Accounts.Code
 		IEnumerator IEnumerable.GetEnumerator() => store.Values.GetEnumerator();
 	}
 
-	public class MagicStore<T, Tk> : Store<T, Tk>
-		where T : IHaveKey<Tk>, new()
-		where Tk : notnull
+	public class MagicStore<T> : Store<T>
+		where T : IHaveKey, new()
 	{
 		public MagicStore(HttpClient httpClient) : base(httpClient) { }
 
-		public override T this[Tk key]
+		public override T this[string key]
 		{
 			get
 			{

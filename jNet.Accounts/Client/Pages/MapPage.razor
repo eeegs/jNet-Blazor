@@ -4,18 +4,18 @@
 <div style="display:flex; flex-direction:column;height:100%">
     <div style="flex-basis: 50%">
         <Map Zoom="10" MapStyle="MapStyle.Outdoors" @ref="@Map">
-            <PointSource Items="@data" Convertor="@Data2PointData" TKey="string" T="Data">
+            <PointSource SourceType="@(PointSource<Data>.Type.Point)"
+                         Items="@data" T="Data"
+                         Convertor="@Data2PointData"
+                         @bind-Selected="@selected">
                 @if (show)
                 {
-                    <Layer Items="@data" TKey="string" T="Data"
-                           @bind-Selected="@selected"
+                    <Layer OnClicked="@(() => {})"
                            Type="@LayerType.circle"
-                           Color="@System.Drawing.Color.AliceBlue"
-                           OnClicked="@boo"
-                           />
+                           Color="@System.Drawing.Color.AliceBlue" />
                 }
             </PointSource>
-            <Popup Item="@selected" @ref="@Popup" AutoClose="@false" >
+            <Popup Item="@selected" @ref="@Popup" AutoClose="@false">
                 @context?.Id
             </Popup>
         </Map>
@@ -28,10 +28,4 @@
     bool show = true;
 
     Data? selected;
-
-
-    void boo(Layer<Data, string>.ClickData data)
-    {
-        Popup?.Show(data.LngLat);
-    }
 }

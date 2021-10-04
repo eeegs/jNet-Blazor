@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace jNet.Accounts.Shared
 {
-	public interface IHaveKey<K>
+	public interface IHaveKey
 	{
-		K Key { get; init; }
+		string Key { get; init; }
 	}
 	public interface IHaveName
 	{

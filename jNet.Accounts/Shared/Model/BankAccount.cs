@@ -2,10 +2,10 @@
 
 namespace jNet.Accounts.Shared.Model
 {
-	public class BankAccount : BaseData, IHaveKey<Guid>
+	public class BankAccount : BaseData, IHaveKey
 	{
-		public Guid Key { get; init; }
-		public string BankAccountNumber { get; set; } = "";
+		public string Key { get; init; } = string.Empty;
+		public string BankAccountNumber { get; set; } = string.Empty;
 		public BankAccount(Account account)
 		{
 			Key = account.Key;
@@ -13,7 +13,7 @@ namespace jNet.Accounts.Shared.Model
 		}
 
 		public BankAccount() { }
-		public string Bank { get; set; } = "";
-		public string BSB { get; set; } = "";
+		public string Bank { get; set; } = string.Empty;
+		public string BSB { get; set; } = string.Empty;
 	}
 }

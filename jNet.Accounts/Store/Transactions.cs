@@ -7,7 +7,7 @@ using System.Net.Http;
 
 namespace jNet.Accounts.Store
 {
-	public class Transactions : Store<Transaction, Guid>
+	public class Transactions : Store<Transaction>
 	{
 		public Transactions(HttpClient httpClient) : base(httpClient)
 		{
@@ -22,7 +22,7 @@ namespace jNet.Accounts.Store
 		public int GetFY() => GetFY(DateTimeOffset.Now);
 		public int GetFY(DateTimeOffset date) => date.LocalDateTime.AddMonths(6).Year;
 
-		public Dictionary<Guid, decimal> GetBalances()
+		public Dictionary<string, decimal> GetBalances()
 		{
 			var q1 = from t in this
 					 from e in t.Entries

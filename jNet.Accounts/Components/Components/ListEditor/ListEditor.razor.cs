@@ -15,6 +15,7 @@ namespace jNet.Accounts.Components
 		[CascadingParameter] public EditContext EditContext { get; set; } = default!;
 		[Parameter] public RenderFragment<T> RowTemplate { get; set; } = default!;
 		[Parameter] public RenderFragment? HeaderTemplate { get; set; }
+		[Parameter] public Func<T>? CreateItem { get; set; }
 
 		readonly HashSet<T> Selected = new();
 
@@ -33,8 +34,17 @@ namespace jNet.Accounts.Components
 		void OnChange(FocusEventArgs e)
 		{
 		}
-	}
 
+		void AddItem()
+		{
+			if (CreateItem != null)
+			{
+				var i = CreateItem();
+				Items.Add(i);
+				StateHasChanged();
+			}
+		}
+	}
 
 
 	public class InvalidList<T>
@@ -55,5 +65,4 @@ namespace jNet.Accounts.Components
 		public InvalidList<T> IsValid(IEnumerable<T> values) => new();
 		public string? IsValid(T value) => null;
 	}
-
 }

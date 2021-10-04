@@ -1,0 +1,38 @@
+﻿
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul {
+    line-height: 1.333333rem;
+    display: block;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+li {
+    border: 1px solid rgb(0 0 0 / 0.00) ;
+    white-space: nowrap;
+    display: block;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: var(--std-back-color);
+    cursor: default;
+}
+
+    li.selected {
+        background-color: #c8c8c8;
+        color: var(--text-selected-color);
+    }
+
+    li:focus {
+        border: 1px dashed #c8c8c8;
+    }
+
+ul:focus-within li.selected {
+    background-color: var(--std-selected-color);
+}

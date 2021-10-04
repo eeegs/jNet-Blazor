@@ -6,11 +6,15 @@
 <hr />
 
 <AsyncWrapper DataPromise="@AStore.LoadTask" Context="data">
-    <TestList T="Account"></TestList>
-   
-    @*<ItemList Items="@data" @bind-Selected="@Selected" Context="item" T="Account">
-        @item.AccountNumber: @item.Name
-    </ItemList>*@ 
+    @*<TestList T="Account"></TestList>*@
+
+    <div style="display:flex;height: 400px;">
+                    <input value="A" />
+                        <ItemList2 Items="@data" Context="item" T="Account">
+                            @item.AccountNumber: @item.Name
+                        </ItemList2>
+                    <input value="B" />
+    </div>
 </AsyncWrapper>
 
 <ToolStrip>

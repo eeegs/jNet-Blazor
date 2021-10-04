@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace jNet.Accounts.Store
 {
-	public class Accounts : Store<Account, Guid>
+	public class Accounts : Store<Account>
 	{
 		public Accounts(HttpClient httpClient) : base(httpClient) { }
 
@@ -16,30 +16,29 @@ namespace jNet.Accounts.Store
 
 		public IEnumerable<Account> ChildrenOf(Account? parent = null)
 		{
-			var parentKey = parent?.Key ?? Guid.Empty;
+			var parentKey = parent?.Key;
 			var result = Where(q => q.ParentKey == parentKey).ToList();
 			return result;
 		}
 
 		public bool AnyChildren(Account? parent = null)
 		{
-			var parentKey = parent?.Key ?? Guid.Empty;
+			var parentKey = parent?.Key;
 			var result = Any(q => q.ParentKey == parentKey);
 			return result;
 		}
 
 		public Account? ParentOf(Account child)
 		{
-			if (child.ParentKey == Guid.Empty)
+			if (child.ParentKey is null)
 			{
 				return default;
 			}
 			return this[child.ParentKey];
 		}
 
-		public IEnumerable<(Account Account, int Depth)> GetFlat(Guid? parentKey = null, int depth = 0)
+		public IEnumerable<(Account Account, int Depth)> GetFlat(string? parentKey = null, int depth = 0)
 		{
-			parentKey ??= Guid.Empty;
 			foreach (var a in Where(q => q.ParentKey == parentKey).OrderBy(q => q.AccountNumber))
 			{
 				yield return (a, depth);

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace jNet.Accounts.Shared
 {
-	public class Setting : BagNew<Setting.Split>, IHaveKey<Guid>, IHaveName
+	public class Setting : BagNew<Setting.Split>, IHaveKey, IHaveName
 	{
-		public Guid Key { get; init; } = Guid.NewGuid();
+		public string Key { get; init; } = Guid.NewGuid().ToString();
 		public string UserName { get; set; } = "";
 		public string Name { get; set; } = "";
 
