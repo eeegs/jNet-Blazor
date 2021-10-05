@@ -1,6 +1,9 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
 
-namespace jNet.MineSweeper.Client
+namespace jNet.MineSweeper.Shared
 {
 	public class GameBoard
 	{
@@ -8,7 +11,7 @@ namespace jNet.MineSweeper.Client
 		readonly Stopwatch Timer = new();
 		readonly int Width = 16;
 		readonly int Height = 16;
-		readonly int Mines  = 40;
+		readonly int Mines = 40;
 		public GameStatus Status { get; private set; } = GameStatus.AwaitingFirstMove;
 		public int RemainingCount => Mines - Pieces.Count(q => q.IsFlagged);
 		public IEnumerable<Piece> GetRow(int row) => Pieces.Where(q => q.Y == row).OrderBy(q => q.X).ToList();
@@ -31,7 +34,7 @@ namespace jNet.MineSweeper.Client
 		public void MoveNeighbors(Piece piece)
 		{
 			var x = GetNeighbors(piece).Where(q => !q.IsOpen);
-			foreach(var p in x)
+			foreach (var p in x)
 			{
 				Move(p);
 			}
@@ -113,10 +116,10 @@ namespace jNet.MineSweeper.Client
 			var (x, y) = piece;
 			var nearbyPieces = Pieces
 				.Where(p =>
-					p.X >= (x - 1) &&
-					p.X <= (x + 1) &&
-					p.Y >= (y - 1) &&
-					p.Y <= (y + 1) &&
+					p.X >= x - 1 &&
+					p.X <= x + 1 &&
+					p.Y >= y - 1 &&
+					p.Y <= y + 1 &&
 					p != piece
 				);
 			return nearbyPieces;

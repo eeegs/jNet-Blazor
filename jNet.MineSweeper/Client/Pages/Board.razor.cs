@@ -14,6 +14,8 @@ using Microsoft.JSInterop;
 using jNet.MineSweeper.Client;
 using jNet.MineSweeper.Client.Shared;
 using System.Diagnostics;
+using System.Threading;
+using jNet.MineSweeper.Shared;
 
 namespace jNet.MineSweeper.Client.Pages
 {

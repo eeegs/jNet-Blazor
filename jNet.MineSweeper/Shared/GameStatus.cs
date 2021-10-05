@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace jNet.MineSweeper.Client
+namespace jNet.MineSweeper.Shared
 {
 	public enum GameStatus
 	{
