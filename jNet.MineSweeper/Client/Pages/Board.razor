@@ -1,12 +1,25 @@
 ﻿@implements IDisposable
+@using jNet.MineSweeper.Shared
 
 <h3>Board</h3>
+
+@{
+    var status = @game.Status switch
+    {
+        GameStatus.AwaitingFirstMove => "Waiting to start",
+        GameStatus.Completed => "You won!",
+        GameStatus.Failed => "You lost!",
+        GameStatus.InProgress => "Playing",
+        _ => "",
+    };
+}
 
 <div>
     <div>
         <button @onclick="@NewGame">New</button>
         <label>@game.RemainingCount</label>
         <label>@game.Time.ToString("m':'ss")</label>
+        <label>@status</label>
     </div>
     <div class="board">
         @for (int r = 0; r < Height; r++)
@@ -28,5 +41,3 @@
         }
     </div>
 </div>
-
-

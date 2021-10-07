@@ -18,7 +18,7 @@ namespace jNet.MineSweeper.Shared
 			Y = y;
 		}
 
-		public void Flag()
+		internal void Flag()
 		{
 			if (!IsOpen)
 			{
@@ -26,7 +26,7 @@ namespace jNet.MineSweeper.Shared
 			}
 		}
 
-		public void Open()
+		internal void Open()
 		{
 			if(!IsFlagged)
 			{

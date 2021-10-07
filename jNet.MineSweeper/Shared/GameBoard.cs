@@ -8,14 +8,14 @@ namespace jNet.MineSweeper.Shared
 	public class GameBoard
 	{
 		readonly List<Piece> Pieces = new();
-		readonly Stopwatch Timer = new();
 		readonly int Width = 16;
 		readonly int Height = 16;
 		readonly int Mines = 40;
+		DateTime? Started;
 		public GameStatus Status { get; private set; } = GameStatus.AwaitingFirstMove;
 		public int RemainingCount => Mines - Pieces.Count(q => q.IsFlagged);
 		public IEnumerable<Piece> GetRow(int row) => Pieces.Where(q => q.Y == row).OrderBy(q => q.X).ToList();
-		public TimeSpan Time => Timer.Elapsed;
+		public TimeSpan Time => Started is null ? TimeSpan.FromSeconds(0) : (DateTime.UtcNow - Started.Value);
 
 		public GameBoard(int width, int height, int mineCount)
 		{
@@ -40,13 +40,12 @@ namespace jNet.MineSweeper.Shared
 			}
 		}
 
-
 		public void Move(Piece piece)
 		{
 			switch (Status)
 			{
 				case GameStatus.AwaitingFirstMove:
-					Timer.Start();
+					Started = DateTime.UtcNow;
 					FirstMove(piece);
 					Status = GameStatus.InProgress;
 					Move(piece);
@@ -63,21 +62,33 @@ namespace jNet.MineSweeper.Shared
 						else
 						{
 							RevealZeros(piece);
-							if (Pieces.Where(q => q.IsOpen).All(q => q.HasMine))
-							{
-								Status = GameStatus.Completed;
-								Move(piece);
-							}
+							CheckComplete(piece);
 						}
 					}
 					break;
 				case GameStatus.Failed:
 					foreach (var p in Pieces.Where(q => q.HasMine)) p.Open();
-					Timer.Stop();
 					break;
 				case GameStatus.Completed:
-					Timer.Stop();
 					break;
+			}
+		}
+
+		private void CheckComplete(Piece piece)
+		{
+			if (Pieces.Where(q => !q.IsOpen).All(q => q.HasMine && q.IsFlagged))
+			{
+				Status = GameStatus.Completed;
+				Move(piece);
+			}
+		}
+
+		public void SetFlag(Piece piece)
+		{
+			piece.Flag();
+			if(Status == GameStatus.InProgress)
+			{
+				CheckComplete(piece);
 			}
 		}
 
@@ -123,6 +134,13 @@ namespace jNet.MineSweeper.Shared
 					p != piece
 				);
 			return nearbyPieces;
+		}
+	}
+
+	public class WarBoard : GameBoard
+	{
+		public WarBoard(int width, int height, int mineCount) : base(width, height, mineCount)
+		{
 		}
 	}
 }

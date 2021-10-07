@@ -45,7 +45,7 @@ namespace jNet.MineSweeper.Client.Pages
 			{
 				if (e.Button == 2)
 				{
-					piece.Flag();
+					game.SetFlag(piece);
 				}
 				else
 				{
