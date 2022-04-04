@@ -1,0 +1,20 @@
+﻿@page "/warboard"
+@implements IAsyncDisposable
+@inject NavigationManager NavigationManager
+<h3>MultiBoard</h3>
+
+<h4>@ConnectionState</h4>
+
+
+<button @onclick="@Connect">Connect</button>
+
+<input @bind="@GameName" />
+
+<button @onclick="@NewGame" disabled="@(!IsConnected)">Create Game</button>
+
+<select @bind="@selectedGame">
+    @foreach (var g in Games)
+    {
+        <option value="@g">@g</option>
+    }
+</select>

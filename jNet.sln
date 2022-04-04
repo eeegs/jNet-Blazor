@@ -74,11 +74,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jNet.Mapbox", "jNet.Mapbox\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jNet.Process", "jNet.Process\jNet.Process.csproj", "{402BE68C-4BCE-481A-B9E4-5B83F6038F45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jNet.MineSweeper.Server", "jNet.MineSweeper\Server\jNet.MineSweeper.Server.csproj", "{01E27B6A-055C-49BD-AEC2-D04294942C6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jNet.MineSweeper.Server", "jNet.MineSweeper\Server\jNet.MineSweeper.Server.csproj", "{01E27B6A-055C-49BD-AEC2-D04294942C6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jNet.MineSweeper.Client", "jNet.MineSweeper\Client\jNet.MineSweeper.Client.csproj", "{F0DB143D-67A2-43A7-A1BE-F3EB17850FEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jNet.MineSweeper.Client", "jNet.MineSweeper\Client\jNet.MineSweeper.Client.csproj", "{F0DB143D-67A2-43A7-A1BE-F3EB17850FEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jNet.MineSweeper.Shared", "jNet.MineSweeper\Shared\jNet.MineSweeper.Shared.csproj", "{9E0516FF-E05D-435C-904A-57794FFC87B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jNet.MineSweeper.Shared", "jNet.MineSweeper\Shared\jNet.MineSweeper.Shared.csproj", "{9E0516FF-E05D-435C-904A-57794FFC87B1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MineSweeper", "MineSweeper", "{2E25DF0C-28FF-4ABF-B6A1-9B0EDD9D0C46}"
 EndProject
